@@ -11,6 +11,10 @@ class CustomDocument extends Document {
       <Html lang="en-US">
         <Head>
           <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+            rel="stylesheet"
+          />
+          <link
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet"
           />
