@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "theme-ui";
+import { client } from "../utils/shopify.js";
 import theme from "theme";
 
 import SEO from "components/seo";
@@ -14,7 +15,7 @@ import Package from "../sections/package";
 import TeamSection from "../sections/team-section";
 import TestimonialCard from "../sections/testimonial";
 
-export default function IndexPage() {
+export default function IndexPage({ products }) {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -25,10 +26,18 @@ export default function IndexPage() {
         <Feature />
         <CoreFeature />
         <WorkFlow />
-        <Package />
+        <Package products={products} />
         <TeamSection />
         <TestimonialCard />
       </Layout>
     </ThemeProvider>
   );
+}
+
+// Server Side Rendering
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const products = await client.product.fetchAll();
+  // Pass data to the page via props
+  return { props: { products: JSON.parse(JSON.stringify(products)) } };
 }

@@ -12,7 +12,7 @@ const packages = {
   monthly: [
     {
       id: 1,
-      name: "Free Plan",
+      name: "100",
       description: "For Small teams or office",
       buttonText: "Start free trail",
       priceWithUnit: "$0",
@@ -45,7 +45,7 @@ const packages = {
     },
     {
       id: 2,
-      name: "Business king",
+      name: "300",
       description: "For Enterprise business",
       priceWithUnit: "$15",
       buttonText: "Create account",
@@ -81,7 +81,7 @@ const packages = {
       id: 3,
       header: "Suggested",
       headerIcon: <IoIosCheckmarkCircle />,
-      name: "Pro Master",
+      name: "500",
       description: "For pro level developers",
       priceWithUnit: "$24",
       buttonText: "Create account",
@@ -117,7 +117,7 @@ const packages = {
   annual: [
     {
       id: 1,
-      name: "Free Plan",
+      name: "100",
       description: "For Small teams or office",
       buttonText: "Start free trail",
       priceWithUnit: "$0",
@@ -150,7 +150,7 @@ const packages = {
     },
     {
       id: 2,
-      name: "Business king",
+      name: "300",
       description: "For Enterprise business",
       priceWithUnit: "$25",
       buttonText: "Create account",
@@ -186,7 +186,7 @@ const packages = {
       id: 3,
       header: "Suggested",
       headerIcon: <IoIosCheckmarkCircle />,
-      name: "Pro Master",
+      name: "500",
       description: "For pro level developers",
       priceWithUnit: "$39",
       buttonText: "Create account",
@@ -239,7 +239,8 @@ const responsive = {
   },
 };
 
-export default function Package() {
+export default function Package({ products }) {
+  console.log(products);
   const { monthly, annual } = packages;
   const [state, setState] = useState({
     active: "monthly",
