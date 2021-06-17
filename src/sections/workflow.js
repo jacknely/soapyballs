@@ -10,25 +10,25 @@ import ArrowEven from "assets/arrowEven.svg";
 const data = [
   {
     id: 1,
-    title: "Set disbursement Instructions",
+    title: "Fill your ball bag",
     text:
       "Get your blood tests delivered at home collect a sample from the your blood tests.",
   },
   {
     id: 2,
-    title: "Assembly retrieves funds from your account",
+    title: "Activate your balls",
     text:
       "Get your blood tests delivered at home collect a sample from the your blood tests.",
   },
   {
     id: 3,
-    title: "Assembly initiates disbursement",
+    title: "Magic SoapyBalls Time",
     text:
       "Get your blood tests delivered at home collect a sample from the your blood tests.",
   },
   {
     id: 4,
-    title: "Customer receives funds payment",
+    title: "After care",
     text:
       "Get your blood tests delivered at home collect a sample from the your blood tests.",
   },
@@ -39,9 +39,9 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="WHAT WE DO"
+          slogan="USE YOUR BALLS AND SAVE THE PLANET"
           isWhite={true}
-          title="Meet the features"
+          title="Laundrey 'How To' Guide"
         />
         <Grid sx={styles.grid}>
           {data.map((item) => (

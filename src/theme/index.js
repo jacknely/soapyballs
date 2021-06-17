@@ -7,7 +7,7 @@ export default {
     heading_secondary: "#0F2137", // heading color
     background: "#ffc76b", // body background color
     background_secondary: "#F9FBFD", // secondary background color
-    border_color: "#E5ECF4", // border color
+    border_color: "##714900", // border color
     yellow: "#FFA740", // border color
     primary: "#8B4513", // primary button and link color
     secondary: "#2563FF", // secondary color - can be used for hover states

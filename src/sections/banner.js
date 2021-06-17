@@ -23,7 +23,9 @@ export default function Banner() {
             A Natural Alternative to Laundry Detergent & Shower Gel
           </Heading>
           <Text as="p" variant="heroSecondary">
-            SoapyBalls are a sustainable alternative to tradaitional
+            SoapyBalls grow naturally! Traditional detergents contain
+            harmful chemicals such as Bleach, Sulphates, Benzens. <br></br>
+            Join the revolution today!
           </Text>
 
           <Link
@@ -44,22 +46,22 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ["140px", "145px", "155px", "170px", null, null, "180px", "215px"],
+    pt: ["140px", "145px", "155px", "110px", null, null, "130px", "215px"],
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: "relative",
     zIndex: 2,
     "&::before": {
       position: "absolute",
       content: '""',
-      bottom: 6,
+      bottom: 40,
       left: 0,
       height: "100%",
       width: "100%",
       zIndex: -1,
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: "bottom left",
-      backgroundSize: "36%",
+      backgroundPosition: "center left",
+      backgroundSize: "28%",
     },
     "&::after": {
       position: "absolute",
@@ -71,8 +73,8 @@ const styles = {
       zIndex: -1,
       backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: "bottom right",
-      backgroundSize: "32%",
+      backgroundPosition: "center right",
+      backgroundSize: "28%",
     },
     container: {
       minHeight: "inherit",
@@ -94,6 +96,7 @@ const styles = {
         position: "relative",
         height: 140,
         width: 120,
+        marginBottom: 20,
       },
     },
   },

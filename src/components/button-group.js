@@ -33,7 +33,7 @@ const styles = {
       fontSize: 40,
       cursor: "pointer",
       px: "2px",
-      color: "#BBC7D7",
+      color: "#000",
       transition: "all 0.25s",
       "&:hover": {
         color: "text",
