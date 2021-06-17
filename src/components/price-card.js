@@ -6,8 +6,9 @@ export default function PriceCard({
   data: {
     header,
     name,
+    title,
     description,
-    priceWithUnit,
+    price,
     buttonText = "Start Free Trial",
     anotherOption,
     points,
@@ -22,14 +23,14 @@ export default function PriceCard({
       <Box>
         <Box className={styles.package__header} sx={styles.pricingHeader}>
           <Heading className="package__name" variant="title">
-            {name}
+            {title}
           </Heading>
           <Text as="p">{description}</Text>
         </Box>
         <List items={points} childStle={styles.listItem} />
         <Text className="package__price" sx={styles.price}>
-          {priceWithUnit}
-          <span>/Monthly</span>
+          £{price}
+          <span></span>
         </Text>
         <Button variant="primary" aria-label={buttonText}>
           {buttonText}

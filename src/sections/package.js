@@ -8,218 +8,188 @@ import ButtonGroup from "components/button-group";
 import SectionHeader from "components/section-header";
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 
-const packages = {
-  monthly: [
-    {
-      id: 1,
-      name: "100",
-      description: "For Small teams or office",
-      buttonText: "Start free trail",
-      priceWithUnit: "$0",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCloseCircle />,
-          text: "eCommerce Store ",
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "300",
-      description: "For Enterprise business",
-      priceWithUnit: "$15",
-      buttonText: "Create account",
-      anotherOption: "Or Start 14 Days trail",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: "eCommerce Store ",
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 3,
-      header: "Suggested",
-      headerIcon: <IoIosCheckmarkCircle />,
-      name: "500",
-      description: "For pro level developers",
-      priceWithUnit: "$24",
-      buttonText: "Create account",
-      anotherOption: "Or Start 14 Days trail",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: "eCommerce Store ",
-          isAvailable: true,
-        },
-      ],
-    },
-  ],
-  annual: [
-    {
-      id: 1,
-      name: "100",
-      description: "For Small teams or office",
-      buttonText: "Start free trail",
-      priceWithUnit: "$0",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCloseCircle />,
-          text: "eCommerce Store ",
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "300",
-      description: "For Enterprise business",
-      priceWithUnit: "$25",
-      buttonText: "Create account",
-      anotherOption: "Or Start 10 Days trail",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "eCommerce Store",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder ",
-          isAvailable: true,
-        },
-      ],
-    },
-    {
-      id: 3,
-      header: "Suggested",
-      headerIcon: <IoIosCheckmarkCircle />,
-      name: "500",
-      description: "For pro level developers",
-      priceWithUnit: "$39",
-      buttonText: "Create account",
-      anotherOption: "Or Start 10 Days trail",
-      points: [
-        {
-          id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: "eCommerce Store",
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Blog Support Tools",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: "Drag & Drop Builder ",
-          isAvailable: true,
-        },
-      ],
-    },
-  ],
-};
+const productInfo = [
+  {
+    title: "100",
+    description: "For Small teams or office",
+    header: "Suggested",
+    headerIcon: <IoIosCheckmarkCircle />,
+    description: "For pro level developers",
+    priceWithUnit: "$24",
+    buttonText: "Create account",
+    anotherOption: "Or Start 14 Days trail",
+    points: [
+      {
+        id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Drag & Drop Builder",
+        isAvailable: true,
+      },
+      {
+        id: 2,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1,000's of Templates",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Blog Support Tools",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCloseCircle />,
+        text: "eCommerce Store ",
+        isAvailable: true,
+      },
+    ],
+  },
+  {
+    title: "300",
+    description: "For Small teams or office",
+    header: "Suggested",
+    headerIcon: <IoIosCheckmarkCircle />,
+    description: "For pro level developers",
+    priceWithUnit: "$24",
+    buttonText: "Create account",
+    anotherOption: "Or Start 14 Days trail",
+    points: [
+      {
+        id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Drag & Drop Builder",
+        isAvailable: true,
+      },
+      {
+        id: 2,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1,000's of Templates",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Blog Support Tools",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCloseCircle />,
+        text: "eCommerce Store ",
+        isAvailable: true,
+      },
+    ],
+  },
+  {
+    title: "500",
+    description: "For Small teams or office",
+    header: "Suggested",
+    headerIcon: <IoIosCheckmarkCircle />,
+    description: "For pro level developers",
+    priceWithUnit: "$24",
+    buttonText: "Create account",
+    anotherOption: "Or Start 14 Days trail",
+    points: [
+      {
+        id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Drag & Drop Builder",
+        isAvailable: true,
+      },
+      {
+        id: 2,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1,000's of Templates",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Blog Support Tools",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCloseCircle />,
+        text: "eCommerce Store ",
+        isAvailable: true,
+      },
+    ],
+  },
+  {
+    title: "1000",
+    description: "For Small teams or office",
+    header: "Suggested",
+    headerIcon: <IoIosCheckmarkCircle />,
+    description: "For pro level developers",
+    priceWithUnit: "$24",
+    buttonText: "Create account",
+    anotherOption: "Or Start 14 Days trail",
+    points: [
+      {
+        id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Drag & Drop Builder",
+        isAvailable: true,
+      },
+      {
+        id: 2,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1,000's of Templates",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Blog Support Tools",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCloseCircle />,
+        text: "eCommerce Store ",
+        isAvailable: true,
+      },
+    ],
+  },
+  {
+    title: "5000",
+    description: "For Small teams or office",
+    header: "Suggested",
+    headerIcon: <IoIosCheckmarkCircle />,
+    description: "For pro level developers",
+    priceWithUnit: "$24",
+    buttonText: "Create account",
+    anotherOption: "Or Start 14 Days trail",
+    points: [
+      {
+        id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Drag & Drop Builder",
+        isAvailable: true,
+      },
+      {
+        id: 2,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1,000's of Templates",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Blog Support Tools",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCloseCircle />,
+        text: "eCommerce Store ",
+        isAvailable: true,
+      },
+    ],
+  },
+];
 
 const responsive = {
   desktop: {
@@ -240,20 +210,14 @@ const responsive = {
 };
 
 export default function Package({ products }) {
-  console.log(products);
-  const { monthly, annual } = packages;
-  const [state, setState] = useState({
-    active: "monthly",
-    pricingPlan: monthly,
-  });
+  const mergeById = (a1, a2) =>
+    a1.map((itm) => ({
+      ...a2.find((item) => item.title === itm.title && item),
+      ...itm,
+    }));
 
-  const handlePricingPlan = (plan) => {
-    if (plan == "annual") {
-      setState({ active: "annual", pricingPlan: annual });
-    } else {
-      setState({ active: "monthly", pricingPlan: monthly });
-    }
-  };
+  const productDetails = mergeById(products[0].variants, productInfo);
+  console.log(productDetails);
 
   const sliderParams = {
     additionalTransfrom: 0,
@@ -282,31 +246,11 @@ export default function Package({ products }) {
     <section id="pricing" sx={{ variant: "section.pricing" }}>
       <Container>
         <SectionHeader slogan="SLOGAN HERE" title="Choose your price" />
-        <Flex sx={styles.buttonGroup}>
-          <Box sx={styles.buttonGroupInner}>
-            <button
-              className={state.active == "monthly" ? "active" : ""}
-              type="button"
-              aria-label="Monthly"
-              onClick={() => handlePricingPlan("monthly")}
-            >
-              Monthly Plan
-            </button>
-            <button
-              className={state.active == "annual" ? "active" : ""}
-              type="button"
-              aria-label="Annual"
-              onClick={() => handlePricingPlan("annual")}
-            >
-              Annual Plan
-            </button>
-          </Box>
-        </Flex>
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">
           <Carousel {...sliderParams}>
-            {state.pricingPlan.map((packageData) => (
-              <Box sx={styles.pricingItem} key={packageData.id}>
-                <PriceCard data={packageData} />
+            {productDetails.map((product) => (
+              <Box sx={styles.pricingItem} key={product.title}>
+                <PriceCard data={product} />
               </Box>
             ))}
           </Carousel>

@@ -35,8 +35,8 @@ export default {
     "1620px",
   ],
   fonts: {
-    body: "Indie Flower",
-    heading: "Indie Flower",
+    body: "Raleway",
+    heading: "Raleway",
     logo: "Pacifico",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],

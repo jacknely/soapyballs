@@ -1,22 +1,41 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
-import BannerImg from "assets/banner-thumb.png";
+import Nut from "assets/nut.png";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
+import { Link } from "react-scroll";
 
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
+        <Box sx={styles.banner.imageBox}>
+          <Image
+            sx={styles.banner.imageBox.img}
+            src={Nut}
+            alt="Thumbnail"
+          />
+        </Box>
+
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            A Natural alternative to Laundry Detergent & Shower gel
+            A Natural Alternative to Laundry Detergent & Shower Gel
           </Heading>
           <Text as="p" variant="heroSecondary">
             SoapyBalls are a sustainable alternative to tradaitional
           </Text>
-          <Button variant="primary">Buy</Button>
+
+          <Link
+            activeClass="active"
+            to="pricing"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <Button variant="primary">Buy</Button>
+          </Link>
         </Box>
       </Container>
     </section>
@@ -65,16 +84,16 @@ const styles = {
       width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
       mx: "auto",
       textAlign: "center",
-      mb: ["40px", null, null, null, null, 7],
+      mb: [null, null, null, null, null, 7],
     },
     imageBox: {
       justifyContent: "center",
       textAlign: "center",
       display: "inline-flex",
-      mb: [0, null, -6, null, null, "-40px", null, -3],
       img: {
         position: "relative",
-        height: [245, "auto"],
+        height: 140,
+        width: 120,
       },
     },
   },
