@@ -1,6 +1,8 @@
-import { Box, Card, Text, Heading, Button } from "theme-ui";
-import React from "react";
+import { Box, Card, Text, Heading, Button, Link } from "theme-ui";
+import React, { useState } from "react";
+import { Router, useRouter } from "next/router";
 import List from "./list";
+import { client } from "../utils/shopify";
 
 export default function PriceCard({
   data: {
@@ -9,21 +11,60 @@ export default function PriceCard({
     title,
     description,
     price,
-    buttonText = "Start Free Trial",
+    buttonText = "Buy",
     anotherOption,
     points,
+    id,
   },
 }) {
+  const router = useRouter();
+  const [webUrl, setWebUrl] = useState({});
+
+  const getCheckoutId = async () => {
+    const storage = window.localStorage;
+    let checkoutId = storage.getItem("checkoutId");
+    if (!checkoutId) {
+      const checkout = await client.checkout.create();
+      checkoutId = checkout.id;
+    }
+    storage.setItem("checkoutId", checkoutId);
+    const cart = await client.checkout.fetch(checkoutId);
+    setWebUrl(cart.webUrl);
+    return checkoutId;
+  };
+
+  const clearCart = async () => {
+    const checkoutId = await getCheckoutId();
+    const cart = await client.checkout.fetch(checkoutId);
+    const items = cart.lineItems.map((a) => a.id);
+    const cleared_cart = await client.checkout.removeLineItems(
+      checkoutId,
+      items
+    );
+  };
+
+  const addToCart = async () => {
+    await clearCart();
+    const checkoutId = await getCheckoutId();
+    const cart = await client.checkout.addLineItems(checkoutId, [
+      {
+        variantId: id,
+        quantity: 1,
+      },
+    ]);
+    console.log(cart);
+    router.push(cart.webUrl);
+  };
+
   return (
     <Card
       className={header ? "package__card active" : "package__card"}
       sx={styles.pricingBox}
     >
-      {header && <Text sx={styles.header}>{header}</Text>}
       <Box>
         <Box className={styles.package__header} sx={styles.pricingHeader}>
           <Heading className="package__name" variant="title">
-            {title}
+            {title} Balls
           </Heading>
           <Text as="p">{description}</Text>
         </Box>
@@ -32,19 +73,25 @@ export default function PriceCard({
           £{price}
           <span></span>
         </Text>
-        <Button variant="primary" aria-label={buttonText}>
-          {buttonText}
-        </Button>
-        {anotherOption && (
+        <Box sx={styles.buttonBox}>
           <Button
-            variant="textButton"
-            className="free__trial"
-            aria-label={anotherOption}
-            sx={{ color: "black" }}
+            variant="primary"
+            aria-label={buttonText}
+            onClick={addToCart}
           >
-            {anotherOption}
+            {buttonText}
           </Button>
-        )}
+          {anotherOption && (
+            <Button
+              variant="textButton"
+              className="free__trial"
+              aria-label={anotherOption}
+              sx={{ color: "black" }}
+            >
+              {anotherOption}
+            </Button>
+          )}
+        </Box>
       </Box>
     </Card>
   );
@@ -154,5 +201,11 @@ const styles = {
       fontSize: ["14px", 1],
       p: "20px 0 0",
     },
+  },
+  buttonBox: {
+    width: "auto",
+    mx: "auto",
+    textAlign: "center",
+    mb: [null, null, null, null, null, 7],
   },
 };

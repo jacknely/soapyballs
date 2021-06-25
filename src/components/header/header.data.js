@@ -8,8 +8,12 @@ export default [
     label: "Benefits",
   },
   {
+    path: "how-to",
+    label: "How to Guides",
+  },
+  {
     path: "pricing",
-    label: "Savings",
+    label: "Buy Balls",
   },
   {
     path: "testimonial",

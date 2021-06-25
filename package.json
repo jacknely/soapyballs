@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap && next export",
-    "export": "next export"
+    "postbuild": "next-sitemap && next export"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

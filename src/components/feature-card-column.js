@@ -29,9 +29,9 @@ const styles = {
   },
   img: {
     mx: ["auto", null, 0],
-    ml: ["auto", null, "-13px"],
-    mb: -2,
-    width: ["80px", null, null, "90px", null, "auto"],
+    ml: ["auto", null, null],
+    mb: 1,
+    width: "80px",
   },
   wrapper: {
     width: "100%",

@@ -7,11 +7,12 @@ import Performance from "assets/feature/performance.svg";
 import Partnership from "assets/feature/partnership.svg";
 import Subscription from "assets/feature/subscription.svg";
 import Support from "assets/feature/support.svg";
+import Factory from "assets/feature/factory_icon.png";
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
+    imgSrc: Factory,
     altText: "Fast Performance",
     title: "Fast Performance",
     text:

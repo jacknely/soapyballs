@@ -34,8 +34,8 @@ export default function IndexPage({ products }) {
   );
 }
 
-// Server Side Rendering
-export async function getServerSideProps() {
+// Server Side Renderingm getServerSideProps()
+export async function getStaticProps() {
   // Fetch data from external API
   const products = await client.product.fetchAll();
   // Pass data to the page via props

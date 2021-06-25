@@ -11,180 +11,57 @@ import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 const productInfo = [
   {
     title: "100",
-    description: "For Small teams or office",
-    header: "Suggested",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "For pro level developers",
-    priceWithUnit: "$24",
-    buttonText: "Create account",
-    anotherOption: "Or Start 14 Days trail",
+    description: "A great way to test our SoapyBalls",
     points: [
       {
         id: 1,
         icon: <IoIosCheckmarkCircle />,
-        text: "Drag & Drop Builder",
+        text: "Over 20 Laundry Washes",
         isAvailable: true,
       },
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "1,000's of Templates",
-        isAvailable: true,
-      },
-      {
-        id: 3,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Blog Support Tools",
-        isAvailable: true,
-      },
-      {
-        id: 4,
-        icon: <IoIosCloseCircle />,
-        text: "eCommerce Store ",
+        text: "1 re-usable ball bags included",
         isAvailable: true,
       },
     ],
   },
   {
     title: "300",
-    description: "For Small teams or office",
-    header: "Suggested",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "For pro level developers",
-    priceWithUnit: "$24",
-    buttonText: "Create account",
-    anotherOption: "Or Start 14 Days trail",
+    description: "A great way to test our SoapyBalls",
     points: [
       {
         id: 1,
         icon: <IoIosCheckmarkCircle />,
-        text: "Drag & Drop Builder",
+        text: "Over 60 Laundry Washes",
         isAvailable: true,
       },
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "1,000's of Templates",
-        isAvailable: true,
-      },
-      {
-        id: 3,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Blog Support Tools",
-        isAvailable: true,
-      },
-      {
-        id: 4,
-        icon: <IoIosCloseCircle />,
-        text: "eCommerce Store ",
+        text: "3 re-usable ball bags included",
         isAvailable: true,
       },
     ],
   },
   {
     title: "500",
-    description: "For Small teams or office",
-    header: "Suggested",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "For pro level developers",
-    priceWithUnit: "$24",
-    buttonText: "Create account",
-    anotherOption: "Or Start 14 Days trail",
+    description: "A great way to test our SoapyBalls",
     points: [
       {
         id: 1,
         icon: <IoIosCheckmarkCircle />,
-        text: "Drag & Drop Builder",
+        text: "Over 100 Laundry Washes",
         isAvailable: true,
       },
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "1,000's of Templates",
-        isAvailable: true,
-      },
-      {
-        id: 3,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Blog Support Tools",
-        isAvailable: true,
-      },
-      {
-        id: 4,
-        icon: <IoIosCloseCircle />,
-        text: "eCommerce Store ",
-        isAvailable: true,
-      },
-    ],
-  },
-  {
-    title: "1000",
-    description: "For Small teams or office",
-    header: "Suggested",
-    headerIcon: <IoIosCheckmarkCircle />,
-    description: "For pro level developers",
-    priceWithUnit: "$24",
-    buttonText: "Create account",
-    anotherOption: "Or Start 14 Days trail",
-    points: [
-      {
-        id: 1,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Drag & Drop Builder",
-        isAvailable: true,
-      },
-      {
-        id: 2,
-        icon: <IoIosCheckmarkCircle />,
-        text: "1,000's of Templates",
-        isAvailable: true,
-      },
-      {
-        id: 3,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Blog Support Tools",
-        isAvailable: true,
-      },
-      {
-        id: 4,
-        icon: <IoIosCloseCircle />,
-        text: "eCommerce Store ",
-        isAvailable: true,
-      },
-    ],
-  },
-  {
-    title: "5000",
-    description: "For Small teams or office",
-    header: "Suggested",
-    headerIcon: <IoIosCheckmarkCircle />,
-    description: "For pro level developers",
-    priceWithUnit: "$24",
-    buttonText: "Create account",
-    anotherOption: "Or Start 14 Days trail",
-    points: [
-      {
-        id: 1,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Drag & Drop Builder",
-        isAvailable: true,
-      },
-      {
-        id: 2,
-        icon: <IoIosCheckmarkCircle />,
-        text: "1,000's of Templates",
-        isAvailable: true,
-      },
-      {
-        id: 3,
-        icon: <IoIosCheckmarkCircle />,
-        text: "Blog Support Tools",
-        isAvailable: true,
-      },
-      {
-        id: 4,
-        icon: <IoIosCloseCircle />,
-        text: "eCommerce Store ",
+        text: "6 re-usable ball bags included",
         isAvailable: true,
       },
     ],
@@ -245,7 +122,10 @@ export default function Package({ products }) {
   return (
     <section id="pricing" sx={{ variant: "section.pricing" }}>
       <Container>
-        <SectionHeader slogan="SLOGAN HERE" title="Choose your price" />
+        <SectionHeader
+          slogan="Choose your package"
+          title="Buy SoapyBalls"
+        />
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">
           <Carousel {...sliderParams}>
             {productDetails.map((product) => (

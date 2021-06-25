@@ -36,12 +36,12 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <section sx={styles.workflow}>
+    <section id="how-to" sx={styles.workflow}>
       <Container>
         <SectionHeader
           slogan="USE YOUR BALLS AND SAVE THE PLANET"
           isWhite={true}
-          title="Laundrey 'How To' Guide"
+          title="Laundry 'How To' Guide"
         />
         <Grid sx={styles.grid}>
           {data.map((item) => (
