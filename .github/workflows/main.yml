@@ -25,4 +25,4 @@ jobs:
       - name: Deploy Next.js app
         run: npx serverless
         env:
-          INTERACTIVE_SETUP_ENABLE: 1
+          SLS_INTERACTIVE_SETUP_ENABLE: 1
