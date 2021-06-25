@@ -24,3 +24,5 @@ jobs:
           aws-region: eu-west-1
       - name: Deploy Next.js app
         run: npx serverless
+        env:
+          INTERACTIVE_SETUP_ENABLE: 1
