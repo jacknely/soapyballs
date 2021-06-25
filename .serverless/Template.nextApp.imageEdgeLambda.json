@@ -1,0 +1,17 @@
+{
+  "name": "smi17c-1s2vc4k",
+  "hash": "4um87jPjG4nzgnitoTrcaspqvq2bJVFLxCWDr4tejUk=",
+  "description": "Image Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/jacknely/Documents/nextjs_landing_page/.serverless_nextjs/image-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs12.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::139228650326:role/smi17c-xpz47rq"
+  },
+  "arn": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-1s2vc4k",
+  "region": "us-east-1"
+}
