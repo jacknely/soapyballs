@@ -2,3 +2,8 @@ node_modules
 .next
 package-lock.json
 out
+.npmignore
+.serverless
+.serverless_nextjs
+handler.js
+.DS-Store
