@@ -1,2 +1,4 @@
+name: SoapyBalls
+
 nextApp:
-  component: "@sls-next/serverless-component@1.18.0"
+  component: "@sls-next/serverless-component@1.17.0"
