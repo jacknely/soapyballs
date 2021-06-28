@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "KyYk");
+/******/ 	return __webpack_require__(__webpack_require__.s = "ymKd");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3405,6 +3405,13 @@ function toSource(func) {
 
 module.exports = toSource;
 
+
+/***/ }),
+
+/***/ "3HT7":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAArCAMAAAADvZf6AAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAHHRSTlMAP3+Qv1Agb2DA/6BAMBDvsI9wgM9f8N+v0OCf4y2mJQAAAbRJREFUGBntwQFy2jAQQNFvy16ktbQGFHBN7n/PqpnJtBCaaVIDVpv3uImmaVoK13Wdo3BdQdE3jVAFaTaeImhB4UIIjsKFEAaKoKqBIjaJlTIKp6ojRSy4TmL0niKo6pbVibtOlSLuo/DHYp8zxVO3OyRWoKHYa3CeT8vhqI4Hs7ZTjSwhCcX0bZN4kKSz643FmJtV99xZs5s8hbE08QLIwbiXk+q254ayanfg5hKF743bSnk+cVvpeRy5F6PwkRvJqkPPXR11aoWlGSDeuDcfdM+ipJ0yjyIGmLGQZ9Vt5KGGsTUW4ZzwYHFQzfwd27AWMvS8R3iftaP2rIpEruuNd9moQ2RdBu2ET/HC2lg+6jMfYwfWyrLjQ9pRhXUzLsmT8JZNGhLr5qcDF+w4cEWOrF0M2iXOZRXOGLXwxy3n7Djwq3ZM1MKMCz7xU5x0K1QlJX7jdIpUZtaW6xLVsUGnxAUTKhVPiVe2EaAfO/4BST3sdE5U7cALzSR11C1q4gfNINROeDFv+fLly3/AeGu/oU7z+G0jnOk1Uyc/nHRP0TfCi6Az9TIDTItAETzVS9Fnz6vvFeQQUs19hO8AAAAASUVORK5CYII="
 
 /***/ }),
 
@@ -20185,13 +20192,6 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 /***/ }),
 
-/***/ "H7RS":
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA0IiBoZWlnaHQ9IjQzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xIDMyLjcyczkyLjMtNzEuNTI4IDE5NSAwIiBzdHJva2U9IiNDMkNCREUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI1IDUiLz48cGF0aCBkPSJNMTgxLjIxOSAzOS40OThzMTkuMTE1IDUuNTI2IDIwLjkzNy0uNzM1YzEuODIyLTYuMjYxLjQ1NS0xMi43MzUtNS40NjItMjEuNjA1IiBzdHJva2U9IiNDMkNCREUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0IDQiLz48L3N2Zz4="
-
-/***/ }),
-
 /***/ "H8j4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22175,416 +22175,6 @@ exports.__esModule=true;exports.setRevalidateHeaders=setRevalidateHeaders;export
 
 /***/ }),
 
-/***/ "KyYk":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-
-    
-    
-    
-    const {isResSent} = __webpack_require__("g/15");
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([{"path":".env","contents":"SITE_URL=http://127.0.0.1:5500/"}])
-  
-    
-    const runtimeConfig = {}
-    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
-    const {parse: parseQs} = __webpack_require__("8xkj")
-    const { renderToHTML } = __webpack_require__("/bjS");
-    const { tryGetPreviewData } = __webpack_require__("PCLx");
-    const { denormalizePagePath } = __webpack_require__("wkBG")
-    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
-    const {sendPayload} = __webpack_require__("KyNf");
-    const {getRedirectStatus} = __webpack_require__("FwDC");
-    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
-    const buildManifest = __webpack_require__("LZ9C");
-    const reactLoadableManifest = __webpack_require__("67Bq");
-    const { normalizeLocalePath } = __webpack_require__("3wub")
-    const i18n = {}
-
-    const appMod = __webpack_require__("IlR1")
-    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-
-    
-    
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
-  
-
-    const compMod = __webpack_require__("RXBc")
-
-    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-
-    // kept for detecting legacy exports
-    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-
-    
-    
-    
-    const getCustomRouteMatcher = pathMatch(true)
-    const prepareDestination = __webpack_require__("6mnf").default
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          const { parsedDestination } = prepareDestination(
-            rewrite.destination,
-            params,
-            parsedUrl.query,
-            true
-          )
-
-          Object.assign(parsedUrl.query, parsedDestination.query)
-          delete parsedDestination.query
-
-          Object.assign(parsedUrl, parsedDestination)
-
-          let fsPathname = parsedUrl.pathname
-
-          
-
-          
-
-          if (fsPathname === '/'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-    const _app = App
-    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
-      let Document
-      let Error
-      let notFoundMod
-      ;[
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        { default: Document },
-        { default: Error },
-        
-      ] = await Promise.all([
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        __webpack_require__("senJ"),
-        __webpack_require__("/a9y"),
-        
-      ])
-
-      const fromExport = renderMode === 'export' || renderMode === true;
-      const nextStartMode = renderMode === 'passthrough'
-      let hasValidParams = true
-
-      
-
-      setLazyProp({ req }, 'cookies', getCookieParser(req))
-
-      const options = {
-        App,
-        Document,
-        buildManifest,
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        reactLoadableManifest,
-        canonicalBase: "",
-        buildId: "XlT7JLr-tNmQBjZ6PlVqL",
-        assetPrefix: "",
-        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"1977420ab7f5e25bca13f3ca50c10d79",previewModeSigningKey:"51c9474ce5b371a6a02f8b1c8f84127b1d293dcbb225082db2bd18909abda368",previewModeEncryptionKey:"3690d8a24e882981872afb4c123ee6c3184d25b76ab785b85e90d9cd15cde85d"},
-        env: process.env,
-        basePath: "",
-        ..._renderOpts
-      }
-      let _nextData = false
-      let parsedUrl
-
-      try {
-        // We need to trust the dynamic route params from the proxy
-        // to ensure we are using the correct values
-        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
-        let parsedUrl = parseUrl(req.url, true)
-        let routeNoAssetPath = parsedUrl.pathname
-        const origQuery = Object.assign({}, parsedUrl.query)
-
-        parsedUrl = handleRewrites(parsedUrl)
-
-        
-
-        // remove ?amp=1 from request URL if rendering for export
-        if (fromExport && parsedUrl.query.amp) {
-          const queryNoAmp = Object.assign({}, origQuery)
-          delete queryNoAmp.amp
-
-          req.url = formatUrl({
-            ...parsedUrl,
-            search: undefined,
-            query: queryNoAmp
-          })
-        }
-
-        if (parsedUrl.pathname.match(/_next\/data/)) {
-          const {
-            default: getRouteNoAssetPath,
-          } = __webpack_require__("1Ej0");
-          _nextData = true;
-          parsedUrl.pathname = getRouteNoAssetPath(
-            parsedUrl.pathname.replace(
-              new RegExp('/_next/data/XlT7JLr\-tNmQBjZ6PlVqL/'),
-              '/'
-            ),
-            '.json'
-          );
-          routeNoAssetPath = parsedUrl.pathname
-        }
-
-        
-      const i18n = {}
-      const detectedLocale = undefined
-      const defaultLocale = undefined
-      const locales = undefined
-    
-
-        if (parsedUrl.query.nextInternalLocale) {
-          detectedLocale = parsedUrl.query.nextInternalLocale
-          delete parsedUrl.query.nextInternalLocale
-        }
-
-        const renderOpts = Object.assign(
-          {
-            Component,
-            pageConfig: config,
-            nextExport: fromExport,
-            isDataReq: _nextData,
-            locale: detectedLocale,
-            locales,
-            defaultLocale: i18n.defaultLocale,
-          },
-          options,
-        )
-
-        
-
-        const params = {};
-
-        const nowParams = null;
-
-        // make sure to set renderOpts to the correct params e.g. _params
-        // if provided from worker or params if we're parsing them here
-        renderOpts.params = _params || params
-
-        // make sure to normalize req.url on Vercel to strip dynamic params
-        // from the query which are added during routing
-        
-
-        // normalize request URL/asPath for fallback/revalidate pages since the
-        // proxy sets the request URL to the output's path for fallback pages
-        
-
-        // make sure to normalize asPath for revalidate and _next/data requests
-        // since the asPath should match what is shown on the client
-        if (
-          !fromExport &&
-          (getStaticProps || getServerSideProps)
-        ) {
-          
-
-          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
-          renderOpts.resolvedUrl = formatUrl({
-            ...parsedUrl,
-            query: origQuery
-          })
-
-          // For getServerSideProps we need to ensure we use the original URL
-          // and not the resolved URL to prevent a hydration mismatch on asPath
-          renderOpts.resolvedAsPath = getServerSideProps
-            ? formatUrl({
-              ...parsedUrl,
-              pathname: routeNoAssetPath,
-              query: origQuery,
-            })
-            : renderOpts.resolvedUrl
-        }
-
-        const isFallback = parsedUrl.query.__nextFallback
-
-        const previewData = tryGetPreviewData(req, res, options.previewProps)
-        const isPreviewMode = previewData !== false
-        if (false) {}
-        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
-
-        if (!renderMode) {
-          if (_nextData || getStaticProps || getServerSideProps) {
-            if (renderOpts.isNotFound) {
-              res.statusCode = 404
-
-              const NotFoundComponent = Error
-
-              const errPathname = "/_error"
-
-              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
-                getStaticProps: undefined,
-                getStaticPaths: undefined,
-                getServerSideProps: undefined,
-                Component: NotFoundComponent,
-                err: undefined,
-                locale: detectedLocale,
-                locales,
-                defaultLocale,
-              }))
-
-              sendPayload(req, res, result, 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            } else if (renderOpts.isRedirect && !_nextData) {
-              const redirect = {
-                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
-                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
-                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
-              }
-              const statusCode = getRedirectStatus(redirect)
-
-              if (false) {}
-
-              if (statusCode === PERMANENT_REDIRECT_STATUS) {
-                res.setHeader('Refresh', `0;url=${redirect.destination}`)
-              }
-
-              res.statusCode = statusCode
-              res.setHeader('Location', redirect.destination)
-              res.end()
-              return null
-            } else {
-              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            }
-          }
-        } else if (isPreviewMode) {
-          res.setHeader(
-            'Cache-Control',
-            'private, no-cache, no-store, max-age=0, must-revalidate'
-          )
-        }
-
-        if (renderMode) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (!parsedUrl) {
-          parsedUrl = parseUrl(req.url, true)
-        }
-
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-        } else if (err.code === 'DECODE_FAILED') {
-          // TODO: better error?
-          res.statusCode = 400
-        } else {
-          console.error('Unhandled error during request:', err)
-
-          // Backwards compat (call getInitialProps in custom error):
-          try {
-            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-              getStaticProps: undefined,
-              getStaticPaths: undefined,
-              getServerSideProps: undefined,
-              Component: Error,
-              err: err,
-              // Short-circuit rendering:
-              isDataReq: true
-            }))
-          } catch (underErrorErr) {
-            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
-          }
-
-          // Throw the error to crash the serverless function
-          if (isResSent(res)) {
-            console.error('!!! WARNING !!!')
-            console.error(
-              'Your function crashed, but closed the response before allowing the function to exit.\n' +
-              'This may cause unexpected behavior for the next request.'
-            )
-            console.error('!!! WARNING !!!')
-          }
-          throw err
-        }
-
-        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-          getStaticProps: undefined,
-          getStaticPaths: undefined,
-          getServerSideProps: undefined,
-          Component: Error,
-          err: res.statusCode === 404 ? undefined : err
-        }))
-        return result
-      }
-    }
-    async function render (req, res) {
-      try {
-        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
-        }
-      } catch(err) {
-        console.error(err)
-        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-        // Throw the error to crash the serverless function
-        throw err
-      }
-    }
-  
-
-/***/ }),
-
 /***/ "Kz5y":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22771,7 +22361,7 @@ module.exports = arrayFilter;
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/XlT7JLr-tNmQBjZ6PlVqL/_buildManifest.js\",\"static/XlT7JLr-tNmQBjZ6PlVqL/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.e0ee29fda8bb196a4dce.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-f716f371ad27fcb576a0.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/1ybYvY0u-ERPHnWSImuK2/_buildManifest.js\",\"static/1ybYvY0u-ERPHnWSImuK2/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.e0ee29fda8bb196a4dce.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-7099744ca90769406804.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -25433,7 +25023,7 @@ const client = shopify_buy_default.a.buildClient({
     // border color
     primary: "#8B4513",
     // primary button and link color
-    secondary: "#2563FF",
+    secondary: "#f6ae42",
     // secondary color - can be used for hover states
     muted: "#E4E4E4",
     // muted color
@@ -34028,16 +33618,15 @@ const core_feature_styles = {
 var patternBG = __webpack_require__("7F+R");
 var patternBG_default = /*#__PURE__*/__webpack_require__.n(patternBG);
 
-// EXTERNAL MODULE: ./src/assets/arrowOdd.svg
-var arrowOdd = __webpack_require__("H7RS");
+// EXTERNAL MODULE: ./src/assets/arrowOdd.png
+var arrowOdd = __webpack_require__("3HT7");
 var arrowOdd_default = /*#__PURE__*/__webpack_require__.n(arrowOdd);
 
-// EXTERNAL MODULE: ./src/assets/arrowEven.svg
-var arrowEven = __webpack_require__("znvc");
+// EXTERNAL MODULE: ./src/assets/arrowEven.png
+var arrowEven = __webpack_require__("dCk/");
 var arrowEven_default = /*#__PURE__*/__webpack_require__.n(arrowEven);
 
 // CONCATENATED MODULE: ./src/sections/workflow.js
-
 var workflow_jsx = react_default.a.createElement;
 
 /** @jsx jsx */
@@ -34047,6 +33636,30 @@ var workflow_jsx = react_default.a.createElement;
 
 
 
+
+
+const guides = {
+  laundry: [{
+    id: 1,
+    title: "Fill your ball bag",
+    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  }, {
+    id: 2,
+    title: "Activate your balls",
+    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  }, {
+    id: 3,
+    title: "Magic SoapyBalls Time",
+    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  }, {
+    id: 4,
+    title: "After care",
+    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  }],
+  shampoo: [],
+  soap: [],
+  cleaning: []
+};
 const workflow_data = [{
   id: 1,
   title: "Fill your ball bag",
@@ -34065,16 +33678,78 @@ const workflow_data = [{
   text: "Get your blood tests delivered at home collect a sample from the your blood tests."
 }];
 function WorkFlow() {
+  const {
+    laundry,
+    shampoo,
+    soap,
+    cleaning
+  } = guides;
+  const {
+    0: state,
+    1: setState
+  } = Object(react["useState"])({
+    active: "laundry",
+    instructions: laundry
+  });
+
+  const handleInstructions = guide => {
+    if (guide == "laundry") {
+      setState({
+        active: "laundry",
+        instructions: laundry
+      });
+    } else if (guide == "shampoo") {
+      setState({
+        active: "shampoo",
+        instructions: shampoo
+      });
+    } else if (guide == "soap") {
+      setState({
+        active: "soap",
+        instructions: shampoo
+      });
+    } else if (guide == "cleaning") {
+      setState({
+        active: "cleaning",
+        instructions: shampoo
+      });
+    }
+  };
+
   return Object(dist["jsx"])("section", {
     id: "how-to",
     sx: workflow_styles.workflow
   }, Object(dist["jsx"])(dist["Container"], null, Object(dist["jsx"])(SectionHeader, {
     slogan: "USE YOUR BALLS AND SAVE THE PLANET",
     isWhite: true,
-    title: "Laundry 'How To' Guide"
-  }), Object(dist["jsx"])(dist["Grid"], {
+    title: "SoapyBall Guides & Instructions"
+  }), Object(dist["jsx"])(dist["Flex"], {
+    sx: workflow_styles.buttonGroup
+  }, Object(dist["jsx"])(dist["Box"], {
+    sx: workflow_styles.buttonGroupInner
+  }, Object(dist["jsx"])("button", {
+    className: state.active == "laundry" ? "active" : "",
+    type: "button",
+    "aria-label": "Monthly",
+    onClick: () => handleInstructions("laundry")
+  }, "Laundry"), Object(dist["jsx"])("button", {
+    className: state.active == "shampoo" ? "active" : "",
+    type: "button",
+    "aria-label": "Annual",
+    onClick: () => handleInstructions("shampoo")
+  }, "Shampoo"), Object(dist["jsx"])("button", {
+    className: state.active == "soap" ? "active" : "",
+    type: "button",
+    "aria-label": "Annual",
+    onClick: () => handleInstructions("soap")
+  }, "Soap"), Object(dist["jsx"])("button", {
+    className: state.active == "cleaning" ? "active" : "",
+    type: "button",
+    "aria-label": "Annual",
+    onClick: () => handleInstructions("cleaning")
+  }, "Cleaning"))), Object(dist["jsx"])(dist["Grid"], {
     sx: workflow_styles.grid
-  }, workflow_data.map(item => Object(dist["jsx"])(dist["Box"], {
+  }, state.instructions.map(item => Object(dist["jsx"])(dist["Box"], {
     sx: workflow_styles.card,
     key: item.id
   }, Object(dist["jsx"])(dist["Box"], {
@@ -34089,7 +33764,7 @@ function WorkFlow() {
 }
 const workflow_styles = {
   workflow: {
-    backgroundColor: "primary",
+    backgroundColor: "secondary",
     backgroundImage: `url(${patternBG_default.a})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: "center center",
@@ -34125,7 +33800,10 @@ const workflow_styles = {
       }
     },
     "&:nth-of-type(2n-1)::before": {
-      backgroundImage: `url(${arrowOdd_default.a})`
+      backgroundImage: `url(${arrowOdd_default.a})`,
+      colors: {
+        primary: "#fff"
+      }
     },
     "&:nth-of-type(2n)::before": {
       backgroundImage: `url(${arrowEven_default.a})`,
@@ -34169,6 +33847,42 @@ const workflow_styles = {
       color: "white",
       opacity: 0.75,
       pr: [0, null, null, null, null, 5]
+    }
+  },
+  buttonGroup: {
+    justifyContent: "center",
+    mb: "7",
+    mt: ["-15px", "-35px"],
+    position: "relative",
+    zIndex: 2
+  },
+  buttonGroupInner: {
+    display: "flex",
+    padding: "7px",
+    margin: "0 auto",
+    borderRadius: "5px",
+    backgroundColor: "#F7F8FB",
+    button: {
+      border: 0,
+      padding: ["15px 20px", "15px 27px"],
+      borderRadius: "5px",
+      color: "text",
+      fontSize: [1, 2],
+      lineHeight: 1.2,
+      fontWeight: 500,
+      backgroundColor: "transparent",
+      cursor: "pointer",
+      fontFamily: "body",
+      letterSpacing: "-0.24px",
+      transition: "all 0.3s",
+      "&.active": {
+        color: "#0f2137",
+        backgroundColor: "#ffffff",
+        boxShadow: "0 3px 4px rgba(38, 78, 118, 0.1)"
+      },
+      "&:focus": {
+        outline: 0
+      }
     }
   }
 };
@@ -34333,13 +34047,14 @@ const price_card_styles = {
       top: 0,
       left: 0,
       height: "100%",
-      border: "1px solid rgba(38, 78, 118, 0.1)",
+      border: "1px solid #8b4513",
       borderRadius: "inherit",
       transition: "all 0.3s",
       zIndex: -1
     },
     "&:hover": {
-      boxShadow: "0px 4px 25px rgba(38, 78, 118, 0.1) !important",
+      border: "1px solid #8b4513",
+      boxShadow: "0px 1px 10px #8b4513 !important",
       "&:before": {
         opacity: 0
       }
@@ -41344,6 +41059,13 @@ module.exports = constant;
 
 exports.f = Object.getOwnPropertySymbols;
 
+
+/***/ }),
+
+/***/ "dCk/":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAArCAMAAAADvZf6AAAAV1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////+ORg7oAAAAHXRSTlMAID9ffzCg/0Bgr7/f4FDAgO8QkHDQsJ+Pb/DPTxWAUtwAAAGuSURBVBgZ7cHrbtpAEIDRb82OZ3y3B2MSkvd/zi75EYmEqi0y4K1yDlkLxS7GQPaEpNTEgKo2MhVioy1JMOFD1WlFnnodxp5Lw+TkyfnG98KPHz/+kTuZc+dsVqduhbwdas5GBek0kjURzkYFvFThP7AcOAtkyo81n6zik5GdftKRa2Z9cfLS6yBc5aNOO/LS81sylGQj8EV4dS44mQiNCpdKdb6x6GycRz2NXPKp5LtZp+hsW1c6X4wauCIMWpKdec91FtgqewvcwHZsjjXaGTcYdYrOpgTtKm5jgy5si3FdEP5IjK3YNaxB3nY8mcdJD4EVWKfTi/NMQRdjJbaceBohcVbkJLPwaHKcJu7BT9rGwCPNqqVxF14tWvEgThIq536CAxKF+/JdrT0PUam2R+5JtdsHHsOr5UDirO69IpmFh1um+lVYT9WotjxJX3a6sAYvSMbDvueJQiDRto7CraxuVZ2tmMuDjiTxveCvSRGPAvTdMhub4oBrUgH+WhTCVV4U7zEApqonYcPExgCYJiMgTSKANIkApokB3ht5cLM+ADIkAsiQ9ICbCXfzC63OEAoh0kkyAAAAAElFTkSuQmCC"
 
 /***/ }),
 
@@ -58713,6 +58435,416 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!gk(c))throw Er
 
 /***/ }),
 
+/***/ "ymKd":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+
+    
+    
+    
+    const {isResSent} = __webpack_require__("g/15");
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([{"path":".env","contents":"SITE_URL=http://127.0.0.1:5500/"}])
+  
+    
+    const runtimeConfig = {}
+    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
+    const {parse: parseQs} = __webpack_require__("8xkj")
+    const { renderToHTML } = __webpack_require__("/bjS");
+    const { tryGetPreviewData } = __webpack_require__("PCLx");
+    const { denormalizePagePath } = __webpack_require__("wkBG")
+    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
+    const {sendPayload} = __webpack_require__("KyNf");
+    const {getRedirectStatus} = __webpack_require__("FwDC");
+    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
+    const buildManifest = __webpack_require__("LZ9C");
+    const reactLoadableManifest = __webpack_require__("67Bq");
+    const { normalizeLocalePath } = __webpack_require__("3wub")
+    const i18n = {}
+
+    const appMod = __webpack_require__("IlR1")
+    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+
+    
+    
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
+  
+
+    const compMod = __webpack_require__("RXBc")
+
+    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+
+    // kept for detecting legacy exports
+    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+
+    
+    
+    
+    const getCustomRouteMatcher = pathMatch(true)
+    const prepareDestination = __webpack_require__("6mnf").default
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          const { parsedDestination } = prepareDestination(
+            rewrite.destination,
+            params,
+            parsedUrl.query,
+            true
+          )
+
+          Object.assign(parsedUrl.query, parsedDestination.query)
+          delete parsedDestination.query
+
+          Object.assign(parsedUrl, parsedDestination)
+
+          let fsPathname = parsedUrl.pathname
+
+          
+
+          
+
+          if (fsPathname === '/'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+    const _app = App
+    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
+      let Document
+      let Error
+      let notFoundMod
+      ;[
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        { default: Document },
+        { default: Error },
+        
+      ] = await Promise.all([
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        __webpack_require__("senJ"),
+        __webpack_require__("/a9y"),
+        
+      ])
+
+      const fromExport = renderMode === 'export' || renderMode === true;
+      const nextStartMode = renderMode === 'passthrough'
+      let hasValidParams = true
+
+      
+
+      setLazyProp({ req }, 'cookies', getCookieParser(req))
+
+      const options = {
+        App,
+        Document,
+        buildManifest,
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        reactLoadableManifest,
+        canonicalBase: "",
+        buildId: "1ybYvY0u-ERPHnWSImuK2",
+        assetPrefix: "",
+        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
+        previewProps: {previewModeId:"17e98b9aceee4a477fcc19491b463329",previewModeSigningKey:"d9f0ef57113d17f102d735586162f6138b2ecc6e20bbd9c1494986695cc95a1b",previewModeEncryptionKey:"ad7b3991ec14d704d11ebdcbd2a2a23b13af9fed2932e174465c78057738bc54"},
+        env: process.env,
+        basePath: "",
+        ..._renderOpts
+      }
+      let _nextData = false
+      let parsedUrl
+
+      try {
+        // We need to trust the dynamic route params from the proxy
+        // to ensure we are using the correct values
+        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
+        let parsedUrl = parseUrl(req.url, true)
+        let routeNoAssetPath = parsedUrl.pathname
+        const origQuery = Object.assign({}, parsedUrl.query)
+
+        parsedUrl = handleRewrites(parsedUrl)
+
+        
+
+        // remove ?amp=1 from request URL if rendering for export
+        if (fromExport && parsedUrl.query.amp) {
+          const queryNoAmp = Object.assign({}, origQuery)
+          delete queryNoAmp.amp
+
+          req.url = formatUrl({
+            ...parsedUrl,
+            search: undefined,
+            query: queryNoAmp
+          })
+        }
+
+        if (parsedUrl.pathname.match(/_next\/data/)) {
+          const {
+            default: getRouteNoAssetPath,
+          } = __webpack_require__("1Ej0");
+          _nextData = true;
+          parsedUrl.pathname = getRouteNoAssetPath(
+            parsedUrl.pathname.replace(
+              new RegExp('/_next/data/1ybYvY0u\-ERPHnWSImuK2/'),
+              '/'
+            ),
+            '.json'
+          );
+          routeNoAssetPath = parsedUrl.pathname
+        }
+
+        
+      const i18n = {}
+      const detectedLocale = undefined
+      const defaultLocale = undefined
+      const locales = undefined
+    
+
+        if (parsedUrl.query.nextInternalLocale) {
+          detectedLocale = parsedUrl.query.nextInternalLocale
+          delete parsedUrl.query.nextInternalLocale
+        }
+
+        const renderOpts = Object.assign(
+          {
+            Component,
+            pageConfig: config,
+            nextExport: fromExport,
+            isDataReq: _nextData,
+            locale: detectedLocale,
+            locales,
+            defaultLocale: i18n.defaultLocale,
+          },
+          options,
+        )
+
+        
+
+        const params = {};
+
+        const nowParams = null;
+
+        // make sure to set renderOpts to the correct params e.g. _params
+        // if provided from worker or params if we're parsing them here
+        renderOpts.params = _params || params
+
+        // make sure to normalize req.url on Vercel to strip dynamic params
+        // from the query which are added during routing
+        
+
+        // normalize request URL/asPath for fallback/revalidate pages since the
+        // proxy sets the request URL to the output's path for fallback pages
+        
+
+        // make sure to normalize asPath for revalidate and _next/data requests
+        // since the asPath should match what is shown on the client
+        if (
+          !fromExport &&
+          (getStaticProps || getServerSideProps)
+        ) {
+          
+
+          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
+          renderOpts.resolvedUrl = formatUrl({
+            ...parsedUrl,
+            query: origQuery
+          })
+
+          // For getServerSideProps we need to ensure we use the original URL
+          // and not the resolved URL to prevent a hydration mismatch on asPath
+          renderOpts.resolvedAsPath = getServerSideProps
+            ? formatUrl({
+              ...parsedUrl,
+              pathname: routeNoAssetPath,
+              query: origQuery,
+            })
+            : renderOpts.resolvedUrl
+        }
+
+        const isFallback = parsedUrl.query.__nextFallback
+
+        const previewData = tryGetPreviewData(req, res, options.previewProps)
+        const isPreviewMode = previewData !== false
+        if (false) {}
+        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
+
+        if (!renderMode) {
+          if (_nextData || getStaticProps || getServerSideProps) {
+            if (renderOpts.isNotFound) {
+              res.statusCode = 404
+
+              const NotFoundComponent = Error
+
+              const errPathname = "/_error"
+
+              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
+                getStaticProps: undefined,
+                getStaticPaths: undefined,
+                getServerSideProps: undefined,
+                Component: NotFoundComponent,
+                err: undefined,
+                locale: detectedLocale,
+                locales,
+                defaultLocale,
+              }))
+
+              sendPayload(req, res, result, 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            } else if (renderOpts.isRedirect && !_nextData) {
+              const redirect = {
+                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
+                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
+                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
+              }
+              const statusCode = getRedirectStatus(redirect)
+
+              if (false) {}
+
+              if (statusCode === PERMANENT_REDIRECT_STATUS) {
+                res.setHeader('Refresh', `0;url=${redirect.destination}`)
+              }
+
+              res.statusCode = statusCode
+              res.setHeader('Location', redirect.destination)
+              res.end()
+              return null
+            } else {
+              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            }
+          }
+        } else if (isPreviewMode) {
+          res.setHeader(
+            'Cache-Control',
+            'private, no-cache, no-store, max-age=0, must-revalidate'
+          )
+        }
+
+        if (renderMode) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (!parsedUrl) {
+          parsedUrl = parseUrl(req.url, true)
+        }
+
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+        } else if (err.code === 'DECODE_FAILED') {
+          // TODO: better error?
+          res.statusCode = 400
+        } else {
+          console.error('Unhandled error during request:', err)
+
+          // Backwards compat (call getInitialProps in custom error):
+          try {
+            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+              getStaticProps: undefined,
+              getStaticPaths: undefined,
+              getServerSideProps: undefined,
+              Component: Error,
+              err: err,
+              // Short-circuit rendering:
+              isDataReq: true
+            }))
+          } catch (underErrorErr) {
+            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
+          }
+
+          // Throw the error to crash the serverless function
+          if (isResSent(res)) {
+            console.error('!!! WARNING !!!')
+            console.error(
+              'Your function crashed, but closed the response before allowing the function to exit.\n' +
+              'This may cause unexpected behavior for the next request.'
+            )
+            console.error('!!! WARNING !!!')
+          }
+          throw err
+        }
+
+        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+          getStaticProps: undefined,
+          getStaticPaths: undefined,
+          getServerSideProps: undefined,
+          Component: Error,
+          err: res.statusCode === 404 ? undefined : err
+        }))
+        return result
+      }
+    }
+    async function render (req, res) {
+      try {
+        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
+        }
+      } catch(err) {
+        console.error(err)
+        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+        // Throw the error to crash the serverless function
+        throw err
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "yoRg":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59415,13 +59547,6 @@ module.exports = function (key, value) {
   } return value;
 };
 
-
-/***/ }),
-
-/***/ "znvc":
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA0IiBoZWlnaHQ9IjQzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0uNDgxIDEwLjI1N3M5Mi4zIDcxLjUyOCAxOTUgMCIgc3Ryb2tlPSIjQzJDQkRFIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSA1Ii8+PHBhdGggZD0iTTE4MC43IDMuNDc1czE5LjExNS01LjUyNyAyMC45MzcuNzM0YzEuODIyIDYuMjYxLjQ1NiAxMi43MzUtNS40NjEgMjEuNjA1IiBzdHJva2U9IiNDMkNCREUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0IDQiLz48L3N2Zz4="
 
 /***/ }),
 

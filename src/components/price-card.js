@@ -114,13 +114,14 @@ const styles = {
       top: 0,
       left: 0,
       height: "100%",
-      border: "1px solid rgba(38, 78, 118, 0.1)",
+      border: "1px solid #8b4513",
       borderRadius: "inherit",
       transition: "all 0.3s",
       zIndex: -1,
     },
     "&:hover": {
-      boxShadow: "0px 4px 25px rgba(38, 78, 118, 0.1) !important",
+      border: "1px solid #8b4513",
+      boxShadow: "0px 1px 10px #8b4513 !important",
       "&:before": {
         opacity: 0,
       },

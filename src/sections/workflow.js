@@ -1,11 +1,44 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Container, Grid, Box, Heading, Text } from "theme-ui";
+import React, { useState } from "react";
+import { Flex, Container, Grid, Box, Heading, Text } from "theme-ui";
 import SectionHeader from "components/section-header";
-
+import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 import PatternBG from "assets/patternBG.png";
-import ArrowOdd from "assets/arrowOdd.svg";
-import ArrowEven from "assets/arrowEven.svg";
+import ArrowOdd from "assets/arrowOdd.png";
+import ArrowEven from "assets/arrowEven.png";
+
+const guides = {
+  laundry: [
+    {
+      id: 1,
+      title: "Fill your ball bag",
+      text:
+        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+    },
+    {
+      id: 2,
+      title: "Activate your balls",
+      text:
+        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+    },
+    {
+      id: 3,
+      title: "Magic SoapyBalls Time",
+      text:
+        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+    },
+    {
+      id: 4,
+      title: "After care",
+      text:
+        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+    },
+  ],
+  shampoo: [],
+  soap: [],
+  cleaning: [],
+};
 
 const data = [
   {
@@ -35,16 +68,71 @@ const data = [
 ];
 
 export default function WorkFlow() {
+  const { laundry, shampoo, soap, cleaning } = guides;
+  const [state, setState] = useState({
+    active: "laundry",
+    instructions: laundry,
+  });
+
+  const handleInstructions = (guide) => {
+    if (guide == "laundry") {
+      setState({ active: "laundry", instructions: laundry });
+    } else if (guide == "shampoo") {
+      setState({ active: "shampoo", instructions: shampoo });
+    } else if (guide == "soap") {
+      setState({ active: "soap", instructions: shampoo });
+    } else if (guide == "cleaning") {
+      setState({ active: "cleaning", instructions: shampoo });
+    }
+  };
+
   return (
     <section id="how-to" sx={styles.workflow}>
       <Container>
         <SectionHeader
           slogan="USE YOUR BALLS AND SAVE THE PLANET"
           isWhite={true}
-          title="Laundry 'How To' Guide"
+          title="SoapyBall Guides & Instructions"
         />
+
+        <Flex sx={styles.buttonGroup}>
+          <Box sx={styles.buttonGroupInner}>
+            <button
+              className={state.active == "laundry" ? "active" : ""}
+              type="button"
+              aria-label="Monthly"
+              onClick={() => handleInstructions("laundry")}
+            >
+              Laundry
+            </button>
+            <button
+              className={state.active == "shampoo" ? "active" : ""}
+              type="button"
+              aria-label="Annual"
+              onClick={() => handleInstructions("shampoo")}
+            >
+              Shampoo
+            </button>
+            <button
+              className={state.active == "soap" ? "active" : ""}
+              type="button"
+              aria-label="Annual"
+              onClick={() => handleInstructions("soap")}
+            >
+              Soap
+            </button>
+            <button
+              className={state.active == "cleaning" ? "active" : ""}
+              type="button"
+              aria-label="Annual"
+              onClick={() => handleInstructions("cleaning")}
+            >
+              Cleaning
+            </button>
+          </Box>
+        </Flex>
         <Grid sx={styles.grid}>
-          {data.map((item) => (
+          {state.instructions.map((item) => (
             <Box sx={styles.card} key={item.id}>
               <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
               <Box sx={styles.wrapper}>
@@ -61,7 +149,7 @@ export default function WorkFlow() {
 
 const styles = {
   workflow: {
-    backgroundColor: "primary",
+    backgroundColor: "secondary",
     backgroundImage: `url(${PatternBG})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: "center center",
@@ -113,6 +201,9 @@ const styles = {
     },
     "&:nth-of-type(2n-1)::before": {
       backgroundImage: `url(${ArrowOdd})`,
+      colors: {
+        primary: "#fff",
+      },
     },
     "&:nth-of-type(2n)::before": {
       backgroundImage: `url(${ArrowEven})`,
@@ -158,6 +249,42 @@ const styles = {
       color: "white",
       opacity: 0.75,
       pr: [0, null, null, null, null, 5],
+    },
+  },
+  buttonGroup: {
+    justifyContent: "center",
+    mb: "7",
+    mt: ["-15px", "-35px"],
+    position: "relative",
+    zIndex: 2,
+  },
+  buttonGroupInner: {
+    display: "flex",
+    padding: "7px",
+    margin: "0 auto",
+    borderRadius: "5px",
+    backgroundColor: "#F7F8FB",
+    button: {
+      border: 0,
+      padding: ["15px 20px", "15px 27px"],
+      borderRadius: "5px",
+      color: "text",
+      fontSize: [1, 2],
+      lineHeight: 1.2,
+      fontWeight: 500,
+      backgroundColor: "transparent",
+      cursor: "pointer",
+      fontFamily: "body",
+      letterSpacing: "-0.24px",
+      transition: "all 0.3s",
+      "&.active": {
+        color: "#0f2137",
+        backgroundColor: "#ffffff",
+        boxShadow: "0 3px 4px rgba(38, 78, 118, 0.1)",
+      },
+      "&:focus": {
+        outline: 0,
+      },
     },
   },
 };

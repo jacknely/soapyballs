@@ -1,4 +1,9 @@
-<svg width="204" height="43" viewBox="0 0 204 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.481201 10.2571C0.481201 10.2571 92.7812 81.7847 195.481 10.2571" stroke="#C2CBDE" stroke-width="1.5" stroke-dasharray="5 5"/>
-<path d="M180.7 3.47455C180.7 3.47455 199.815 -2.05177 201.637 4.20916C203.459 10.4701 202.093 16.9444 196.176 25.8142" stroke="#C2CBDE" stroke-width="1.5" stroke-dasharray="4 4"/>
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 43" width="204" height="43">
+	<title>Layer</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #c2cbde;stroke-width: 1.5;stroke-dasharray: 5 } 
+	</style>
+	<path id="Layer" class="shp0" d="M0.48 10.26C0.48 10.26 92.78 81.78 195.48 10.26" />
+	<path id="Layer" class="shp0" d="M180.7 3.47C180.7 3.47 199.81 -2.05 201.64 4.21C203.46 10.47 202.09 16.94 196.18 25.81" />
 </svg>

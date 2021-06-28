@@ -21,10 +21,10 @@ export default function FeatureCardColumn({
 const styles = {
   card: {
     display: "flex",
-    alignItems: ["center", "flex-start"],
+    alignItems: "center",
     flexDirection: "column",
     mb: -1,
-    textAlign: ["center", null, "left"],
+    textAlign: "center",
     px: [4, null, 0],
   },
   img: {

@@ -3,20 +3,22 @@ import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
 import SectionHeader from "components/section-header";
 import FeatureCard from "components/feature-card.js";
+
 import Performance from "assets/feature/performance.svg";
 import Partnership from "assets/feature/partnership.svg";
 import Subscription from "assets/feature/subscription.svg";
 import Support from "assets/feature/support.svg";
+
 import Factory from "assets/feature/factory_icon.png";
 
 const data = [
   {
     id: 1,
     imgSrc: Factory,
-    altText: "Fast Performance",
-    title: "Fast Performance",
+    altText: "Biodegradable",
+    title: "Biodegradable",
     text:
-      "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
+      "version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
   },
   {
     id: 2,

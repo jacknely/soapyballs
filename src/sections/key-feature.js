@@ -3,33 +3,34 @@ import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
 import SectionHeader from "../components/section-header";
 import FeatureCardColumn from "components/feature-card-column.js";
-import Performance from "assets/key-feature/performance.svg";
+
 import Partnership from "assets/key-feature/partnership.svg";
 import Subscription from "assets/key-feature/subscription.svg";
 import Support from "assets/key-feature/support.svg";
-import FeatureCard from "components/feature-card";
-import Factory from "assets/feature/factory_icon.png";
+import Eco from "assets/Label.svg";
+import Love from "assets/Love.png";
+import Chem from "assets/no_chemical.png";
 
 const data = [
   {
     id: 1,
-    imgSrc: Factory,
-    altText: "Fast Performance",
-    title: "Fast Performance",
+    imgSrc: Eco,
+    altText: "Biodegradable",
+    title: "Biodegradable",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Our SoapyBalls are 100% compostable and used many times for washing",
   },
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: Love,
     altText: "Partnership deal",
     title: "Partnership deal",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Nuts come from India, where they used as a natural detergent for many years.",
   },
   {
     id: 3,
-    imgSrc: Subscription,
+    imgSrc: Chem,
     altText: "Pro Subscription",
     title: "Pro Subscription",
     text:
