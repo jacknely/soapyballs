@@ -1,13 +1,13 @@
 {
   "name": "smi17c-olx84bd",
-  "hash": "ugAyPVWH0JjhttRSyLSrOFlR4A2bjWX8xbluo/JLNuE=",
+  "hash": "v9S6GTnxU4HjyroakQfuzEMN7AB7hBB9p+iyMFrd6KM=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
   "code": "/Users/jacknely/Documents/nextjs_landing_page/.serverless_nextjs/default-lambda",
   "shims": [],
   "handler": "index.handler",
-  "runtime": "nodejs12.x",
+  "runtime": "nodejs14.x",
   "env": {},
   "role": {
     "arn": "arn:aws:iam::139228650326:role/smi17c-guhyi4n"

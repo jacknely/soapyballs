@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "ymKd");
+/******/ 	return __webpack_require__(__webpack_require__.s = "rlkU");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2229,6 +2229,13 @@ __export(__webpack_require__("8UsT"));
 __export(__webpack_require__("Oygx"));
 __export(__webpack_require__("fDON"));
 
+
+/***/ }),
+
+/***/ "2Gv+":
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/Love-716cffbf5a152976b892201b75717fcd.png";
 
 /***/ }),
 
@@ -8711,13 +8718,6 @@ function arrayPush(array, values) {
 
 module.exports = arrayPush;
 
-
-/***/ }),
-
-/***/ "CsJq":
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iMTA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTQ4LjQ2NiAxN2MxNC42MjMgMCAyNi40NzYgMTEuODY0IDI2LjQ3NiAyNi41IDAgMTQuNjM1LTExLjg1MyAyNi41LTI2LjQ3NiAyNi41QzMzLjg0NCA3MCAyMS45OSA1OC4xMzUgMjEuOTkgNDMuNWMwLTE0LjYzNiAxMS44NTQtMjYuNSAyNi40NzYtMjYuNXoiIGZpbGw9IiNGRjQzNjEiLz48cGF0aCBkPSJNNDguNDY2IDE3YzE0LjYyMyAwIDI2LjQ3NiAxMS44NjQgMjYuNDc2IDI2LjUgMCAxNC42MzUtMTEuODUzIDI2LjUtMjYuNDc2IDI2LjVDMzMuODQ0IDcwIDIxLjk5IDU4LjEzNSAyMS45OSA0My41YzAtMTQuNjM2IDExLjg1NC0yNi41IDI2LjQ3Ni0yNi41eiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPjwvZz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQyLjk3MiAxaDkuOTkxYzE2LjU1NCAwIDI5Ljk3MyAxMy40MyAyOS45NzMgMzB2MTBjMCAxNi41NjgtMTMuNDIgMzAtMjkuOTczIDMwaC05Ljk5Yy0xNi41NTQgMC0yOS45NzQtMTMuNDMyLTI5Ljk3NC0zMFYzMWMwLTE2LjU2OSAxMy40Mi0zMCAyOS45NzMtMzB6IiBmaWxsPSIjRkY0MzYxIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Mi45NzIgMWg5Ljk5MWMxNi41NTQgMCAyOS45NzMgMTMuNDMgMjkuOTczIDMwdjEwYzAgMTYuNTY4LTEzLjQyIDMwLTI5Ljk3MyAzMGgtOS45OWMtMTYuNTU0IDAtMjkuOTc0LTEzLjQzMi0yOS45NzQtMzBWMzFjMC0xNi41NjkgMTMuNDItMzAgMjkuOTczLTMweiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyKSIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNTYuOTA4IDMxLjAwM2EuNTU3LjU1NyAwIDAwLS41MDYtLjMzN2gtNi42MTZsNi41My0xMC43NzJhLjYwNC42MDQgMCAwMC4wMTctLjU5Mi41NTUuNTU1IDAgMDAtLjQ5LS4zMDNoLTguOTMyYS41NTcuNTU3IDAgMDAtLjUuMzIybC04LjM3NSAxNy41YS42MDYuNjA2IDAgMDAuMDI1LjU2OC41NTQuNTU0IDAgMDAuNDc1LjI3Nmg1Ljc0MWwtNi4yNTYgMTUuNTI0YS41OTkuNTk5IDAgMDAuMjI0LjcyNC41NDUuNTQ1IDAgMDAuNzE4LS4xMjFMNTYuODMgMzEuNjI1YS42MDUuNjA1IDAgMDAuMDc5LS42MjJ6IiBmaWxsPSIjZmZmIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iNTIuNTk4IiB5MT0iMTAyLjYzNSIgeDI9IjEwNy42MDUiIHkyPSIzOS40MTQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRjgwNzU5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQkM0RTlDIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXIiIHgxPSI1My4zNzYiIHkxPSIxMTMuNDEzIiB4Mj0iMTI1LjM4NSIgeTI9IjMwLjY1MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGODA3NTkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNCQzRFOUMiLz48L2xpbmVhckdyYWRpZW50PjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZCIgeD0iLjk5IiB5PSI5IiB3aWR0aD0iOTQuOTUyIiBoZWlnaHQ9Ijk1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz48ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiLz48ZmVPZmZzZXQgZHk9IjEzIi8+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTAuNSIvPjxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAwLjg5ODAzOSAwIDAgMCAwIDAuMTE3NjQ3IDAgMCAwIDAgMC40MzUyOTQgMCAwIDAgMC4zIDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3ciLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3ciIHJlc3VsdD0ic2hhcGUiLz48L2ZpbHRlcj48L2RlZnM+PC9zdmc+"
 
 /***/ }),
 
@@ -22361,7 +22361,7 @@ module.exports = arrayFilter;
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/1ybYvY0u-ERPHnWSImuK2/_buildManifest.js\",\"static/1ybYvY0u-ERPHnWSImuK2/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.e0ee29fda8bb196a4dce.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-7099744ca90769406804.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/RGmDGw3DHpZVccKjiwGpj/_buildManifest.js\",\"static/RGmDGw3DHpZVccKjiwGpj/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.e0ee29fda8bb196a4dce.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-2293095f4e2fea9ad675.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -23580,6 +23580,13 @@ var defineProperty = (function() {
 
 module.exports = defineProperty;
 
+
+/***/ }),
+
+/***/ "O4kY":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjQgNjQiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzIiIHkxPSI2MyIgeDI9IjMyIiB5Mj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhjZGQ3OSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Q0ZTZiNiIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9IjMyIiB5MT0iNTQiIHgyPSIzMiIgeTI9IjEwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZDRkOGUxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjNmNGY1Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudC0zIiB4MT0iMjQiIHkxPSI0NS42MyIgeDI9IjI0IiB5Mj0iMzMiIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudC00IiB4MT0iNDAiIHkxPSI0OCIgeDI9IjQwIiB5Mj0iMzUuMzciIGdyYWRpZW50VHJhbnNmb3JtPSJyb3RhdGUoLTE4MCA0MCA0MS42ODUpIiB4bGluazpocmVmPSIjbGluZWFyLWdyYWRpZW50Ii8+PHN0eWxlPi5jbHMtMntmaWxsOiM3ZWNlNjd9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxhYmVsIj48cGF0aCBkPSJNNjMgMzJjMCAyLjY4LTIuNTMgNS0zLjE5IDcuNDVzLjMzIDUuODItMSA4LTQuNjUgMy02LjUgNC44NS0yLjU4IDUuMTktNC44NSA2LjUtNS40OS4yOC04IDFTMzQuNjggNjMgMzIgNjNzLTUtMi41My03LjQ1LTMuMTktNS44Mi4zMy04LTEtMy00LjY1LTQuODUtNi41LTUuMTktMi41OC02LjUtNC44NS0uMjgtNS40OS0xLThTMSAzNC42OCAxIDMyczIuNTMtNSAzLjE5LTcuNDUtLjMzLTUuODIgMS04IDQuNjUtMyA2LjUtNC44NSAyLjU4LTUuMTkgNC44NS02LjUgNS40OS0uMjggOC4wNS0xUzI5LjMyIDEgMzIgMXM1IDIuNTMgNy40NSAzLjE5IDUuODItLjMzIDggMSAzIDQuNjUgNC44NSA2LjUgNS4xOSAyLjU4IDYuNSA0Ljg1LjI4IDUuNDkgMSA4LjA1UzYzIDI5LjMyIDYzIDMyeiIgZmlsbD0idXJsKCNsaW5lYXItZ3JhZGllbnQpIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIzMiIgY3k9IjMyIiByPSIyNCIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIyIiBmaWxsPSJ1cmwoI2xpbmVhci1ncmFkaWVudC0yKSIvPjxwYXRoIGQ9Ik01My45NCAzMy40OGEyMiAyMiAwIDAwLTQzLjg4IDAgMjIgMjIgMCAxMTQzLjg4IDB6IiBmaWxsPSIjZGZlM2VhIi8+PHBhdGggZD0iTTE2IDMzaDUuMzlBMTAuNjEgMTAuNjEgMCAwMTMyIDQzLjYxdjJoLTUuMzlBMTAuNjEgMTAuNjEgMCAwMTE2IDM1di0yeiIgZmlsbD0idXJsKCNsaW5lYXItZ3JhZGllbnQtMykiLz48cGF0aCBkPSJNNDIuNjEgMzUuMzdINDh2MkExMC42MSAxMC42MSAwIDAxMzcuMzkgNDhIMzJ2LTJhMTAuNjEgMTAuNjEgMCAwMTEwLjYxLTEwLjYzeiIgdHJhbnNmb3JtPSJyb3RhdGUoMTgwIDQwIDQxLjY4NSkiIGZpbGw9InVybCgjbGluZWFyLWdyYWRpZW50LTQpIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzIgNDMuNjN2MmgtNS4zOUExMC42MSAxMC42MSAwIDAxMTYgMzV2LTJhMTAuNjEgMTAuNjEgMCAwMDEwLjYxIDEwLjYzem0xNi04LjI0djJBMTAuNjEgMTAuNjEgMCAwMTM3LjM5IDQ4SDMydi0yaDUuMzlBMTAuNjEgMTAuNjEgMCAwMDQ4IDM1LjM5eiIvPjxwYXRoIGQ9Ik02Mi4xNSAyNy4wN2MtMS40OS0yLjQ5LTEuNjQtMi45NC0xLjYtNiAuMDYtNC42Ny0uNjItNi00Ljg1LTguMzUtMi42MS0xLjQ2LTMtMS44LTQuNDEtNC40MS0yLjI5LTQuMjItMy42Ni00LjkzLTguMzUtNC44Ni0zLjA2IDAtMy41Mi0uMTEtNi0xLjYtNC4xNS0yLjQ4LTUuNzMtMi40Ny05Ljg2IDAtMi40OSAxLjQ5LTIuOTUgMS42NC02IDEuNi00LjctLjA3LTYgLjY1LTguMzUgNC44NS0xLjQ2IDIuNjEtMS43OSAyLjk1LTQuNDEgNC40MS00LjIzIDIuMzYtNC45MSAzLjY4LTQuODUgOC4zNSAwIDMuMDUtLjEgMy41LTEuNiA2LTIuNDYgNC4xMS0yLjUgNS42OSAwIDkuODYgMS40OSAyLjQ5IDEuNjQgMi45NCAxLjYgNi0uMDYgNC42Ny42MiA2IDQuODUgOC4zNSAyLjYxIDEuNDYgMi45NSAxLjggNC40MSA0LjQxIDIuMzIgNC4xNyAzLjYyIDQuOTIgOC4zNSA0Ljg1IDMuMDcgMCAzLjUyLjExIDYgMS42IDQuMTUgMi40OCA1LjczIDIuNDcgOS44NiAwIDIuNDktMS40OSAyLjk0LTEuNjQgNi0xLjYgNC43My4wNyA2LS42OCA4LjM1LTQuODUgMS40Ni0yLjYxIDEuNzktMyA0LjQxLTQuNDEgNC4yMy0yLjM2IDQuOTEtMy42OCA0Ljg1LTguMzUgMC0zIC4xLTMuNSAxLjYtNiAyLjQ2LTQuMSAyLjUtNS42OCAwLTkuODV6bS0xLjcyIDguODNjLTEuNjggMi44Mi0xLjkyIDMuNjItMS44OCA3LjA2LjA2IDQtLjI5IDQuNjItMy44MiA2LjU4LTIuOTQgMS42NC0zLjU1IDIuMjUtNS4xOSA1LjE5LTIgMy41Mi0yLjYxIDMuODgtNi41OCAzLjgyLTMuNDQgMC00LjI2LjItNy4wNiAxLjg4LTMuNDkgMi4xLTQuMzEgMi4wOS03LjggMC0yLjQzLTEuNDUtMy40LTEuODgtNi4yMy0xLjg4LTEuNjUgMC0zLjYuMTctNC44Ny0uNTYtMS45NC0xLjEyLTIuNzEtNC40LTQuNjUtNi4zNFM3LjE0IDQ5IDYgNDdzLS4xNS01LjEzLS44Ny03LjgxUzIgMzQuMyAyIDMyczIuNDYtNC41OSAzLjE1LTcuMi0uMjQtNS45Ljg1LTcuOCA0LjM5LTIuNzEgNi4zMy00LjY1UzE1LjA2IDcuMTQgMTcgNnM1LjEzLS4xNCA3LjgtLjg2QzI3LjI0IDQuNSAyOS43OCAyIDMyIDJzNC41OSAyLjQ2IDcuMTkgMy4xNVM0NS4xIDQuOTEgNDcgNnMyLjcxIDQuNCA0LjY1IDYuMzRTNTYuODYgMTUuMDUgNTggMTdzLjE1IDUuMTMuODcgNy44MVM2MiAyOS43IDYyIDMyYTguMTkgOC4xOSAwIDAxLTEuNTcgMy45eiIvPjxwYXRoIGQ9Ik0zMiA5YTIzIDIzIDAgMTAyMyAyM0EyMyAyMyAwIDAwMzIgOXptOS40NSAzMC4xMWMtMy40MyAwLTYuNDYgMy04LjMzIDUuNDRhOS42MSA5LjYxIDAgMDE5LjQ5LTguMThINDd2MUE5LjYyIDkuNjIgMCAwMTM3LjM5IDQ3SDMzLjhjMS42NS0yLjQyIDQuNjgtNS44OSA3LjY1LTUuODlhMSAxIDAgMDAwLTJ6bS0xOC45LS4zN2MzIDAgNiAzLjQ3IDcuNjUgNS44OWgtMy41OUE5LjYyIDkuNjIgMCAwMTE3IDM1di0xaDQuMzlhOS42MSA5LjYxIDAgMDE5LjQ5IDguMThDMjkgMzkuNzYgMjYgMzYuNzQgMjIuNTUgMzYuNzRhMSAxIDAgMDAwIDJ6TTMzIDUzdi00aDQuMzlBMTEuNjMgMTEuNjMgMCAwMDQ5IDM3LjM5di0yYTEgMSAwIDAwLTEtMWgtNS4zOWExMS41OSAxMS41OSAwIDAwLTEwLjEgNS45MUExMS42NCAxMS42NCAwIDAwMjEuMzkgMzJIMTZhMSAxIDAgMDAtMSAxdjJhMTEuNjMgMTEuNjMgMCAwMDExLjYxIDExLjYzSDMxVjUzYTIxIDIxIDAgMTEyIDB6Ii8+PHBhdGggZD0iTTI2IDIwYTEgMSAwIDAwMC0yaC02YTEgMSAwIDAwLTEgMXYxMGExIDEgMCAwMDEgMWg2YTEgMSAwIDAwMC0yaC01di0zaDMuNWExIDEgMCAwMDAtMkgyMXYtM3ptMTYtMmE0IDQgMCAwMC00IDR2NGE0IDQgMCAwMDggMHYtNGE0IDQgMCAwMC00LTR6bTIgOGEyIDIgMCAwMS00IDB2LTRhMiAyIDAgMDE0IDB6bS0xMC4xOC00Ljc1YTEgMSAwIDAwMS4zLjU1YzEuNjItLjY1LS4yNi0zLjgtMy4xNC0zLjhhNCA0IDAgMDAtNCA0djRhNCA0IDAgMDA3LjY4IDEuNDggMSAxIDAgMDAtMS44Ni0uNzVBMiAyIDAgMDEzMCAyNnYtNGEyIDIgMCAwMTMuODItLjc1eiIvPjwvZz48L3N2Zz4="
 
 /***/ }),
 
@@ -32942,10 +32949,10 @@ function FeatureCardColumn({
 const feature_card_column_styles = {
   card: {
     display: "flex",
-    alignItems: ["center", "flex-start"],
+    alignItems: "center",
     flexDirection: "column",
     mb: -1,
-    textAlign: ["center", null, "left"],
+    textAlign: "center",
     px: [4, null, 0]
   },
   img: {
@@ -32972,82 +32979,27 @@ const feature_card_column_styles = {
     }
   }
 };
-// EXTERNAL MODULE: ./src/assets/key-feature/performance.svg
-var performance = __webpack_require__("CsJq");
-
 // EXTERNAL MODULE: ./src/assets/key-feature/partnership.svg
 var partnership = __webpack_require__("dE70");
-var partnership_default = /*#__PURE__*/__webpack_require__.n(partnership);
 
 // EXTERNAL MODULE: ./src/assets/key-feature/subscription.svg
 var subscription = __webpack_require__("z9u5");
-var subscription_default = /*#__PURE__*/__webpack_require__.n(subscription);
 
 // EXTERNAL MODULE: ./src/assets/key-feature/support.svg
 var support = __webpack_require__("Reoy");
 var support_default = /*#__PURE__*/__webpack_require__.n(support);
 
-// CONCATENATED MODULE: ./src/components/feature-card.js
+// EXTERNAL MODULE: ./src/assets/Label.svg
+var Label = __webpack_require__("O4kY");
+var Label_default = /*#__PURE__*/__webpack_require__.n(Label);
 
-var feature_card_jsx = react_default.a.createElement;
+// EXTERNAL MODULE: ./src/assets/Love.png
+var Love = __webpack_require__("2Gv+");
+var Love_default = /*#__PURE__*/__webpack_require__.n(Love);
 
-/** @jsx jsx */
-
-function FeatureCard({
-  src,
-  altText = "default alt text",
-  title,
-  text
-}) {
-  return Object(dist["jsx"])(dist["Box"], {
-    sx: feature_card_styles.card
-  }, Object(dist["jsx"])(dist["Image"], {
-    src: src,
-    altText: altText,
-    sx: feature_card_styles.img
-  }), Object(dist["jsx"])(dist["Box"], {
-    sx: feature_card_styles.wrapper
-  }, Object(dist["jsx"])(dist["Heading"], {
-    sx: feature_card_styles.wrapper.title
-  }, title), Object(dist["jsx"])(dist["Text"], {
-    sx: feature_card_styles.wrapper.subTitle
-  }, text)));
-}
-const feature_card_styles = {
-  card: {
-    display: "flex",
-    alignItems: "flex-start",
-    mb: -1
-  },
-  img: {
-    width: ["70px", null, null, "80px", "90px", "auto"],
-    height: "auto",
-    flexShrink: 0,
-    mr: [2, 3, null, null, 4, 5],
-    ml: -2
-  },
-  wrapper: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    mt: "-5px",
-    title: {
-      fontSize: [2, 3],
-      color: "heading_secondary",
-      lineHeight: 1.4,
-      fontWeight: 700,
-      mb: ["10px", null, "15px"]
-    },
-    subTitle: {
-      fontSize: [1, "15px"],
-      fontWeight: 400,
-      lineHeight: "1.9"
-    }
-  }
-};
-// EXTERNAL MODULE: ./src/assets/feature/factory_icon.png
-var factory_icon = __webpack_require__("XTdN");
-var factory_icon_default = /*#__PURE__*/__webpack_require__.n(factory_icon);
+// EXTERNAL MODULE: ./src/assets/no_chemical.png
+var no_chemical = __webpack_require__("SMnO");
+var no_chemical_default = /*#__PURE__*/__webpack_require__.n(no_chemical);
 
 // CONCATENATED MODULE: ./src/sections/key-feature.js
 
@@ -33066,19 +33018,19 @@ var key_feature_jsx = react_default.a.createElement;
 
 const data = [{
   id: 1,
-  imgSrc: factory_icon_default.a,
-  altText: "Fast Performance",
-  title: "Fast Performance",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  imgSrc: Label_default.a,
+  altText: "Biodegradable",
+  title: "Biodegradable",
+  text: "Our SoapyBalls are 100% compostable and used many times for washing"
 }, {
   id: 2,
-  imgSrc: partnership_default.a,
+  imgSrc: Love_default.a,
   altText: "Partnership deal",
   title: "Partnership deal",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  text: "Nuts come from India, where they used as a natural detergent for many years."
 }, {
   id: 3,
-  imgSrc: subscription_default.a,
+  imgSrc: no_chemical_default.a,
   altText: "Pro Subscription",
   title: "Pro Subscription",
   text: "Get your blood tests delivered at home collect a sample from the your blood tests."
@@ -33213,8 +33165,66 @@ var smart_default = /*#__PURE__*/__webpack_require__.n(smart);
 var services_secure = __webpack_require__("lYj7");
 var secure_default = /*#__PURE__*/__webpack_require__.n(services_secure);
 
+// CONCATENATED MODULE: ./src/components/feature-card.js
+
+var feature_card_jsx = react_default.a.createElement;
+
+/** @jsx jsx */
+
+function FeatureCard({
+  src,
+  altText = "default alt text",
+  title,
+  text
+}) {
+  return Object(dist["jsx"])(dist["Box"], {
+    sx: feature_card_styles.card
+  }, Object(dist["jsx"])(dist["Image"], {
+    src: src,
+    altText: altText,
+    sx: feature_card_styles.img
+  }), Object(dist["jsx"])(dist["Box"], {
+    sx: feature_card_styles.wrapper
+  }, Object(dist["jsx"])(dist["Heading"], {
+    sx: feature_card_styles.wrapper.title
+  }, title), Object(dist["jsx"])(dist["Text"], {
+    sx: feature_card_styles.wrapper.subTitle
+  }, text)));
+}
+const feature_card_styles = {
+  card: {
+    display: "flex",
+    alignItems: "flex-start",
+    mb: -1
+  },
+  img: {
+    width: ["70px", null, null, "80px", "90px", "auto"],
+    height: "auto",
+    flexShrink: 0,
+    mr: [2, 3, null, null, 4, 5],
+    ml: -2
+  },
+  wrapper: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    mt: "-5px",
+    title: {
+      fontSize: [2, 3],
+      color: "heading_secondary",
+      lineHeight: 1.4,
+      fontWeight: 700,
+      mb: ["10px", null, "15px"]
+    },
+    subTitle: {
+      fontSize: [1, "15px"],
+      fontWeight: 400,
+      lineHeight: "1.9"
+    }
+  }
+};
 // EXTERNAL MODULE: ./src/assets/feature/performance.svg
-var feature_performance = __webpack_require__("6D42");
+var performance = __webpack_require__("6D42");
 
 // EXTERNAL MODULE: ./src/assets/feature/partnership.svg
 var feature_partnership = __webpack_require__("wTVH");
@@ -33227,6 +33237,10 @@ var feature_subscription_default = /*#__PURE__*/__webpack_require__.n(feature_su
 // EXTERNAL MODULE: ./src/assets/feature/support.svg
 var feature_support = __webpack_require__("6kX6");
 var feature_support_default = /*#__PURE__*/__webpack_require__.n(feature_support);
+
+// EXTERNAL MODULE: ./src/assets/feature/factory_icon.png
+var factory_icon = __webpack_require__("XTdN");
+var factory_icon_default = /*#__PURE__*/__webpack_require__.n(factory_icon);
 
 // CONCATENATED MODULE: ./src/sections/feature.js
 
@@ -33245,9 +33259,9 @@ var feature_jsx = react_default.a.createElement;
 const feature_data = [{
   id: 1,
   imgSrc: factory_icon_default.a,
-  altText: "Fast Performance",
-  title: "Fast Performance",
-  text: "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world."
+  altText: "Biodegradable",
+  title: "Biodegradable",
+  text: "version of Edu flow. Paid subscriptions allow us to continue helping learners around the world."
 }, {
   id: 2,
   imgSrc: feature_partnership_default.a,
@@ -35574,6 +35588,13 @@ const key=_crypto.default.pbkdf2Sync(secret,salt,PBKDF2_ITERATIONS,CIPHER_KEY_LE
 
 "use strict";
 Object.defineProperty(exports,"__esModule",{value:!0});var React=__webpack_require__("q1tI"),utils_1=__webpack_require__("3TDQ"),CarouselItems=function(_a){var props=_a.props,state=_a.state,goToSlide=_a.goToSlide,clones=_a.clones,notEnoughChildren=_a.notEnoughChildren,itemWidth=state.itemWidth,children=props.children,infinite=props.infinite,itemClass=props.itemClass,itemAriaLabel=props.itemAriaLabel,partialVisbile=props.partialVisbile,partialVisible=props.partialVisible,_b=utils_1.getInitialState(state,props),flexBisis=_b.flexBisis,shouldRenderOnSSR=_b.shouldRenderOnSSR,domFullyLoaded=_b.domFullyLoaded,partialVisibilityGutter=_b.partialVisibilityGutter;return _b.shouldRenderAtAll?(partialVisbile&&console.warn('WARNING: Please correct props name: "partialVisible" as old typo will be removed in future versions!'),React.createElement(React.Fragment,null,(infinite?clones:React.Children.toArray(children)).map(function(child,index){return React.createElement("li",{key:index,"data-index":index,onClick:function(){props.focusOnSelect&&goToSlide(index)},"aria-hidden":utils_1.getIfSlideIsVisbile(index,state)?"false":"true","aria-label":itemAriaLabel||(child.props.ariaLabel?child.props.ariaLabel:null),style:{flex:shouldRenderOnSSR?"1 0 "+flexBisis+"%":"auto",position:"relative",width:domFullyLoaded?((partialVisbile||partialVisible)&&partialVisibilityGutter&&!notEnoughChildren?itemWidth-partialVisibilityGutter:itemWidth)+"px":"auto"},className:"react-multi-carousel-item "+(utils_1.getIfSlideIsVisbile(index,state)?"react-multi-carousel-item--active":"")+" "+itemClass},child)}))):null};exports.default=CarouselItems;
+
+/***/ }),
+
+/***/ "SMnO":
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/no_chemical-bc7abf675cbf36783d681809827e432a.png";
 
 /***/ }),
 
@@ -53373,6 +53394,416 @@ module.exports = function () {
 
 /***/ }),
 
+/***/ "rlkU":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+
+    
+    
+    
+    const {isResSent} = __webpack_require__("g/15");
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([{"path":".env","contents":"SITE_URL=http://127.0.0.1:5500/"}])
+  
+    
+    const runtimeConfig = {}
+    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
+    const {parse: parseQs} = __webpack_require__("8xkj")
+    const { renderToHTML } = __webpack_require__("/bjS");
+    const { tryGetPreviewData } = __webpack_require__("PCLx");
+    const { denormalizePagePath } = __webpack_require__("wkBG")
+    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
+    const {sendPayload} = __webpack_require__("KyNf");
+    const {getRedirectStatus} = __webpack_require__("FwDC");
+    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
+    const buildManifest = __webpack_require__("LZ9C");
+    const reactLoadableManifest = __webpack_require__("67Bq");
+    const { normalizeLocalePath } = __webpack_require__("3wub")
+    const i18n = {}
+
+    const appMod = __webpack_require__("IlR1")
+    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+
+    
+    
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
+  
+
+    const compMod = __webpack_require__("RXBc")
+
+    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+
+    // kept for detecting legacy exports
+    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+
+    
+    
+    
+    const getCustomRouteMatcher = pathMatch(true)
+    const prepareDestination = __webpack_require__("6mnf").default
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          const { parsedDestination } = prepareDestination(
+            rewrite.destination,
+            params,
+            parsedUrl.query,
+            true
+          )
+
+          Object.assign(parsedUrl.query, parsedDestination.query)
+          delete parsedDestination.query
+
+          Object.assign(parsedUrl, parsedDestination)
+
+          let fsPathname = parsedUrl.pathname
+
+          
+
+          
+
+          if (fsPathname === '/'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+    const _app = App
+    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
+      let Document
+      let Error
+      let notFoundMod
+      ;[
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        { default: Document },
+        { default: Error },
+        
+      ] = await Promise.all([
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        __webpack_require__("senJ"),
+        __webpack_require__("/a9y"),
+        
+      ])
+
+      const fromExport = renderMode === 'export' || renderMode === true;
+      const nextStartMode = renderMode === 'passthrough'
+      let hasValidParams = true
+
+      
+
+      setLazyProp({ req }, 'cookies', getCookieParser(req))
+
+      const options = {
+        App,
+        Document,
+        buildManifest,
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        reactLoadableManifest,
+        canonicalBase: "",
+        buildId: "RGmDGw3DHpZVccKjiwGpj",
+        assetPrefix: "",
+        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
+        previewProps: {previewModeId:"8401f859feb2101eaaeaf444c28d21e9",previewModeSigningKey:"03beaa740b7c5a5f113ba3a3f5b7235a264ead9e164e537fd7db0964807ebc06",previewModeEncryptionKey:"6b0b34009d0f6c35fd2a93df14e19007d46b40235aef3b80b39f2000d3e76cb0"},
+        env: process.env,
+        basePath: "",
+        ..._renderOpts
+      }
+      let _nextData = false
+      let parsedUrl
+
+      try {
+        // We need to trust the dynamic route params from the proxy
+        // to ensure we are using the correct values
+        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
+        let parsedUrl = parseUrl(req.url, true)
+        let routeNoAssetPath = parsedUrl.pathname
+        const origQuery = Object.assign({}, parsedUrl.query)
+
+        parsedUrl = handleRewrites(parsedUrl)
+
+        
+
+        // remove ?amp=1 from request URL if rendering for export
+        if (fromExport && parsedUrl.query.amp) {
+          const queryNoAmp = Object.assign({}, origQuery)
+          delete queryNoAmp.amp
+
+          req.url = formatUrl({
+            ...parsedUrl,
+            search: undefined,
+            query: queryNoAmp
+          })
+        }
+
+        if (parsedUrl.pathname.match(/_next\/data/)) {
+          const {
+            default: getRouteNoAssetPath,
+          } = __webpack_require__("1Ej0");
+          _nextData = true;
+          parsedUrl.pathname = getRouteNoAssetPath(
+            parsedUrl.pathname.replace(
+              new RegExp('/_next/data/RGmDGw3DHpZVccKjiwGpj/'),
+              '/'
+            ),
+            '.json'
+          );
+          routeNoAssetPath = parsedUrl.pathname
+        }
+
+        
+      const i18n = {}
+      const detectedLocale = undefined
+      const defaultLocale = undefined
+      const locales = undefined
+    
+
+        if (parsedUrl.query.nextInternalLocale) {
+          detectedLocale = parsedUrl.query.nextInternalLocale
+          delete parsedUrl.query.nextInternalLocale
+        }
+
+        const renderOpts = Object.assign(
+          {
+            Component,
+            pageConfig: config,
+            nextExport: fromExport,
+            isDataReq: _nextData,
+            locale: detectedLocale,
+            locales,
+            defaultLocale: i18n.defaultLocale,
+          },
+          options,
+        )
+
+        
+
+        const params = {};
+
+        const nowParams = null;
+
+        // make sure to set renderOpts to the correct params e.g. _params
+        // if provided from worker or params if we're parsing them here
+        renderOpts.params = _params || params
+
+        // make sure to normalize req.url on Vercel to strip dynamic params
+        // from the query which are added during routing
+        
+
+        // normalize request URL/asPath for fallback/revalidate pages since the
+        // proxy sets the request URL to the output's path for fallback pages
+        
+
+        // make sure to normalize asPath for revalidate and _next/data requests
+        // since the asPath should match what is shown on the client
+        if (
+          !fromExport &&
+          (getStaticProps || getServerSideProps)
+        ) {
+          
+
+          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
+          renderOpts.resolvedUrl = formatUrl({
+            ...parsedUrl,
+            query: origQuery
+          })
+
+          // For getServerSideProps we need to ensure we use the original URL
+          // and not the resolved URL to prevent a hydration mismatch on asPath
+          renderOpts.resolvedAsPath = getServerSideProps
+            ? formatUrl({
+              ...parsedUrl,
+              pathname: routeNoAssetPath,
+              query: origQuery,
+            })
+            : renderOpts.resolvedUrl
+        }
+
+        const isFallback = parsedUrl.query.__nextFallback
+
+        const previewData = tryGetPreviewData(req, res, options.previewProps)
+        const isPreviewMode = previewData !== false
+        if (false) {}
+        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
+
+        if (!renderMode) {
+          if (_nextData || getStaticProps || getServerSideProps) {
+            if (renderOpts.isNotFound) {
+              res.statusCode = 404
+
+              const NotFoundComponent = Error
+
+              const errPathname = "/_error"
+
+              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
+                getStaticProps: undefined,
+                getStaticPaths: undefined,
+                getServerSideProps: undefined,
+                Component: NotFoundComponent,
+                err: undefined,
+                locale: detectedLocale,
+                locales,
+                defaultLocale,
+              }))
+
+              sendPayload(req, res, result, 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            } else if (renderOpts.isRedirect && !_nextData) {
+              const redirect = {
+                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
+                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
+                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
+              }
+              const statusCode = getRedirectStatus(redirect)
+
+              if (false) {}
+
+              if (statusCode === PERMANENT_REDIRECT_STATUS) {
+                res.setHeader('Refresh', `0;url=${redirect.destination}`)
+              }
+
+              res.statusCode = statusCode
+              res.setHeader('Location', redirect.destination)
+              res.end()
+              return null
+            } else {
+              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            }
+          }
+        } else if (isPreviewMode) {
+          res.setHeader(
+            'Cache-Control',
+            'private, no-cache, no-store, max-age=0, must-revalidate'
+          )
+        }
+
+        if (renderMode) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (!parsedUrl) {
+          parsedUrl = parseUrl(req.url, true)
+        }
+
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+        } else if (err.code === 'DECODE_FAILED') {
+          // TODO: better error?
+          res.statusCode = 400
+        } else {
+          console.error('Unhandled error during request:', err)
+
+          // Backwards compat (call getInitialProps in custom error):
+          try {
+            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+              getStaticProps: undefined,
+              getStaticPaths: undefined,
+              getServerSideProps: undefined,
+              Component: Error,
+              err: err,
+              // Short-circuit rendering:
+              isDataReq: true
+            }))
+          } catch (underErrorErr) {
+            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
+          }
+
+          // Throw the error to crash the serverless function
+          if (isResSent(res)) {
+            console.error('!!! WARNING !!!')
+            console.error(
+              'Your function crashed, but closed the response before allowing the function to exit.\n' +
+              'This may cause unexpected behavior for the next request.'
+            )
+            console.error('!!! WARNING !!!')
+          }
+          throw err
+        }
+
+        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+          getStaticProps: undefined,
+          getStaticPaths: undefined,
+          getServerSideProps: undefined,
+          Component: Error,
+          err: res.statusCode === 404 ? undefined : err
+        }))
+        return result
+      }
+    }
+    async function render (req, res) {
+      try {
+        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
+        }
+      } catch(err) {
+        console.error(err)
+        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+        // Throw the error to crash the serverless function
+        throw err
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "rpNk":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -58432,416 +58863,6 @@ exports.flushSync=function(a,b){if((W&(fj|gj))!==V)throw Error(u(187));var c=W;W
 exports.unmountComponentAtNode=function(a){if(!gk(a))throw Error(u(40));return a._reactRootContainer?(Nj(function(){ik(null,null,a,!1,function(){a._reactRootContainer=null;a[Od]=null})}),!0):!1};exports.unstable_batchedUpdates=Mj;exports.unstable_createPortal=function(a,b){return kk(a,b,2<arguments.length&&void 0!==arguments[2]?arguments[2]:null)};
 exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!gk(c))throw Error(u(200));if(null==a||void 0===a._reactInternalFiber)throw Error(u(38));return ik(a,b,c,!1,d)};exports.version="16.13.0";
 
-
-/***/ }),
-
-/***/ "ymKd":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-
-    
-    
-    
-    const {isResSent} = __webpack_require__("g/15");
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([{"path":".env","contents":"SITE_URL=http://127.0.0.1:5500/"}])
-  
-    
-    const runtimeConfig = {}
-    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
-    const {parse: parseQs} = __webpack_require__("8xkj")
-    const { renderToHTML } = __webpack_require__("/bjS");
-    const { tryGetPreviewData } = __webpack_require__("PCLx");
-    const { denormalizePagePath } = __webpack_require__("wkBG")
-    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
-    const {sendPayload} = __webpack_require__("KyNf");
-    const {getRedirectStatus} = __webpack_require__("FwDC");
-    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
-    const buildManifest = __webpack_require__("LZ9C");
-    const reactLoadableManifest = __webpack_require__("67Bq");
-    const { normalizeLocalePath } = __webpack_require__("3wub")
-    const i18n = {}
-
-    const appMod = __webpack_require__("IlR1")
-    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-
-    
-    
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
-  
-
-    const compMod = __webpack_require__("RXBc")
-
-    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-
-    // kept for detecting legacy exports
-    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-
-    
-    
-    
-    const getCustomRouteMatcher = pathMatch(true)
-    const prepareDestination = __webpack_require__("6mnf").default
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          const { parsedDestination } = prepareDestination(
-            rewrite.destination,
-            params,
-            parsedUrl.query,
-            true
-          )
-
-          Object.assign(parsedUrl.query, parsedDestination.query)
-          delete parsedDestination.query
-
-          Object.assign(parsedUrl, parsedDestination)
-
-          let fsPathname = parsedUrl.pathname
-
-          
-
-          
-
-          if (fsPathname === '/'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-    const _app = App
-    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
-      let Document
-      let Error
-      let notFoundMod
-      ;[
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        { default: Document },
-        { default: Error },
-        
-      ] = await Promise.all([
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        __webpack_require__("senJ"),
-        __webpack_require__("/a9y"),
-        
-      ])
-
-      const fromExport = renderMode === 'export' || renderMode === true;
-      const nextStartMode = renderMode === 'passthrough'
-      let hasValidParams = true
-
-      
-
-      setLazyProp({ req }, 'cookies', getCookieParser(req))
-
-      const options = {
-        App,
-        Document,
-        buildManifest,
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        reactLoadableManifest,
-        canonicalBase: "",
-        buildId: "1ybYvY0u-ERPHnWSImuK2",
-        assetPrefix: "",
-        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"17e98b9aceee4a477fcc19491b463329",previewModeSigningKey:"d9f0ef57113d17f102d735586162f6138b2ecc6e20bbd9c1494986695cc95a1b",previewModeEncryptionKey:"ad7b3991ec14d704d11ebdcbd2a2a23b13af9fed2932e174465c78057738bc54"},
-        env: process.env,
-        basePath: "",
-        ..._renderOpts
-      }
-      let _nextData = false
-      let parsedUrl
-
-      try {
-        // We need to trust the dynamic route params from the proxy
-        // to ensure we are using the correct values
-        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
-        let parsedUrl = parseUrl(req.url, true)
-        let routeNoAssetPath = parsedUrl.pathname
-        const origQuery = Object.assign({}, parsedUrl.query)
-
-        parsedUrl = handleRewrites(parsedUrl)
-
-        
-
-        // remove ?amp=1 from request URL if rendering for export
-        if (fromExport && parsedUrl.query.amp) {
-          const queryNoAmp = Object.assign({}, origQuery)
-          delete queryNoAmp.amp
-
-          req.url = formatUrl({
-            ...parsedUrl,
-            search: undefined,
-            query: queryNoAmp
-          })
-        }
-
-        if (parsedUrl.pathname.match(/_next\/data/)) {
-          const {
-            default: getRouteNoAssetPath,
-          } = __webpack_require__("1Ej0");
-          _nextData = true;
-          parsedUrl.pathname = getRouteNoAssetPath(
-            parsedUrl.pathname.replace(
-              new RegExp('/_next/data/1ybYvY0u\-ERPHnWSImuK2/'),
-              '/'
-            ),
-            '.json'
-          );
-          routeNoAssetPath = parsedUrl.pathname
-        }
-
-        
-      const i18n = {}
-      const detectedLocale = undefined
-      const defaultLocale = undefined
-      const locales = undefined
-    
-
-        if (parsedUrl.query.nextInternalLocale) {
-          detectedLocale = parsedUrl.query.nextInternalLocale
-          delete parsedUrl.query.nextInternalLocale
-        }
-
-        const renderOpts = Object.assign(
-          {
-            Component,
-            pageConfig: config,
-            nextExport: fromExport,
-            isDataReq: _nextData,
-            locale: detectedLocale,
-            locales,
-            defaultLocale: i18n.defaultLocale,
-          },
-          options,
-        )
-
-        
-
-        const params = {};
-
-        const nowParams = null;
-
-        // make sure to set renderOpts to the correct params e.g. _params
-        // if provided from worker or params if we're parsing them here
-        renderOpts.params = _params || params
-
-        // make sure to normalize req.url on Vercel to strip dynamic params
-        // from the query which are added during routing
-        
-
-        // normalize request URL/asPath for fallback/revalidate pages since the
-        // proxy sets the request URL to the output's path for fallback pages
-        
-
-        // make sure to normalize asPath for revalidate and _next/data requests
-        // since the asPath should match what is shown on the client
-        if (
-          !fromExport &&
-          (getStaticProps || getServerSideProps)
-        ) {
-          
-
-          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
-          renderOpts.resolvedUrl = formatUrl({
-            ...parsedUrl,
-            query: origQuery
-          })
-
-          // For getServerSideProps we need to ensure we use the original URL
-          // and not the resolved URL to prevent a hydration mismatch on asPath
-          renderOpts.resolvedAsPath = getServerSideProps
-            ? formatUrl({
-              ...parsedUrl,
-              pathname: routeNoAssetPath,
-              query: origQuery,
-            })
-            : renderOpts.resolvedUrl
-        }
-
-        const isFallback = parsedUrl.query.__nextFallback
-
-        const previewData = tryGetPreviewData(req, res, options.previewProps)
-        const isPreviewMode = previewData !== false
-        if (false) {}
-        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
-
-        if (!renderMode) {
-          if (_nextData || getStaticProps || getServerSideProps) {
-            if (renderOpts.isNotFound) {
-              res.statusCode = 404
-
-              const NotFoundComponent = Error
-
-              const errPathname = "/_error"
-
-              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
-                getStaticProps: undefined,
-                getStaticPaths: undefined,
-                getServerSideProps: undefined,
-                Component: NotFoundComponent,
-                err: undefined,
-                locale: detectedLocale,
-                locales,
-                defaultLocale,
-              }))
-
-              sendPayload(req, res, result, 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            } else if (renderOpts.isRedirect && !_nextData) {
-              const redirect = {
-                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
-                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
-                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
-              }
-              const statusCode = getRedirectStatus(redirect)
-
-              if (false) {}
-
-              if (statusCode === PERMANENT_REDIRECT_STATUS) {
-                res.setHeader('Refresh', `0;url=${redirect.destination}`)
-              }
-
-              res.statusCode = statusCode
-              res.setHeader('Location', redirect.destination)
-              res.end()
-              return null
-            } else {
-              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            }
-          }
-        } else if (isPreviewMode) {
-          res.setHeader(
-            'Cache-Control',
-            'private, no-cache, no-store, max-age=0, must-revalidate'
-          )
-        }
-
-        if (renderMode) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (!parsedUrl) {
-          parsedUrl = parseUrl(req.url, true)
-        }
-
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-        } else if (err.code === 'DECODE_FAILED') {
-          // TODO: better error?
-          res.statusCode = 400
-        } else {
-          console.error('Unhandled error during request:', err)
-
-          // Backwards compat (call getInitialProps in custom error):
-          try {
-            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-              getStaticProps: undefined,
-              getStaticPaths: undefined,
-              getServerSideProps: undefined,
-              Component: Error,
-              err: err,
-              // Short-circuit rendering:
-              isDataReq: true
-            }))
-          } catch (underErrorErr) {
-            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
-          }
-
-          // Throw the error to crash the serverless function
-          if (isResSent(res)) {
-            console.error('!!! WARNING !!!')
-            console.error(
-              'Your function crashed, but closed the response before allowing the function to exit.\n' +
-              'This may cause unexpected behavior for the next request.'
-            )
-            console.error('!!! WARNING !!!')
-          }
-          throw err
-        }
-
-        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-          getStaticProps: undefined,
-          getStaticPaths: undefined,
-          getServerSideProps: undefined,
-          Component: Error,
-          err: res.statusCode === 404 ? undefined : err
-        }))
-        return result
-      }
-    }
-    async function render (req, res) {
-      try {
-        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
-        }
-      } catch(err) {
-        console.error(err)
-        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-        // Throw the error to crash the serverless function
-        throw err
-      }
-    }
-  
 
 /***/ }),
 
