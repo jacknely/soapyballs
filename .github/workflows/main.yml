@@ -18,8 +18,6 @@ jobs:
         run: npm -g install
       - name: Update NPM
         run: npm update
-      - name: Build Next
-        run: npm run build
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
