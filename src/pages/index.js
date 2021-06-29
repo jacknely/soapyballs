@@ -34,7 +34,7 @@ export default function IndexPage({ products }) {
   );
 }
 
-export async function getInitialProps() {
+export async function getServerSideProps() {
   const products = await client.product.fetchAll();
   return { props: { products: JSON.parse(JSON.stringify(products)) } };
 }
