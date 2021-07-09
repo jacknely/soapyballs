@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "uu2b");
+/******/ 	return __webpack_require__(__webpack_require__.s = "B670");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -4877,281 +4877,6 @@ exports.compose = compose;
 
 /***/ }),
 
-/***/ "60Bi":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("q1tI");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _CSSTransition = __webpack_require__("Si88");
-
-var _CSSTransition2 = _interopRequireDefault(_CSSTransition);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ModalVideo = function (_React$Component) {
-  _inherits(ModalVideo, _React$Component);
-
-  function ModalVideo(props) {
-    _classCallCheck(this, ModalVideo);
-
-    var _this = _possibleConstructorReturn(this, (ModalVideo.__proto__ || Object.getPrototypeOf(ModalVideo)).call(this, props));
-
-    _this.state = {
-      isOpen: false
-    };
-    _this.closeModal = _this.closeModal.bind(_this);
-    _this.updateFocus = _this.updateFocus.bind(_this);
-    return _this;
-  }
-
-  _createClass(ModalVideo, [{
-    key: 'openModal',
-    value: function openModal() {
-      this.setState({ isOpen: true });
-    }
-  }, {
-    key: 'closeModal',
-    value: function closeModal() {
-      this.setState({ isOpen: false });
-      if (typeof this.props.onClose === 'function') {
-        this.props.onClose();
-      }
-    }
-  }, {
-    key: 'keydownHandler',
-    value: function keydownHandler(e) {
-      if (e.keyCode === 27) {
-        this.closeModal();
-      }
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      document.addEventListener('keydown', this.keydownHandler.bind(this));
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      document.removeEventListener('keydown', this.keydownHandler.bind(this));
-    }
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
-      if (this.state.isOpen && this.modal) {
-        this.modal.focus();
-      }
-    }
-  }, {
-    key: 'updateFocus',
-    value: function updateFocus(e) {
-      if (e.keyCode === 9) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (this.modal === document.activeElement) {
-          this.modalbtn.focus();
-        } else {
-          this.modal.focus();
-        }
-      }
-    }
-  }, {
-    key: 'getQueryString',
-    value: function getQueryString(obj) {
-      var url = '';
-      for (var key in obj) {
-        if (obj.hasOwnProperty(key)) {
-          if (obj[key] !== null) {
-            url += key + '=' + obj[key] + '&';
-          }
-        }
-      }
-      return url.substr(0, url.length - 1);
-    }
-  }, {
-    key: 'getYoutubeUrl',
-    value: function getYoutubeUrl(youtube, videoId) {
-      var query = this.getQueryString(youtube);
-      return '//www.youtube.com/embed/' + videoId + '?' + query;
-    }
-  }, {
-    key: 'getVimeoUrl',
-    value: function getVimeoUrl(vimeo, videoId) {
-      var query = this.getQueryString(vimeo);
-      return '//player.vimeo.com/video/' + videoId + '?' + query;
-    }
-  }, {
-    key: 'getYoukuUrl',
-    value: function getYoukuUrl(youku, videoId) {
-      var query = this.getQueryString(youku);
-      return '//player.youku.com/embed/' + videoId + '?' + query;
-    }
-  }, {
-    key: 'getVideoUrl',
-    value: function getVideoUrl(opt, videoId) {
-      if (opt.channel === 'youtube') {
-        return this.getYoutubeUrl(opt.youtube, videoId);
-      } else if (opt.channel === 'vimeo') {
-        return this.getVimeoUrl(opt.vimeo, videoId);
-      } else if (opt.channel === 'youku') {
-        return this.getYoukuUrl(opt.youku, videoId);
-      } else if (opt.channel === 'custom') {
-        return opt.url;
-      }
-    }
-  }, {
-    key: 'getPadding',
-    value: function getPadding(ratio) {
-      var arr = ratio.split(':');
-      var width = Number(arr[0]);
-      var height = Number(arr[1]);
-      var padding = height * 100 / width;
-      return padding + '%';
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var style = {
-        paddingBottom: this.getPadding(this.props.ratio)
-      };
-
-      return _react2.default.createElement(
-        _CSSTransition2.default,
-        {
-          classNames: this.props.classNames.modalVideoEffect,
-          timeout: this.props.animationSpeed
-        },
-        function () {
-          if (!_this2.state.isOpen) {
-            return null;
-          }
-
-          return _react2.default.createElement(
-            'div',
-            { className: _this2.props.classNames.modalVideo, tabIndex: '-1', role: 'dialog',
-              'aria-label': _this2.props.aria.openMessage, onClick: _this2.closeModal, ref: function ref(node) {
-                _this2.modal = node;
-              }, onKeyDown: _this2.updateFocus },
-            _react2.default.createElement(
-              'div',
-              { className: _this2.props.classNames.modalVideoBody },
-              _react2.default.createElement(
-                'div',
-                { className: _this2.props.classNames.modalVideoInner },
-                _react2.default.createElement(
-                  'div',
-                  { className: _this2.props.classNames.modalVideoIframeWrap, style: style },
-                  _react2.default.createElement('button', { className: _this2.props.classNames.modalVideoCloseBtn, 'aria-label': _this2.props.aria.dismissBtnMessage, ref: function ref(node) {
-                      _this2.modalbtn = node;
-                    }, onKeyDown: _this2.updateFocus }),
-                  _this2.props.children || _react2.default.createElement('iframe', { width: '460', height: '230', src: _this2.getVideoUrl(_this2.props, _this2.props.videoId), frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: _this2.props.allowFullScreen, tabIndex: '-1' })
-                )
-              )
-            )
-          );
-        }
-      );
-    }
-  }], [{
-    key: 'getDerivedStateFromProps',
-    value: function getDerivedStateFromProps(props) {
-      return { isOpen: props.isOpen };
-    }
-  }]);
-
-  return ModalVideo;
-}(_react2.default.Component);
-
-exports.default = ModalVideo;
-
-
-ModalVideo.defaultProps = {
-  channel: 'youtube',
-  isOpen: false,
-  youtube: {
-    autoplay: 1,
-    cc_load_policy: 1,
-    color: null,
-    controls: 1,
-    disablekb: 0,
-    enablejsapi: 0,
-    end: null,
-    fs: 1,
-    h1: null,
-    iv_load_policy: 1,
-    list: null,
-    listType: null,
-    loop: 0,
-    modestbranding: null,
-    origin: null,
-    playlist: null,
-    playsinline: null,
-    rel: 0,
-    showinfo: 1,
-    start: 0,
-    wmode: 'transparent',
-    theme: 'dark',
-    mute: 0
-  },
-  ratio: '16:9',
-  vimeo: {
-    api: false,
-    autopause: true,
-    autoplay: true,
-    byline: true,
-    callback: null,
-    color: null,
-    height: null,
-    loop: false,
-    maxheight: null,
-    maxwidth: null,
-    player_id: null,
-    portrait: true,
-    title: true,
-    width: null,
-    xhtml: false
-  },
-  youku: {
-    autoplay: 1,
-    show_related: 0
-  },
-  allowFullScreen: true,
-  animationSpeed: 300,
-  classNames: {
-    modalVideoEffect: 'modal-video-effect',
-    modalVideo: 'modal-video',
-    modalVideoClose: 'modal-video-close',
-    modalVideoBody: 'modal-video-body',
-    modalVideoInner: 'modal-video-inner',
-    modalVideoIframeWrap: 'modal-video-movie-wrap',
-    modalVideoCloseBtn: 'modal-video-close-btn'
-  },
-  aria: {
-    openMessage: 'You just openned the modal video',
-    dismissBtnMessage: 'Close the modal by clicking here'
-  }
-};
-
-/***/ }),
-
 /***/ "67Bq":
 /***/ (function(module) {
 
@@ -8083,6 +7808,416 @@ const ESCAPE_LOOKUP={'&':'\\u0026','>':'\\u003e','<':'\\u003c','\u2028':'\\u2028
 
 /***/ }),
 
+/***/ "B670":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+
+    
+    
+    
+    const {isResSent} = __webpack_require__("g/15");
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([])
+  
+    
+    const runtimeConfig = {}
+    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
+    const {parse: parseQs} = __webpack_require__("8xkj")
+    const { renderToHTML } = __webpack_require__("/bjS");
+    const { tryGetPreviewData } = __webpack_require__("PCLx");
+    const { denormalizePagePath } = __webpack_require__("wkBG")
+    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
+    const {sendPayload} = __webpack_require__("KyNf");
+    const {getRedirectStatus} = __webpack_require__("FwDC");
+    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
+    const buildManifest = __webpack_require__("LZ9C");
+    const reactLoadableManifest = __webpack_require__("67Bq");
+    const { normalizeLocalePath } = __webpack_require__("3wub")
+    const i18n = {}
+
+    const appMod = __webpack_require__("IlR1")
+    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+
+    
+    
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
+  
+
+    const compMod = __webpack_require__("RXBc")
+
+    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+
+    // kept for detecting legacy exports
+    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+
+    
+    
+    
+    const getCustomRouteMatcher = pathMatch(true)
+    const prepareDestination = __webpack_require__("6mnf").default
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          const { parsedDestination } = prepareDestination(
+            rewrite.destination,
+            params,
+            parsedUrl.query,
+            true
+          )
+
+          Object.assign(parsedUrl.query, parsedDestination.query)
+          delete parsedDestination.query
+
+          Object.assign(parsedUrl, parsedDestination)
+
+          let fsPathname = parsedUrl.pathname
+
+          
+
+          
+
+          if (fsPathname === '/'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+    const _app = App
+    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
+      let Document
+      let Error
+      let notFoundMod
+      ;[
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        { default: Document },
+        { default: Error },
+        
+      ] = await Promise.all([
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        Component,
+        App,
+        config,
+        __webpack_require__("senJ"),
+        __webpack_require__("/a9y"),
+        
+      ])
+
+      const fromExport = renderMode === 'export' || renderMode === true;
+      const nextStartMode = renderMode === 'passthrough'
+      let hasValidParams = true
+
+      
+
+      setLazyProp({ req }, 'cookies', getCookieParser(req))
+
+      const options = {
+        App,
+        Document,
+        buildManifest,
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        reactLoadableManifest,
+        canonicalBase: "",
+        buildId: "RTdwg5fJP2Ln8Bb-bM6YY",
+        assetPrefix: "",
+        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
+        previewProps: {previewModeId:"44752e512db9dcf0d3e4e4557a0ac171",previewModeSigningKey:"ba90f3009d532d5489883b1cd3642cb18cfb459e63ae91fb37d8bc9e4437ec7e",previewModeEncryptionKey:"5656498f511033039d486b88801ab2e1c155634225c7dc750a706c89abff46ef"},
+        env: process.env,
+        basePath: "",
+        ..._renderOpts
+      }
+      let _nextData = false
+      let parsedUrl
+
+      try {
+        // We need to trust the dynamic route params from the proxy
+        // to ensure we are using the correct values
+        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
+        let parsedUrl = parseUrl(req.url, true)
+        let routeNoAssetPath = parsedUrl.pathname
+        const origQuery = Object.assign({}, parsedUrl.query)
+
+        parsedUrl = handleRewrites(parsedUrl)
+
+        
+
+        // remove ?amp=1 from request URL if rendering for export
+        if (fromExport && parsedUrl.query.amp) {
+          const queryNoAmp = Object.assign({}, origQuery)
+          delete queryNoAmp.amp
+
+          req.url = formatUrl({
+            ...parsedUrl,
+            search: undefined,
+            query: queryNoAmp
+          })
+        }
+
+        if (parsedUrl.pathname.match(/_next\/data/)) {
+          const {
+            default: getRouteNoAssetPath,
+          } = __webpack_require__("1Ej0");
+          _nextData = true;
+          parsedUrl.pathname = getRouteNoAssetPath(
+            parsedUrl.pathname.replace(
+              new RegExp('/_next/data/RTdwg5fJP2Ln8Bb\-bM6YY/'),
+              '/'
+            ),
+            '.json'
+          );
+          routeNoAssetPath = parsedUrl.pathname
+        }
+
+        
+      const i18n = {}
+      const detectedLocale = undefined
+      const defaultLocale = undefined
+      const locales = undefined
+    
+
+        if (parsedUrl.query.nextInternalLocale) {
+          detectedLocale = parsedUrl.query.nextInternalLocale
+          delete parsedUrl.query.nextInternalLocale
+        }
+
+        const renderOpts = Object.assign(
+          {
+            Component,
+            pageConfig: config,
+            nextExport: fromExport,
+            isDataReq: _nextData,
+            locale: detectedLocale,
+            locales,
+            defaultLocale: i18n.defaultLocale,
+          },
+          options,
+        )
+
+        
+
+        const params = {};
+
+        const nowParams = null;
+
+        // make sure to set renderOpts to the correct params e.g. _params
+        // if provided from worker or params if we're parsing them here
+        renderOpts.params = _params || params
+
+        // make sure to normalize req.url on Vercel to strip dynamic params
+        // from the query which are added during routing
+        
+
+        // normalize request URL/asPath for fallback/revalidate pages since the
+        // proxy sets the request URL to the output's path for fallback pages
+        
+
+        // make sure to normalize asPath for revalidate and _next/data requests
+        // since the asPath should match what is shown on the client
+        if (
+          !fromExport &&
+          (getStaticProps || getServerSideProps)
+        ) {
+          
+
+          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
+          renderOpts.resolvedUrl = formatUrl({
+            ...parsedUrl,
+            query: origQuery
+          })
+
+          // For getServerSideProps we need to ensure we use the original URL
+          // and not the resolved URL to prevent a hydration mismatch on asPath
+          renderOpts.resolvedAsPath = getServerSideProps
+            ? formatUrl({
+              ...parsedUrl,
+              pathname: routeNoAssetPath,
+              query: origQuery,
+            })
+            : renderOpts.resolvedUrl
+        }
+
+        const isFallback = parsedUrl.query.__nextFallback
+
+        const previewData = tryGetPreviewData(req, res, options.previewProps)
+        const isPreviewMode = previewData !== false
+        if (false) {}
+        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
+
+        if (!renderMode) {
+          if (_nextData || getStaticProps || getServerSideProps) {
+            if (renderOpts.isNotFound) {
+              res.statusCode = 404
+
+              const NotFoundComponent = Error
+
+              const errPathname = "/_error"
+
+              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
+                getStaticProps: undefined,
+                getStaticPaths: undefined,
+                getServerSideProps: undefined,
+                Component: NotFoundComponent,
+                err: undefined,
+                locale: detectedLocale,
+                locales,
+                defaultLocale,
+              }))
+
+              sendPayload(req, res, result, 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            } else if (renderOpts.isRedirect && !_nextData) {
+              const redirect = {
+                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
+                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
+                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
+              }
+              const statusCode = getRedirectStatus(redirect)
+
+              if (false) {}
+
+              if (statusCode === PERMANENT_REDIRECT_STATUS) {
+                res.setHeader('Refresh', `0;url=${redirect.destination}`)
+              }
+
+              res.statusCode = statusCode
+              res.setHeader('Location', redirect.destination)
+              res.end()
+              return null
+            } else {
+              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
+                private: isPreviewMode,
+                stateful: !!getServerSideProps,
+                revalidate: renderOpts.revalidate,
+              })
+              return null
+            }
+          }
+        } else if (isPreviewMode) {
+          res.setHeader(
+            'Cache-Control',
+            'private, no-cache, no-store, max-age=0, must-revalidate'
+          )
+        }
+
+        if (renderMode) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (!parsedUrl) {
+          parsedUrl = parseUrl(req.url, true)
+        }
+
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+        } else if (err.code === 'DECODE_FAILED') {
+          // TODO: better error?
+          res.statusCode = 400
+        } else {
+          console.error('Unhandled error during request:', err)
+
+          // Backwards compat (call getInitialProps in custom error):
+          try {
+            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+              getStaticProps: undefined,
+              getStaticPaths: undefined,
+              getServerSideProps: undefined,
+              Component: Error,
+              err: err,
+              // Short-circuit rendering:
+              isDataReq: true
+            }))
+          } catch (underErrorErr) {
+            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
+          }
+
+          // Throw the error to crash the serverless function
+          if (isResSent(res)) {
+            console.error('!!! WARNING !!!')
+            console.error(
+              'Your function crashed, but closed the response before allowing the function to exit.\n' +
+              'This may cause unexpected behavior for the next request.'
+            )
+            console.error('!!! WARNING !!!')
+          }
+          throw err
+        }
+
+        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+          getStaticProps: undefined,
+          getStaticPaths: undefined,
+          getServerSideProps: undefined,
+          Component: Error,
+          err: res.statusCode === 404 ? undefined : err
+        }))
+        return result
+      }
+    }
+    async function render (req, res) {
+      try {
+        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
+        }
+      } catch(err) {
+        console.error(err)
+        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+        // Throw the error to crash the serverless function
+        throw err
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "B8du":
 /***/ (function(module, exports) {
 
@@ -9113,13 +9248,6 @@ function copySymbolsIn(source, object) {
 
 module.exports = copySymbolsIn;
 
-
-/***/ }),
-
-/***/ "EEX6":
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/service-thumb-6a076b8618df34279774bf61694e026f.png";
 
 /***/ }),
 
@@ -22368,7 +22496,7 @@ module.exports = arrayFilter;
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/HVGsCkwSzd8kBg_FVhjzw/_buildManifest.js\",\"static/HVGsCkwSzd8kBg_FVhjzw/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.1edabdd63c6ae9d62c9f.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-cac53304f8f4d110ecaf.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-a98cee78eb8282e29fb6.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/RTdwg5fJP2Ln8Bb-bM6YY/_buildManifest.js\",\"static/RTdwg5fJP2Ln8Bb-bM6YY/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/1bfc9850.91058a39d30b31ead745.js\",\"static/chunks/95b64a6e.1edabdd63c6ae9d62c9f.js\",\"static/chunks/11100001.83507a56f5bc8a552ca3.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/index-7ea0928ec93921de44c1.js\"],\"/_app\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/css/fea5101357688621a7ad.css\",\"static/chunks/pages/_app-39afd4236165386c1803.js\"],\"/_error\":[\"static/chunks/main-33ee9a3fd7516ef5bb7f.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.d6f4b26821e9a500fc3a.js\",\"static/chunks/commons.45c9c704e8d5f651188e.js\",\"static/chunks/pages/_error-1340120886cd4b266042.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -33144,12 +33272,6 @@ const text_feature_styles = {
     mb: "30px"
   }
 };
-// EXTERNAL MODULE: ./node_modules/react-modal-video/lib/index.js
-var react_modal_video_lib = __webpack_require__("60Bi");
-
-// EXTERNAL MODULE: ./src/assets/service-thumb.png
-var service_thumb = __webpack_require__("EEX6");
-
 // EXTERNAL MODULE: ./src/assets/shape-pattern1.png
 var shape_pattern1 = __webpack_require__("Tdnd");
 
@@ -33169,9 +33291,6 @@ var Earth_default = /*#__PURE__*/__webpack_require__.n(Earth);
 var service_section_jsx = react_default.a.createElement;
 
 /** @jsx jsx */
-
-
-
 
 
 
@@ -33206,7 +33325,7 @@ function ServiceSection() {
     sx: service_section_styles.containerBox
   }, Object(dist["jsx"])(dist["Image"], {
     src: soapnut_default.a,
-    width: "550px",
+    width: "650px",
     alt: "Thumbnail"
   }), Object(dist["jsx"])(dist["Box"], {
     sx: service_section_styles.contentBox
@@ -33558,6 +33677,7 @@ function CoreFeature() {
     btnURL: core_feature_data.btnURL
   })), Object(dist["jsx"])(dist["Image"], {
     src: soap_nuts_default.a,
+    width: "650px",
     alt: "soap nuts"
   }), Object(dist["jsx"])(dist["Box"], {
     sx: core_feature_styles.shapeBox
@@ -33629,46 +33749,61 @@ const guides = {
   laundry: [{
     id: 1,
     title: "Fill your ball bag",
-    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+    text: "Pop about 5 or 6 SoapyBalls (approx 10 half shells) into the supplied ball bag."
   }, {
     id: 2,
     title: "Activate your balls",
-    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+    text: "If you do not have a hot water setting on your washer then soak balls in a glass of warm water for 5 mins before"
   }, {
     id: 3,
     title: "Magic SoapyBalls Time",
-    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+    text: "When agitated in water, the soap berries release saponin, which is a natural cleaner."
   }, {
     id: 4,
     title: "After care",
-    text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+    text: "Save the used shells, as they can be reused up to FOUR more times. Let them dry out naturally or place on radiator"
   }],
-  shampoo: [],
+  shower_gel: [{
+    id: 1,
+    title: "Boil you balls",
+    text: "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes"
+  }, {
+    id: 2,
+    title: "Spice things up",
+    text: "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil"
+  }, {
+    id: 3,
+    title: "Froffing and foaming",
+    text: "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,"
+  }, {
+    id: 4,
+    title: "Bath time",
+    text: "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it"
+  }],
   soap: [],
   cleaning: []
 };
 const workflow_data = [{
   id: 1,
-  title: "Fill your ball bag",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  title: "Boil you balls",
+  text: "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes"
 }, {
   id: 2,
-  title: "Activate your balls",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  title: "Spice things up",
+  text: "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil"
 }, {
   id: 3,
-  title: "Magic SoapyBalls Time",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  title: "Froffing and foaming",
+  text: "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,"
 }, {
   id: 4,
-  title: "After care",
-  text: "Get your blood tests delivered at home collect a sample from the your blood tests."
+  title: "Bath time",
+  text: "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it"
 }];
 function WorkFlow() {
   const {
     laundry,
-    shampoo,
-    soap,
+    shower_gel,
     cleaning
   } = guides;
   const {
@@ -33685,20 +33820,15 @@ function WorkFlow() {
         active: "laundry",
         instructions: laundry
       });
-    } else if (guide == "shampoo") {
+    } else if (guide == "shower_gel") {
       setState({
-        active: "shampoo",
-        instructions: shampoo
-      });
-    } else if (guide == "soap") {
-      setState({
-        active: "soap",
-        instructions: shampoo
+        active: "shower_gel",
+        instructions: shower_gel
       });
     } else if (guide == "cleaning") {
       setState({
         active: "cleaning",
-        instructions: shampoo
+        instructions: cleaning
       });
     }
   };
@@ -33720,19 +33850,14 @@ function WorkFlow() {
     "aria-label": "Monthly",
     onClick: () => handleInstructions("laundry")
   }, "Laundry"), Object(dist["jsx"])("button", {
-    className: state.active == "shampoo" ? "active" : "",
+    className: state.active == "shower_gel" ? "active" : "",
     type: "button",
-    "aria-label": "Annual",
-    onClick: () => handleInstructions("shampoo")
-  }, "Shampoo"), Object(dist["jsx"])("button", {
-    className: state.active == "soap" ? "active" : "",
-    type: "button",
-    "aria-label": "Annual",
-    onClick: () => handleInstructions("soap")
-  }, "Soap"), Object(dist["jsx"])("button", {
+    "aria-label": "Shower Gel",
+    onClick: () => handleInstructions("shower_gel")
+  }, "Shower Gel"), Object(dist["jsx"])("button", {
     className: state.active == "cleaning" ? "active" : "",
     type: "button",
-    "aria-label": "Annual",
+    "aria-label": "Cleaning",
     onClick: () => handleInstructions("cleaning")
   }, "Cleaning"))), Object(dist["jsx"])(dist["Grid"], {
     sx: workflow_styles.grid
@@ -34197,7 +34322,7 @@ function package_defineProperty(obj, key, value) { if (key in obj) { Object.defi
 
 
 const productInfo = [{
-  title: "100",
+  title: "50",
   headerIcon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
   description: "Sample our SoapyBalls - it's a great way to get familiar with our balls.",
   points: [{
@@ -34213,16 +34338,21 @@ const productInfo = [{
   }, {
     id: 3,
     icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
-    text: "Makes over 500ml of Shampoo",
+    text: "Makes over 1 litre of Shower gel",
     isAvailable: true
   }, {
     id: 3,
     icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
     text: "1 re-usable ball bag included",
     isAvailable: true
+  }, {
+    id: 4,
+    icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
+    text: "Atleast 200 grams of SoapyBalls",
+    isAvailable: true
   }]
 }, {
-  title: "300",
+  title: "150",
   headerIcon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
   description: "Buy 300 SoapyBalls and start saving the planet today.",
   points: [{
@@ -34245,9 +34375,14 @@ const productInfo = [{
     icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
     text: "3 re-usable ball bags included",
     isAvailable: true
+  }, {
+    id: 4,
+    icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
+    text: "Atleast 600 grams of SoapyBalls",
+    isAvailable: true
   }]
 }, {
-  title: "500",
+  title: "250",
   headerIcon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
   description: "Get our big bag of SoapyBalls - Great for families & house shares!",
   points: [{
@@ -34269,6 +34404,11 @@ const productInfo = [{
     id: 3,
     icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
     text: "5 re-usable ball bags included",
+    isAvailable: true
+  }, {
+    id: 4,
+    icon: Object(dist["jsx"])(IoIosCheckmarkCircle, null),
+    text: "Atleast 1kg of SoapyBalls",
     isAvailable: true
   }]
 }];
@@ -35070,471 +35210,6 @@ async function getServerSideProps() {
 
 /***/ }),
 
-/***/ "S3Uj":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = exports.EXITING = exports.ENTERED = exports.ENTERING = exports.EXITED = exports.UNMOUNTED = void 0;
-
-var PropTypes = _interopRequireWildcard(__webpack_require__("17x9"));
-
-var _react = _interopRequireDefault(__webpack_require__("q1tI"));
-
-var _reactDom = _interopRequireDefault(__webpack_require__("i8i4"));
-
-var _reactLifecyclesCompat = __webpack_require__("gcKQ");
-
-var _PropTypes = __webpack_require__("xfxO");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
-var UNMOUNTED = 'unmounted';
-exports.UNMOUNTED = UNMOUNTED;
-var EXITED = 'exited';
-exports.EXITED = EXITED;
-var ENTERING = 'entering';
-exports.ENTERING = ENTERING;
-var ENTERED = 'entered';
-exports.ENTERED = ENTERED;
-var EXITING = 'exiting';
-/**
- * The Transition component lets you describe a transition from one component
- * state to another _over time_ with a simple declarative API. Most commonly
- * it's used to animate the mounting and unmounting of a component, but can also
- * be used to describe in-place transition states as well.
- *
- * ---
- *
- * **Note**: `Transition` is a platform-agnostic base component. If you're using
- * transitions in CSS, you'll probably want to use
- * [`CSSTransition`](https://reactcommunity.org/react-transition-group/css-transition)
- * instead. It inherits all the features of `Transition`, but contains
- * additional features necessary to play nice with CSS transitions (hence the
- * name of the component).
- *
- * ---
- *
- * By default the `Transition` component does not alter the behavior of the
- * component it renders, it only tracks "enter" and "exit" states for the
- * components. It's up to you to give meaning and effect to those states. For
- * example we can add styles to a component when it enters or exits:
- *
- * ```jsx
- * import { Transition } from 'react-transition-group';
- *
- * const duration = 300;
- *
- * const defaultStyle = {
- *   transition: `opacity ${duration}ms ease-in-out`,
- *   opacity: 0,
- * }
- *
- * const transitionStyles = {
- *   entering: { opacity: 0 },
- *   entered:  { opacity: 1 },
- * };
- *
- * const Fade = ({ in: inProp }) => (
- *   <Transition in={inProp} timeout={duration}>
- *     {state => (
- *       <div style={{
- *         ...defaultStyle,
- *         ...transitionStyles[state]
- *       }}>
- *         I'm a fade Transition!
- *       </div>
- *     )}
- *   </Transition>
- * );
- * ```
- *
- * There are 4 main states a Transition can be in:
- *  - `'entering'`
- *  - `'entered'`
- *  - `'exiting'`
- *  - `'exited'`
- *
- * Transition state is toggled via the `in` prop. When `true` the component
- * begins the "Enter" stage. During this stage, the component will shift from
- * its current transition state, to `'entering'` for the duration of the
- * transition and then to the `'entered'` stage once it's complete. Let's take
- * the following example (we'll use the
- * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook):
- *
- * ```jsx
- * function App() {
- *   const [inProp, setInProp] = useState(false);
- *   return (
- *     <div>
- *       <Transition in={inProp} timeout={500}>
- *         {state => (
- *           // ...
- *         )}
- *       </Transition>
- *       <button onClick={() => setInProp(true)}>
- *         Click to Enter
- *       </button>
- *     </div>
- *   );
- * }
- * ```
- *
- * When the button is clicked the component will shift to the `'entering'` state
- * and stay there for 500ms (the value of `timeout`) before it finally switches
- * to `'entered'`.
- *
- * When `in` is `false` the same thing happens except the state moves from
- * `'exiting'` to `'exited'`.
- */
-
-exports.EXITING = EXITING;
-
-var Transition =
-/*#__PURE__*/
-function (_React$Component) {
-  _inheritsLoose(Transition, _React$Component);
-
-  function Transition(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    var parentGroup = context.transitionGroup; // In the context of a TransitionGroup all enters are really appears
-
-    var appear = parentGroup && !parentGroup.isMounting ? props.enter : props.appear;
-    var initialStatus;
-    _this.appearStatus = null;
-
-    if (props.in) {
-      if (appear) {
-        initialStatus = EXITED;
-        _this.appearStatus = ENTERING;
-      } else {
-        initialStatus = ENTERED;
-      }
-    } else {
-      if (props.unmountOnExit || props.mountOnEnter) {
-        initialStatus = UNMOUNTED;
-      } else {
-        initialStatus = EXITED;
-      }
-    }
-
-    _this.state = {
-      status: initialStatus
-    };
-    _this.nextCallback = null;
-    return _this;
-  }
-
-  var _proto = Transition.prototype;
-
-  _proto.getChildContext = function getChildContext() {
-    return {
-      transitionGroup: null // allows for nested Transitions
-
-    };
-  };
-
-  Transition.getDerivedStateFromProps = function getDerivedStateFromProps(_ref, prevState) {
-    var nextIn = _ref.in;
-
-    if (nextIn && prevState.status === UNMOUNTED) {
-      return {
-        status: EXITED
-      };
-    }
-
-    return null;
-  }; // getSnapshotBeforeUpdate(prevProps) {
-  //   let nextStatus = null
-  //   if (prevProps !== this.props) {
-  //     const { status } = this.state
-  //     if (this.props.in) {
-  //       if (status !== ENTERING && status !== ENTERED) {
-  //         nextStatus = ENTERING
-  //       }
-  //     } else {
-  //       if (status === ENTERING || status === ENTERED) {
-  //         nextStatus = EXITING
-  //       }
-  //     }
-  //   }
-  //   return { nextStatus }
-  // }
-
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.updateStatus(true, this.appearStatus);
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    var nextStatus = null;
-
-    if (prevProps !== this.props) {
-      var status = this.state.status;
-
-      if (this.props.in) {
-        if (status !== ENTERING && status !== ENTERED) {
-          nextStatus = ENTERING;
-        }
-      } else {
-        if (status === ENTERING || status === ENTERED) {
-          nextStatus = EXITING;
-        }
-      }
-    }
-
-    this.updateStatus(false, nextStatus);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.cancelNextCallback();
-  };
-
-  _proto.getTimeouts = function getTimeouts() {
-    var timeout = this.props.timeout;
-    var exit, enter, appear;
-    exit = enter = appear = timeout;
-
-    if (timeout != null && typeof timeout !== 'number') {
-      exit = timeout.exit;
-      enter = timeout.enter; // TODO: remove fallback for next major
-
-      appear = timeout.appear !== undefined ? timeout.appear : enter;
-    }
-
-    return {
-      exit: exit,
-      enter: enter,
-      appear: appear
-    };
-  };
-
-  _proto.updateStatus = function updateStatus(mounting, nextStatus) {
-    if (mounting === void 0) {
-      mounting = false;
-    }
-
-    if (nextStatus !== null) {
-      // nextStatus will always be ENTERING or EXITING.
-      this.cancelNextCallback();
-
-      var node = _reactDom.default.findDOMNode(this);
-
-      if (nextStatus === ENTERING) {
-        this.performEnter(node, mounting);
-      } else {
-        this.performExit(node);
-      }
-    } else if (this.props.unmountOnExit && this.state.status === EXITED) {
-      this.setState({
-        status: UNMOUNTED
-      });
-    }
-  };
-
-  _proto.performEnter = function performEnter(node, mounting) {
-    var _this2 = this;
-
-    var enter = this.props.enter;
-    var appearing = this.context.transitionGroup ? this.context.transitionGroup.isMounting : mounting;
-    var timeouts = this.getTimeouts();
-    var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
-    // if we are mounting and running this it means appear _must_ be set
-
-    if (!mounting && !enter) {
-      this.safeSetState({
-        status: ENTERED
-      }, function () {
-        _this2.props.onEntered(node);
-      });
-      return;
-    }
-
-    this.props.onEnter(node, appearing);
-    this.safeSetState({
-      status: ENTERING
-    }, function () {
-      _this2.props.onEntering(node, appearing);
-
-      _this2.onTransitionEnd(node, enterTimeout, function () {
-        _this2.safeSetState({
-          status: ENTERED
-        }, function () {
-          _this2.props.onEntered(node, appearing);
-        });
-      });
-    });
-  };
-
-  _proto.performExit = function performExit(node) {
-    var _this3 = this;
-
-    var exit = this.props.exit;
-    var timeouts = this.getTimeouts(); // no exit animation skip right to EXITED
-
-    if (!exit) {
-      this.safeSetState({
-        status: EXITED
-      }, function () {
-        _this3.props.onExited(node);
-      });
-      return;
-    }
-
-    this.props.onExit(node);
-    this.safeSetState({
-      status: EXITING
-    }, function () {
-      _this3.props.onExiting(node);
-
-      _this3.onTransitionEnd(node, timeouts.exit, function () {
-        _this3.safeSetState({
-          status: EXITED
-        }, function () {
-          _this3.props.onExited(node);
-        });
-      });
-    });
-  };
-
-  _proto.cancelNextCallback = function cancelNextCallback() {
-    if (this.nextCallback !== null) {
-      this.nextCallback.cancel();
-      this.nextCallback = null;
-    }
-  };
-
-  _proto.safeSetState = function safeSetState(nextState, callback) {
-    // This shouldn't be necessary, but there are weird race conditions with
-    // setState callbacks and unmounting in testing, so always make sure that
-    // we can cancel any pending setState callbacks after we unmount.
-    callback = this.setNextCallback(callback);
-    this.setState(nextState, callback);
-  };
-
-  _proto.setNextCallback = function setNextCallback(callback) {
-    var _this4 = this;
-
-    var active = true;
-
-    this.nextCallback = function (event) {
-      if (active) {
-        active = false;
-        _this4.nextCallback = null;
-        callback(event);
-      }
-    };
-
-    this.nextCallback.cancel = function () {
-      active = false;
-    };
-
-    return this.nextCallback;
-  };
-
-  _proto.onTransitionEnd = function onTransitionEnd(node, timeout, handler) {
-    this.setNextCallback(handler);
-    var doesNotHaveTimeoutOrListener = timeout == null && !this.props.addEndListener;
-
-    if (!node || doesNotHaveTimeoutOrListener) {
-      setTimeout(this.nextCallback, 0);
-      return;
-    }
-
-    if (this.props.addEndListener) {
-      this.props.addEndListener(node, this.nextCallback);
-    }
-
-    if (timeout != null) {
-      setTimeout(this.nextCallback, timeout);
-    }
-  };
-
-  _proto.render = function render() {
-    var status = this.state.status;
-
-    if (status === UNMOUNTED) {
-      return null;
-    }
-
-    var _this$props = this.props,
-        children = _this$props.children,
-        childProps = _objectWithoutPropertiesLoose(_this$props, ["children"]); // filter props for Transtition
-
-
-    delete childProps.in;
-    delete childProps.mountOnEnter;
-    delete childProps.unmountOnExit;
-    delete childProps.appear;
-    delete childProps.enter;
-    delete childProps.exit;
-    delete childProps.timeout;
-    delete childProps.addEndListener;
-    delete childProps.onEnter;
-    delete childProps.onEntering;
-    delete childProps.onEntered;
-    delete childProps.onExit;
-    delete childProps.onExiting;
-    delete childProps.onExited;
-
-    if (typeof children === 'function') {
-      return children(status, childProps);
-    }
-
-    var child = _react.default.Children.only(children);
-
-    return _react.default.cloneElement(child, childProps);
-  };
-
-  return Transition;
-}(_react.default.Component);
-
-Transition.contextTypes = {
-  transitionGroup: PropTypes.object
-};
-Transition.childContextTypes = {
-  transitionGroup: function transitionGroup() {}
-};
-Transition.propTypes =  false ? undefined : {};
-
-function noop() {}
-
-Transition.defaultProps = {
-  in: false,
-  mountOnEnter: false,
-  unmountOnExit: false,
-  appear: false,
-  enter: true,
-  exit: true,
-  onEnter: noop,
-  onEntering: noop,
-  onEntered: noop,
-  onExit: noop,
-  onExiting: noop,
-  onExited: noop
-};
-Transition.UNMOUNTED = 0;
-Transition.EXITED = 1;
-Transition.ENTERING = 2;
-Transition.ENTERED = 3;
-Transition.EXITING = 4;
-
-var _default = (0, _reactLifecyclesCompat.polyfill)(Transition);
-
-exports.default = _default;
-
-/***/ }),
-
 /***/ "S3md":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35898,270 +35573,6 @@ function hashClear() {
 
 module.exports = hashClear;
 
-
-/***/ }),
-
-/***/ "Si88":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var PropTypes = _interopRequireWildcard(__webpack_require__("17x9"));
-
-var _addClass = _interopRequireDefault(__webpack_require__("ycFn"));
-
-var _removeClass = _interopRequireDefault(__webpack_require__("VOcB"));
-
-var _react = _interopRequireDefault(__webpack_require__("q1tI"));
-
-var _Transition = _interopRequireDefault(__webpack_require__("S3Uj"));
-
-var _PropTypes = __webpack_require__("xfxO");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
-var addClass = function addClass(node, classes) {
-  return node && classes && classes.split(' ').forEach(function (c) {
-    return (0, _addClass.default)(node, c);
-  });
-};
-
-var removeClass = function removeClass(node, classes) {
-  return node && classes && classes.split(' ').forEach(function (c) {
-    return (0, _removeClass.default)(node, c);
-  });
-};
-/**
- * A transition component inspired by the excellent
- * [ng-animate](http://www.nganimate.org/) library, you should use it if you're
- * using CSS transitions or animations. It's built upon the
- * [`Transition`](https://reactcommunity.org/react-transition-group/transition)
- * component, so it inherits all of its props.
- *
- * `CSSTransition` applies a pair of class names during the `appear`, `enter`,
- * and `exit` states of the transition. The first class is applied and then a
- * second `*-active` class in order to activate the CSSS transition. After the
- * transition, matching `*-done` class names are applied to persist the
- * transition state.
- *
- * ```jsx
- * function App() {
- *   const [inProp, setInProp] = useState(false);
- *   return (
- *     <div>
- *       <CSSTransition in={inProp} timeout={200} classNames="my-node">
- *         <div>
- *           {"I'll receive my-node-* classes"}
- *         </div>
- *       </CSSTransition>
- *       <button type="button" onClick={() => setInProp(true)}>
- *         Click to Enter
- *       </button>
- *     </div>
- *   );
- * }
- * ```
- *
- * When the `in` prop is set to `true`, the child component will first receive
- * the class `example-enter`, then the `example-enter-active` will be added in
- * the next tick. `CSSTransition` [forces a
- * reflow](https://github.com/reactjs/react-transition-group/blob/5007303e729a74be66a21c3e2205e4916821524b/src/CSSTransition.js#L208-L215)
- * between before adding the `example-enter-active`. This is an important trick
- * because it allows us to transition between `example-enter` and
- * `example-enter-active` even though they were added immediately one after
- * another. Most notably, this is what makes it possible for us to animate
- * _appearance_.
- *
- * ```css
- * .my-node-enter {
- *   opacity: 0;
- * }
- * .my-node-enter-active {
- *   opacity: 1;
- *   transition: opacity 200ms;
- * }
- * .my-node-exit {
- *   opacity: 1;
- * }
- * .my-node-exit-active {
- *   opacity: 0;
- *   transition: opacity: 200ms;
- * }
- * ```
- *
- * `*-active` classes represent which styles you want to animate **to**.
- */
-
-
-var CSSTransition =
-/*#__PURE__*/
-function (_React$Component) {
-  _inheritsLoose(CSSTransition, _React$Component);
-
-  function CSSTransition() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-
-    _this.onEnter = function (node, appearing) {
-      var _this$getClassNames = _this.getClassNames(appearing ? 'appear' : 'enter'),
-          className = _this$getClassNames.className;
-
-      _this.removeClasses(node, 'exit');
-
-      addClass(node, className);
-
-      if (_this.props.onEnter) {
-        _this.props.onEnter(node, appearing);
-      }
-    };
-
-    _this.onEntering = function (node, appearing) {
-      var _this$getClassNames2 = _this.getClassNames(appearing ? 'appear' : 'enter'),
-          activeClassName = _this$getClassNames2.activeClassName;
-
-      _this.reflowAndAddClass(node, activeClassName);
-
-      if (_this.props.onEntering) {
-        _this.props.onEntering(node, appearing);
-      }
-    };
-
-    _this.onEntered = function (node, appearing) {
-      var appearClassName = _this.getClassNames('appear').doneClassName;
-
-      var enterClassName = _this.getClassNames('enter').doneClassName;
-
-      var doneClassName = appearing ? appearClassName + " " + enterClassName : enterClassName;
-
-      _this.removeClasses(node, appearing ? 'appear' : 'enter');
-
-      addClass(node, doneClassName);
-
-      if (_this.props.onEntered) {
-        _this.props.onEntered(node, appearing);
-      }
-    };
-
-    _this.onExit = function (node) {
-      var _this$getClassNames3 = _this.getClassNames('exit'),
-          className = _this$getClassNames3.className;
-
-      _this.removeClasses(node, 'appear');
-
-      _this.removeClasses(node, 'enter');
-
-      addClass(node, className);
-
-      if (_this.props.onExit) {
-        _this.props.onExit(node);
-      }
-    };
-
-    _this.onExiting = function (node) {
-      var _this$getClassNames4 = _this.getClassNames('exit'),
-          activeClassName = _this$getClassNames4.activeClassName;
-
-      _this.reflowAndAddClass(node, activeClassName);
-
-      if (_this.props.onExiting) {
-        _this.props.onExiting(node);
-      }
-    };
-
-    _this.onExited = function (node) {
-      var _this$getClassNames5 = _this.getClassNames('exit'),
-          doneClassName = _this$getClassNames5.doneClassName;
-
-      _this.removeClasses(node, 'exit');
-
-      addClass(node, doneClassName);
-
-      if (_this.props.onExited) {
-        _this.props.onExited(node);
-      }
-    };
-
-    _this.getClassNames = function (type) {
-      var classNames = _this.props.classNames;
-      var isStringClassNames = typeof classNames === 'string';
-      var prefix = isStringClassNames && classNames ? classNames + '-' : '';
-      var className = isStringClassNames ? prefix + type : classNames[type];
-      var activeClassName = isStringClassNames ? className + '-active' : classNames[type + 'Active'];
-      var doneClassName = isStringClassNames ? className + '-done' : classNames[type + 'Done'];
-      return {
-        className: className,
-        activeClassName: activeClassName,
-        doneClassName: doneClassName
-      };
-    };
-
-    return _this;
-  }
-
-  var _proto = CSSTransition.prototype;
-
-  _proto.removeClasses = function removeClasses(node, type) {
-    var _this$getClassNames6 = this.getClassNames(type),
-        className = _this$getClassNames6.className,
-        activeClassName = _this$getClassNames6.activeClassName,
-        doneClassName = _this$getClassNames6.doneClassName;
-
-    className && removeClass(node, className);
-    activeClassName && removeClass(node, activeClassName);
-    doneClassName && removeClass(node, doneClassName);
-  };
-
-  _proto.reflowAndAddClass = function reflowAndAddClass(node, className) {
-    // This is for to force a repaint,
-    // which is necessary in order to transition styles when adding a class name.
-    if (className) {
-      /* eslint-disable no-unused-expressions */
-      node && node.scrollTop;
-      /* eslint-enable no-unused-expressions */
-
-      addClass(node, className);
-    }
-  };
-
-  _proto.render = function render() {
-    var props = _extends({}, this.props);
-
-    delete props.classNames;
-    return _react.default.createElement(_Transition.default, _extends({}, props, {
-      onEnter: this.onEnter,
-      onEntered: this.onEntered,
-      onEntering: this.onEntering,
-      onExit: this.onExit,
-      onExiting: this.onExiting,
-      onExited: this.onExited
-    }));
-  };
-
-  return CSSTransition;
-}(_react.default.Component);
-
-CSSTransition.defaultProps = {
-  classNames: ''
-};
-CSSTransition.propTypes =  false ? undefined : {};
-var _default = CSSTransition;
-exports.default = _default;
-module.exports = exports["default"];
 
 /***/ }),
 
@@ -37923,22 +37334,6 @@ function getAmpPath(ampPath, asPath) {
 /***/ (function(module, exports) {
 
 
-
-/***/ }),
-
-/***/ "VOcB":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function replaceClassName(origClass, classToRemove) {
-  return origClass.replace(new RegExp('(^|\\s)' + classToRemove + '(?:\\s|$)', 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
-}
-
-module.exports = function removeClass(element, className) {
-  if (element.classList) element.classList.remove(className);else if (typeof element.className === 'string') element.className = replaceClassName(element.className, className);else element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
-};
 
 /***/ }),
 
@@ -44335,176 +43730,6 @@ module.exports = {
     "chars": "���������������������������������กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮฯะัาำิีึืฺุู����฿เแโใไๅๆ็่้๊๋์ํ๎๏๐๑๒๓๔๕๖๗๘๙๚๛����"
   }
 }
-
-/***/ }),
-
-/***/ "gcKQ":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-function componentWillMount() {
-  // Call this.constructor.gDSFP to support sub-classes.
-  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
-  if (state !== null && state !== undefined) {
-    this.setState(state);
-  }
-}
-
-function componentWillReceiveProps(nextProps) {
-  // Call this.constructor.gDSFP to support sub-classes.
-  // Use the setState() updater to ensure state isn't stale in certain edge cases.
-  function updater(prevState) {
-    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
-    return state !== null && state !== undefined ? state : null;
-  }
-  // Binding "this" is important for shallow renderer support.
-  this.setState(updater.bind(this));
-}
-
-function componentWillUpdate(nextProps, nextState) {
-  try {
-    var prevProps = this.props;
-    var prevState = this.state;
-    this.props = nextProps;
-    this.state = nextState;
-    this.__reactInternalSnapshotFlag = true;
-    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
-      prevProps,
-      prevState
-    );
-  } finally {
-    this.props = prevProps;
-    this.state = prevState;
-  }
-}
-
-// React may warn about cWM/cWRP/cWU methods being deprecated.
-// Add a flag to suppress these warnings for this special case.
-componentWillMount.__suppressDeprecationWarning = true;
-componentWillReceiveProps.__suppressDeprecationWarning = true;
-componentWillUpdate.__suppressDeprecationWarning = true;
-
-function polyfill(Component) {
-  var prototype = Component.prototype;
-
-  if (!prototype || !prototype.isReactComponent) {
-    throw new Error('Can only polyfill class components');
-  }
-
-  if (
-    typeof Component.getDerivedStateFromProps !== 'function' &&
-    typeof prototype.getSnapshotBeforeUpdate !== 'function'
-  ) {
-    return Component;
-  }
-
-  // If new component APIs are defined, "unsafe" lifecycles won't be called.
-  // Error if any of these lifecycles are present,
-  // Because they would work differently between older and newer (16.3+) versions of React.
-  var foundWillMountName = null;
-  var foundWillReceivePropsName = null;
-  var foundWillUpdateName = null;
-  if (typeof prototype.componentWillMount === 'function') {
-    foundWillMountName = 'componentWillMount';
-  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
-    foundWillMountName = 'UNSAFE_componentWillMount';
-  }
-  if (typeof prototype.componentWillReceiveProps === 'function') {
-    foundWillReceivePropsName = 'componentWillReceiveProps';
-  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
-    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
-  }
-  if (typeof prototype.componentWillUpdate === 'function') {
-    foundWillUpdateName = 'componentWillUpdate';
-  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
-    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
-  }
-  if (
-    foundWillMountName !== null ||
-    foundWillReceivePropsName !== null ||
-    foundWillUpdateName !== null
-  ) {
-    var componentName = Component.displayName || Component.name;
-    var newApiName =
-      typeof Component.getDerivedStateFromProps === 'function'
-        ? 'getDerivedStateFromProps()'
-        : 'getSnapshotBeforeUpdate()';
-
-    throw Error(
-      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
-        componentName +
-        ' uses ' +
-        newApiName +
-        ' but also contains the following legacy lifecycles:' +
-        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
-        (foundWillReceivePropsName !== null
-          ? '\n  ' + foundWillReceivePropsName
-          : '') +
-        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
-        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
-        'https://fb.me/react-async-component-lifecycle-hooks'
-    );
-  }
-
-  // React <= 16.2 does not support static getDerivedStateFromProps.
-  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
-  // Newer versions of React will ignore these lifecycles if gDSFP exists.
-  if (typeof Component.getDerivedStateFromProps === 'function') {
-    prototype.componentWillMount = componentWillMount;
-    prototype.componentWillReceiveProps = componentWillReceiveProps;
-  }
-
-  // React <= 16.2 does not support getSnapshotBeforeUpdate.
-  // As a workaround, use cWU to invoke the new lifecycle.
-  // Newer versions of React will ignore that lifecycle if gSBU exists.
-  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
-    if (typeof prototype.componentDidUpdate !== 'function') {
-      throw new Error(
-        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
-      );
-    }
-
-    prototype.componentWillUpdate = componentWillUpdate;
-
-    var componentDidUpdate = prototype.componentDidUpdate;
-
-    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
-      prevProps,
-      prevState,
-      maybeSnapshot
-    ) {
-      // 16.3+ will not execute our will-update method;
-      // It will pass a snapshot value to did-update though.
-      // Older versions will require our polyfilled will-update value.
-      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
-      // Because for <= 15.x versions this might be a "prevContext" object.
-      // We also can't just check "__reactInternalSnapshot",
-      // Because get-snapshot might return a falsy value.
-      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
-      var snapshot = this.__reactInternalSnapshotFlag
-        ? this.__reactInternalSnapshot
-        : maybeSnapshot;
-
-      componentDidUpdate.call(this, prevProps, prevState, snapshot);
-    };
-  }
-
-  return Component;
-}
-
-exports.polyfill = polyfill;
-
 
 /***/ }),
 
@@ -56004,416 +55229,6 @@ if (true) {
 
 /***/ }),
 
-/***/ "uu2b":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-
-    
-    
-    
-    const {isResSent} = __webpack_require__("g/15");
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([])
-  
-    
-    const runtimeConfig = {}
-    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
-    const {parse: parseQs} = __webpack_require__("8xkj")
-    const { renderToHTML } = __webpack_require__("/bjS");
-    const { tryGetPreviewData } = __webpack_require__("PCLx");
-    const { denormalizePagePath } = __webpack_require__("wkBG")
-    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
-    const {sendPayload} = __webpack_require__("KyNf");
-    const {getRedirectStatus} = __webpack_require__("FwDC");
-    const {PERMANENT_REDIRECT_STATUS} = __webpack_require__("w7wo")
-    const buildManifest = __webpack_require__("LZ9C");
-    const reactLoadableManifest = __webpack_require__("67Bq");
-    const { normalizeLocalePath } = __webpack_require__("3wub")
-    const i18n = {}
-
-    const appMod = __webpack_require__("IlR1")
-    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-
-    
-    
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
-  
-
-    const compMod = __webpack_require__("RXBc")
-
-    let Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    let getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-    let getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-    let getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-
-    // kept for detecting legacy exports
-    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-
-    
-    
-    
-    const getCustomRouteMatcher = pathMatch(true)
-    const prepareDestination = __webpack_require__("6mnf").default
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          const { parsedDestination } = prepareDestination(
-            rewrite.destination,
-            params,
-            parsedUrl.query,
-            true
-          )
-
-          Object.assign(parsedUrl.query, parsedDestination.query)
-          delete parsedDestination.query
-
-          Object.assign(parsedUrl, parsedDestination)
-
-          let fsPathname = parsedUrl.pathname
-
-          
-
-          
-
-          if (fsPathname === '/'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-    const _app = App
-    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
-      let Document
-      let Error
-      let notFoundMod
-      ;[
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        { default: Document },
-        { default: Error },
-        
-      ] = await Promise.all([
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        Component,
-        App,
-        config,
-        __webpack_require__("senJ"),
-        __webpack_require__("/a9y"),
-        
-      ])
-
-      const fromExport = renderMode === 'export' || renderMode === true;
-      const nextStartMode = renderMode === 'passthrough'
-      let hasValidParams = true
-
-      
-
-      setLazyProp({ req }, 'cookies', getCookieParser(req))
-
-      const options = {
-        App,
-        Document,
-        buildManifest,
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        reactLoadableManifest,
-        canonicalBase: "",
-        buildId: "HVGsCkwSzd8kBg_FVhjzw",
-        assetPrefix: "",
-        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"d461cb296a37ffc47a165188105216af",previewModeSigningKey:"ba39fa9b6097287d4b74365a8be5f87b6968d2cf7c1d22e88367f08d3892d152",previewModeEncryptionKey:"eb150db1e2748e469c98706215ba8a485f15593691fb69618c23634fbb51a067"},
-        env: process.env,
-        basePath: "",
-        ..._renderOpts
-      }
-      let _nextData = false
-      let parsedUrl
-
-      try {
-        // We need to trust the dynamic route params from the proxy
-        // to ensure we are using the correct values
-        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
-        let parsedUrl = parseUrl(req.url, true)
-        let routeNoAssetPath = parsedUrl.pathname
-        const origQuery = Object.assign({}, parsedUrl.query)
-
-        parsedUrl = handleRewrites(parsedUrl)
-
-        
-
-        // remove ?amp=1 from request URL if rendering for export
-        if (fromExport && parsedUrl.query.amp) {
-          const queryNoAmp = Object.assign({}, origQuery)
-          delete queryNoAmp.amp
-
-          req.url = formatUrl({
-            ...parsedUrl,
-            search: undefined,
-            query: queryNoAmp
-          })
-        }
-
-        if (parsedUrl.pathname.match(/_next\/data/)) {
-          const {
-            default: getRouteNoAssetPath,
-          } = __webpack_require__("1Ej0");
-          _nextData = true;
-          parsedUrl.pathname = getRouteNoAssetPath(
-            parsedUrl.pathname.replace(
-              new RegExp('/_next/data/HVGsCkwSzd8kBg_FVhjzw/'),
-              '/'
-            ),
-            '.json'
-          );
-          routeNoAssetPath = parsedUrl.pathname
-        }
-
-        
-      const i18n = {}
-      const detectedLocale = undefined
-      const defaultLocale = undefined
-      const locales = undefined
-    
-
-        if (parsedUrl.query.nextInternalLocale) {
-          detectedLocale = parsedUrl.query.nextInternalLocale
-          delete parsedUrl.query.nextInternalLocale
-        }
-
-        const renderOpts = Object.assign(
-          {
-            Component,
-            pageConfig: config,
-            nextExport: fromExport,
-            isDataReq: _nextData,
-            locale: detectedLocale,
-            locales,
-            defaultLocale: i18n.defaultLocale,
-          },
-          options,
-        )
-
-        
-
-        const params = {};
-
-        const nowParams = null;
-
-        // make sure to set renderOpts to the correct params e.g. _params
-        // if provided from worker or params if we're parsing them here
-        renderOpts.params = _params || params
-
-        // make sure to normalize req.url on Vercel to strip dynamic params
-        // from the query which are added during routing
-        
-
-        // normalize request URL/asPath for fallback/revalidate pages since the
-        // proxy sets the request URL to the output's path for fallback pages
-        
-
-        // make sure to normalize asPath for revalidate and _next/data requests
-        // since the asPath should match what is shown on the client
-        if (
-          !fromExport &&
-          (getStaticProps || getServerSideProps)
-        ) {
-          
-
-          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
-          renderOpts.resolvedUrl = formatUrl({
-            ...parsedUrl,
-            query: origQuery
-          })
-
-          // For getServerSideProps we need to ensure we use the original URL
-          // and not the resolved URL to prevent a hydration mismatch on asPath
-          renderOpts.resolvedAsPath = getServerSideProps
-            ? formatUrl({
-              ...parsedUrl,
-              pathname: routeNoAssetPath,
-              query: origQuery,
-            })
-            : renderOpts.resolvedUrl
-        }
-
-        const isFallback = parsedUrl.query.__nextFallback
-
-        const previewData = tryGetPreviewData(req, res, options.previewProps)
-        const isPreviewMode = previewData !== false
-        if (false) {}
-        let result = await renderToHTML(req, res, "/", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
-
-        if (!renderMode) {
-          if (_nextData || getStaticProps || getServerSideProps) {
-            if (renderOpts.isNotFound) {
-              res.statusCode = 404
-
-              const NotFoundComponent = Error
-
-              const errPathname = "/_error"
-
-              const result = await renderToHTML(req, res, errPathname, parsedUrl.query, Object.assign({}, options, {
-                getStaticProps: undefined,
-                getStaticPaths: undefined,
-                getServerSideProps: undefined,
-                Component: NotFoundComponent,
-                err: undefined,
-                locale: detectedLocale,
-                locales,
-                defaultLocale,
-              }))
-
-              sendPayload(req, res, result, 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            } else if (renderOpts.isRedirect && !_nextData) {
-              const redirect = {
-                destination: renderOpts.pageData.pageProps.__N_REDIRECT,
-                statusCode: renderOpts.pageData.pageProps.__N_REDIRECT_STATUS,
-                basePath: renderOpts.pageData.pageProps.__N_REDIRECT_BASE_PATH
-              }
-              const statusCode = getRedirectStatus(redirect)
-
-              if (false) {}
-
-              if (statusCode === PERMANENT_REDIRECT_STATUS) {
-                res.setHeader('Refresh', `0;url=${redirect.destination}`)
-              }
-
-              res.statusCode = statusCode
-              res.setHeader('Location', redirect.destination)
-              res.end()
-              return null
-            } else {
-              sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
-                private: isPreviewMode,
-                stateful: !!getServerSideProps,
-                revalidate: renderOpts.revalidate,
-              })
-              return null
-            }
-          }
-        } else if (isPreviewMode) {
-          res.setHeader(
-            'Cache-Control',
-            'private, no-cache, no-store, max-age=0, must-revalidate'
-          )
-        }
-
-        if (renderMode) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (!parsedUrl) {
-          parsedUrl = parseUrl(req.url, true)
-        }
-
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-        } else if (err.code === 'DECODE_FAILED') {
-          // TODO: better error?
-          res.statusCode = 400
-        } else {
-          console.error('Unhandled error during request:', err)
-
-          // Backwards compat (call getInitialProps in custom error):
-          try {
-            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-              getStaticProps: undefined,
-              getStaticPaths: undefined,
-              getServerSideProps: undefined,
-              Component: Error,
-              err: err,
-              // Short-circuit rendering:
-              isDataReq: true
-            }))
-          } catch (underErrorErr) {
-            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
-          }
-
-          // Throw the error to crash the serverless function
-          if (isResSent(res)) {
-            console.error('!!! WARNING !!!')
-            console.error(
-              'Your function crashed, but closed the response before allowing the function to exit.\n' +
-              'This may cause unexpected behavior for the next request.'
-            )
-            console.error('!!! WARNING !!!')
-          }
-          throw err
-        }
-
-        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-          getStaticProps: undefined,
-          getStaticPaths: undefined,
-          getServerSideProps: undefined,
-          Component: Error,
-          err: res.statusCode === 404 ? undefined : err
-        }))
-        return result
-      }
-    }
-    async function render (req, res) {
-      try {
-        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
-        }
-      } catch(err) {
-        console.error(err)
-        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-        // Throw the error to crash the serverless function
-        throw err
-      }
-    }
-  
-
-/***/ }),
-
 /***/ "uxXc":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -57967,26 +56782,6 @@ module.exports = safer
 
 /***/ }),
 
-/***/ "xfxO":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.classNamesShape = exports.timeoutsShape = void 0;
-
-var _propTypes = _interopRequireDefault(__webpack_require__("17x9"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var timeoutsShape =  false ? undefined : null;
-exports.timeoutsShape = timeoutsShape;
-var classNamesShape =  false ? undefined : null;
-exports.classNamesShape = classNamesShape;
-
-/***/ }),
-
 /***/ "xkKp":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -58339,23 +57134,6 @@ module.exports = assocIndexOf;
 
 /***/ }),
 
-/***/ "yD6e":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = hasClass;
-
-function hasClass(element, className) {
-  if (element.classList) return !!className && element.classList.contains(className);else return (" " + (element.className.baseVal || element.className) + " ").indexOf(" " + className + " ") !== -1;
-}
-
-module.exports = exports["default"];
-
-/***/ }),
-
 /***/ "yGk4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -58509,27 +57287,6 @@ var disableSelectStyle = exports.disableSelectStyle = {
 var disableSelectStyleReset = exports.disableSelectStyleReset = {
     userSelect: ''
 };
-
-/***/ }),
-
-/***/ "ycFn":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__("TqRt");
-
-exports.__esModule = true;
-exports.default = addClass;
-
-var _hasClass = _interopRequireDefault(__webpack_require__("yD6e"));
-
-function addClass(element, className) {
-  if (element.classList) element.classList.add(className);else if (!(0, _hasClass.default)(element, className)) if (typeof element.className === 'string') element.className = element.className + ' ' + className;else element.setAttribute('class', (element.className && element.className.baseVal || '') + ' ' + className);
-}
-
-module.exports = exports["default"];
 
 /***/ }),
 

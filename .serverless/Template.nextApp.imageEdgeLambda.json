@@ -1,6 +1,6 @@
 {
   "name": "smi17c-1s2vc4k",
-  "hash": "LagW8reEpsKVDpc7mAV8w73oJYwCZs8jQIkOWE68D/k=",
+  "hash": "nc169shvOCdBV6RUmlkw5AMhBC3vMTeN9btFzM2GvzE=",
   "description": "Image Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
