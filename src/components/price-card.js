@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Router, useRouter } from "next/router";
 import List from "./list";
 import { client } from "../utils/shopify";
+import LoadingOverlay from "react-loading-overlay";
+import styled from "styled-components";
 
 export default function PriceCard({
   data: {
@@ -19,8 +21,10 @@ export default function PriceCard({
 }) {
   const router = useRouter();
   const [webUrl, setWebUrl] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const getCheckoutId = async () => {
+    setLoading(true);
     const storage = window.localStorage;
     let checkoutId = storage.getItem("checkoutId");
     if (!checkoutId) {
@@ -56,43 +60,63 @@ export default function PriceCard({
     router.push(cart.webUrl);
   };
 
+  const StyledLoader = styled(LoadingOverlay)`
+    .MyLoader_overlay {
+      background: rgba(255, 198, 107, 0.85);
+      color: #000000;
+    }
+    &.MyLoader_wrapper--active {
+      overflow: hidden;
+    }
+  `;
+
   return (
     <Card
       className={header ? "package__card active" : "package__card"}
       sx={styles.pricingBox}
     >
-      <Box>
-        <Box className={styles.package__header} sx={styles.pricingHeader}>
-          <Heading className="package__name" variant="title">
-            {title} Balls
-          </Heading>
-          <Text as="p">{description}</Text>
-        </Box>
-        <List items={points} childStle={styles.listItem} />
-        <Text className="package__price" sx={styles.price}>
-          £{price}
-          <span></span>
-        </Text>
-        <Box sx={styles.buttonBox}>
-          <Button
-            variant="primary"
-            aria-label={buttonText}
-            onClick={addToCart}
+      <StyledLoader
+        active={loading}
+        classNamePrefix="MyLoader_"
+        spinner
+        text="Preparing your balls..."
+      >
+        <Box>
+          <Box
+            className={styles.package__header}
+            sx={styles.pricingHeader}
           >
-            {buttonText}
-          </Button>
-          {anotherOption && (
+            <Heading className="package__name" variant="title">
+              {title} Balls
+            </Heading>
+            <Text as="p">{description}</Text>
+          </Box>
+          <List items={points} childStle={styles.listItem} />
+          <Text className="package__price" sx={styles.price}>
+            £{price}
+            <span></span>
+          </Text>
+          <Box sx={styles.buttonBox}>
             <Button
-              variant="textButton"
-              className="free__trial"
-              aria-label={anotherOption}
-              sx={{ color: "black" }}
+              variant="primary"
+              aria-label={buttonText}
+              onClick={addToCart}
             >
-              {anotherOption}
+              {buttonText}
             </Button>
-          )}
+            {anotherOption && (
+              <Button
+                variant="textButton"
+                className="free__trial"
+                aria-label={anotherOption}
+                sx={{ color: "black" }}
+              >
+                {anotherOption}
+              </Button>
+            )}
+          </Box>
         </Box>
-      </Box>
+      </StyledLoader>
     </Card>
   );
 }
