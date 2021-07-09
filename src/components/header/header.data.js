@@ -13,7 +13,7 @@ export default [
   },
   {
     path: "pricing",
-    label: "Buy Balls",
+    label: "Buy SoapyBalls",
   },
   {
     path: "testimonial",

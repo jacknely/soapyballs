@@ -13,9 +13,9 @@ import Avatar4 from "assets/testimonial/avatar4.png";
 const data = [
   {
     id: 1,
-    title: "Modern look & trending design",
+    title: "Would recommend them...",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      '"I enjoy using these because I know they are are eco friendly and they work. My clothes are clean. I use 5 nuts per big wash and it works at 30C perfectly. I would recommend them to anyone."',
     avatar: Avatar1,
     name: "Denny Hilguston",
     designation: "@denny.hil",
@@ -23,9 +23,9 @@ const data = [
   },
   {
     id: 2,
-    title: "Design Quality & performance",
+    title: "A novel idea...",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      '"These seems a novel idea which apparently is an ancient way of washing. I came by "soap nuts" in some French laundry soap and was intrigued. I have used the nuts three times, and the washing came out fresh and clean. These seem a great eco idea!"',
     avatar: Avatar2,
     name: "Denny Hilguston",
     designation: "@denny.hil",
@@ -33,9 +33,9 @@ const data = [
   },
   {
     id: 3,
-    title: "Layout and organized layers",
+    title: "Smelt so soapy!",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      '"Smelt so soapy! And clothes felt clean - idk if I’d use them for heavily soiled stuff but I’d give em a try. Using these regularly and then a liquid detergent once a month"',
     avatar: Avatar3,
     name: "Denny Hilguston",
     designation: "@denny.hil",
@@ -43,9 +43,9 @@ const data = [
   },
   {
     id: 4,
-    title: "Modern look & trending design",
+    title: "Very satisfied with the cleaning...",
     description:
-      "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      '"Been using these wash nuts for quite a while now, very satisfied with the cleaning they accomplish. Very economical, one kilo lasts well over 6 months. After use for washing I use the nuts on the veg patch to discourage snails and slugs. Seems to work well. They even seem to discourage cats and dogs."',
     avatar: Avatar4,
     name: "Denny Hilguston",
     designation: "@denny.hil",
@@ -104,30 +104,34 @@ export default function TestimonialCard() {
     <section id="testimonial" sx={{ variant: "section.testimonial" }}>
       <Container css={{ textAlign: "centre" }}>
         <SectionHeader
-          slogan="Testimonial"
-          title="Meet Client Satificac"
+          slogan="Testimonials"
+          title="What are People saying about SoapyBalls?"
         />
       </Container>
       <Box sx={styles.carouselWrapper}>
         <Carousel {...carouselParams}>
           {data.map((item, i) => (
             <Box sx={styles.reviewCard} key={i}>
-              <Rating rating={item.review} />
+              {/*<Rating rating={item.review} />*/}
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
+              {/*
               <div className="card-footer">
                 <div className="image">
                   <Image src={item.avatar} alt="Client Image" />
                 </div>
+
                 <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
                   </Heading>
                   <Text sx={styles.designation}>{item.designation}</Text>
                 </div>
+                
               </div>
+              */}
             </Box>
           ))}
         </Carousel>
@@ -172,6 +176,7 @@ const styles = {
   reviewCard: {
     boxShadow: "0px 0px 1px rgba(38, 78, 118, 0.35)",
     transition: "all 0.3s",
+    height: "400px",
     borderRadius: "6px",
     p: [
       "30px 20px 35px",
@@ -234,7 +239,7 @@ const styles = {
     },
   },
   title: {
-    fontSize: [1, 2],
+    fontSize: [1, 3],
     fontWeight: 700,
     mb: [3, null, null, "22px"],
     color: "text",
@@ -248,7 +253,7 @@ const styles = {
   },
   heading: {
     fontSize: [1, null, null, 2],
-    fontWeight: 700,
+    fontWeight: 1100,
     mb: "3px",
     color: "text",
     lineHeight: 1.3,

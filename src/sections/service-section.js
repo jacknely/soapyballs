@@ -12,66 +12,42 @@ import {
 } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import TextFeature from "components/text-feature";
-import ModalVideo from "react-modal-video";
-import { IoIosPlay } from "react-icons/io";
-
-import ServiceThumb from "assets/service-thumb.png";
 import shapePattern from "assets/shape-pattern1.png";
+import SoapNuts from "assets/soapnut.jpg";
 
-import Smart from "assets/services/smart.svg";
-import Secure from "assets/services/secure.svg";
-import Feature from "./feature";
+import Berry from "assets/berry.png";
+import Earth from "assets/Earth.png";
 
 const data = {
-  subTitle: "our services",
-  title: "Business Goals Achieved with Design",
+  subTitle: "SoapyBalls",
+  title: "What are SoapyBalls???",
   features: [
     {
       id: 1,
-      imgSrc: Smart,
-      altText: "Smart Features",
-      title: "Smart Features",
+      imgSrc: Berry,
+      altText: "NUT ALLERGY SAFE!",
+      title: "NUT ALLERGY SAFE",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "Our SoapyBalls are also know as Soap Nuts but are not actually nuts, they are the shell (or husks) of berry from a tree called 'Sapindus Mukorossi'. Whilst we call them soap nuts, they are actually berries.",
     },
     {
       id: 2,
-      imgSrc: Secure,
-      altText: "Secure Contents",
-      title: "Secure Contents",
+      imgSrc: Earth,
+      altText: "Enviroment Friendly",
+      title: "Enviroment Friendly",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "SoapyBalls are a great choice to launder clothes for those who want to avoid conventional detergents that contaminate our water supplies and are often harsh on the skin.",
     },
   ],
 };
 
 export default function ServiceSection() {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setVideoOpen(true);
-  };
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
-        <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="thumbnail" />
-          <Button
-            sx={styles.videoBtn}
-            onClick={handleClick}
-            aria-label="Play Button"
-          >
-            <span>
-              <IoIosPlay />
-            </span>
-          </Button>
-          <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="shape" />
-          </Box>
-        </Box>
+        <Image src={SoapNuts} width="650px" alt="Thumbnail" />
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subtitle} title={data.title} />
-
           <Grid sx={styles.grid}>
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
@@ -91,12 +67,6 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
-        channel="youtube"
-        isOpen={videoOpen}
-        videoId="iGBERMGMIvc"
-        onClose={() => setVideoOpen(false)}
-      />
     </section>
   );
 }

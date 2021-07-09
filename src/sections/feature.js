@@ -4,45 +4,45 @@ import { Container, Grid } from "theme-ui";
 import SectionHeader from "components/section-header";
 import FeatureCard from "components/feature-card.js";
 
-import Performance from "assets/feature/performance.svg";
-import Partnership from "assets/feature/partnership.svg";
-import Subscription from "assets/feature/subscription.svg";
-import Support from "assets/feature/support.svg";
+import GlobalWarming from "assets/global-warming.png";
+import NoPlastic from "assets/no-plastics.png";
+import Sustainable from "assets/sustainable-world.png";
+import Support from "assets/Forest.png";
 
 import Factory from "assets/feature/factory_icon.png";
 
 const data = [
   {
     id: 1,
-    imgSrc: Factory,
-    altText: "Biodegradable",
-    title: "Biodegradable",
+    imgSrc: GlobalWarming,
+    altText: "Great For The Planet",
+    title: "Great For The Planet",
     text:
-      "version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
+      "Growns in hard environmental conditions it also protects its native areas from the risk of erosion. It is incredibly resilient to diseases and doesn’t need any fertilizer or chemical pesticides..",
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: "Pro Subscription",
-    title: "Pro Subscription",
+    imgSrc: NoPlastic,
+    altText: "Zero Plastic Packaging",
+    title: "Zero Plastic Packaging",
     text:
-      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+      "At SoapyBalls, we are 100% committed to sustainablilty. All our packaging can be recycled and our in-house processess are carbon negative!",
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: "Partnership deal",
-    title: "Partnership deal",
+    imgSrc: Sustainable,
+    altText: "Compostable",
+    title: "Compostable",
     text:
-      "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
+      "Our SoapyBalls are 100% biodegradable, meaning you can literally just chuck them in your compost when your done, helping to cut down on landfill with every load.",
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: "Customer Support",
-    title: "Customer Support",
+    altText: "Sustainable",
+    title: "Sustainable",
     text:
-      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+      "Naturally & sustainably sourced SoapyBalls are an organic, allergy-friendly, economical and effective alternative to the common laundry detergent.",
   },
 ];
 
@@ -50,7 +50,10 @@ export default function Feature() {
   return (
     <section sx={{ variant: "section.feature" }}>
       <Container>
-        <SectionHeader slogan="This is a Slogan" title="this is TITLE" />
+        <SectionHeader
+          slogan="Join the revolution"
+          title="Great for you, me, and the planet!"
+        />
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCard

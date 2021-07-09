@@ -27,7 +27,6 @@ export default function IndexPage({ products }) {
         <CoreFeature />
         <WorkFlow />
         <Package products={products} />
-        <TeamSection />
         <TestimonialCard />
       </Layout>
     </ThemeProvider>

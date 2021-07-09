@@ -14,28 +14,53 @@ const guides = {
       id: 1,
       title: "Fill your ball bag",
       text:
-        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+        "Pop about 5 or 6 SoapyBalls (approx 10 half shells) into the supplied ball bag.",
     },
     {
       id: 2,
       title: "Activate your balls",
       text:
-        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+        "If you do not have a hot water setting on your washer then soak balls in a glass of warm water for 5 mins before",
     },
     {
       id: 3,
       title: "Magic SoapyBalls Time",
       text:
-        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+        "When agitated in water, the soap berries release saponin, which is a natural cleaner.",
     },
     {
       id: 4,
       title: "After care",
       text:
-        "Get your blood tests delivered at home collect a sample from the your blood tests.",
+        "Save the used shells, as they can be reused up to FOUR more times. Let them dry out naturally or place on radiator",
     },
   ],
-  shampoo: [],
+  shower_gel: [
+    {
+      id: 1,
+      title: "Boil you balls",
+      text:
+        "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes",
+    },
+    {
+      id: 2,
+      title: "Spice things up",
+      text:
+        "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil",
+    },
+    {
+      id: 3,
+      title: "Froffing and foaming",
+      text:
+        "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,",
+    },
+    {
+      id: 4,
+      title: "Bath time",
+      text:
+        "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it",
+    },
+  ],
   soap: [],
   cleaning: [],
 };
@@ -43,32 +68,32 @@ const guides = {
 const data = [
   {
     id: 1,
-    title: "Fill your ball bag",
+    title: "Boil you balls",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes",
   },
   {
     id: 2,
-    title: "Activate your balls",
+    title: "Spice things up",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil",
   },
   {
     id: 3,
-    title: "Magic SoapyBalls Time",
+    title: "Froffing and foaming",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,",
   },
   {
     id: 4,
-    title: "After care",
+    title: "Bath time",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it",
   },
 ];
 
 export default function WorkFlow() {
-  const { laundry, shampoo, soap, cleaning } = guides;
+  const { laundry, shower_gel, cleaning } = guides;
   const [state, setState] = useState({
     active: "laundry",
     instructions: laundry,
@@ -77,12 +102,10 @@ export default function WorkFlow() {
   const handleInstructions = (guide) => {
     if (guide == "laundry") {
       setState({ active: "laundry", instructions: laundry });
-    } else if (guide == "shampoo") {
-      setState({ active: "shampoo", instructions: shampoo });
-    } else if (guide == "soap") {
-      setState({ active: "soap", instructions: shampoo });
+    } else if (guide == "shower_gel") {
+      setState({ active: "shower_gel", instructions: shower_gel });
     } else if (guide == "cleaning") {
-      setState({ active: "cleaning", instructions: shampoo });
+      setState({ active: "cleaning", instructions: cleaning });
     }
   };
 
@@ -106,25 +129,17 @@ export default function WorkFlow() {
               Laundry
             </button>
             <button
-              className={state.active == "shampoo" ? "active" : ""}
+              className={state.active == "shower_gel" ? "active" : ""}
               type="button"
-              aria-label="Annual"
-              onClick={() => handleInstructions("shampoo")}
+              aria-label="Shower Gel"
+              onClick={() => handleInstructions("shower_gel")}
             >
-              Shampoo
-            </button>
-            <button
-              className={state.active == "soap" ? "active" : ""}
-              type="button"
-              aria-label="Annual"
-              onClick={() => handleInstructions("soap")}
-            >
-              Soap
+              Shower Gel
             </button>
             <button
               className={state.active == "cleaning" ? "active" : ""}
               type="button"
-              aria-label="Annual"
+              aria-label="Cleaning"
               onClick={() => handleInstructions("cleaning")}
             >
               Cleaning

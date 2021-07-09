@@ -10,58 +10,114 @@ import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 
 const productInfo = [
   {
-    title: "100",
+    title: "50",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "A great way to test our SoapyBalls",
+    description:
+      "Sample our SoapyBalls - it's a great way to get familiar with our balls.",
     points: [
       {
         id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "SoapyBalls Sample Pack",
+        isAvailable: true,
+      },
+      {
+        id: 2,
         icon: <IoIosCheckmarkCircle />,
         text: "Over 20 Laundry Washes",
         isAvailable: true,
       },
       {
-        id: 2,
+        id: 3,
         icon: <IoIosCheckmarkCircle />,
-        text: "1 re-usable ball bags included",
+        text: "Makes over 1 litre of Shower gel",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "1 re-usable ball bag included",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Atleast 200 grams of SoapyBalls",
         isAvailable: true,
       },
     ],
   },
   {
-    title: "300",
+    title: "150",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "A great way to test our SoapyBalls",
+    description: "Buy 300 SoapyBalls and start saving the planet today.",
     points: [
       {
         id: 1,
+        icon: <IoIosCheckmarkCircle />,
+        text: "SoapyBalls Eco Pack",
+        isAvailable: true,
+      },
+      {
+        id: 2,
         icon: <IoIosCheckmarkCircle />,
         text: "Over 60 Laundry Washes",
         isAvailable: true,
       },
       {
-        id: 2,
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Makes over 1500ml of Shampoo",
+        isAvailable: true,
+      },
+      {
+        id: 3,
         icon: <IoIosCheckmarkCircle />,
         text: "3 re-usable ball bags included",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Atleast 600 grams of SoapyBalls",
         isAvailable: true,
       },
     ],
   },
   {
-    title: "500",
+    title: "250",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "A great way to test our SoapyBalls",
+    description:
+      "Get our big bag of SoapyBalls - Great for families & house shares!",
     points: [
       {
         id: 1,
         icon: <IoIosCheckmarkCircle />,
-        text: "Over 100 Laundry Washes",
+        text: "SoapyBalls Family Pack",
         isAvailable: true,
       },
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "6 re-usable ball bags included",
+        text: "Over 120 Laundry Washes",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Makes over 3000ml of Shampoo",
+        isAvailable: true,
+      },
+      {
+        id: 3,
+        icon: <IoIosCheckmarkCircle />,
+        text: "5 re-usable ball bags included",
+        isAvailable: true,
+      },
+      {
+        id: 4,
+        icon: <IoIosCheckmarkCircle />,
+        text: "Atleast 1kg of SoapyBalls",
         isAvailable: true,
       },
     ],
@@ -123,7 +179,7 @@ export default function Package({ products }) {
     <section id="pricing" sx={{ variant: "section.pricing" }}>
       <Container>
         <SectionHeader
-          slogan="Choose your package"
+          slogan="Choose your bag size"
           title="Buy SoapyBalls"
         />
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">

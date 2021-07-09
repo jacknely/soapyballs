@@ -2,8 +2,8 @@
   "name": "smi17c-xpz47rq",
   "arn": "arn:aws:iam::139228650326:role/smi17c-xpz47rq",
   "service": [
-    "lambda.amazonaws.com",
-    "edgelambda.amazonaws.com"
+    "edgelambda.amazonaws.com",
+    "lambda.amazonaws.com"
   ],
   "policy": {
     "Version": "2012-10-17",
@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::smi17c-77el8tn/*",
+        "Resource": "arn:aws:s3:::smi17c-0yz8wka/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"

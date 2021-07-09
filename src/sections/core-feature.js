@@ -2,14 +2,14 @@
 import { jsx, Container, Box, Image } from "theme-ui";
 import TextFeature from "components/text-feature";
 
-import FeatureThumb from "assets/green-city.png";
+import SoapNuts from "assets/soap-nuts.jpg";
 import shapePattern from "assets/shape-pattern2.png";
 
 const data = {
-  subTitle: "Core features",
-  title: "Smart Jackpots that you may love this anytime & anywhere",
+  subTitle: "SoapyBalls are Soap Nut shells",
+  title: "How do I get the Soap from my SoapyBalls?",
   description:
-    "Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.",
+    'Although we refer to them as "Balls" or "Nuts", its actually the shell of the Indian soap berry that produces the soap-like substance. Once picked and left to dry in the sun,these amazing shells contain a natural cleaning agent called saponin that produces an effect comparable to soap. Click below to see our guides on using SoapyBalls.',
   btnName: "Get Started",
   btnURL: "#",
 };
@@ -27,11 +27,9 @@ export default function CoreFeature() {
             btnURL={data.btnURL}
           />
         </Box>
-        <Box sx={styles.thumbnail}>
-          <Image src={FeatureThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
-            {/*<Image src={shapePattern} alt="Shape" />*/}
-          </Box>
+        <Image src={SoapNuts} width="650px" alt="soap nuts" />
+        <Box sx={styles.shapeBox}>
+          {/*<Image src={shapePattern} alt="Shape" />*/}
         </Box>
       </Container>
     </section>

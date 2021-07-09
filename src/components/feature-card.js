@@ -26,7 +26,7 @@ const styles = {
   },
 
   img: {
-    width: ["70px", null, null, "80px", "90px", "auto"],
+    width: "85px",
     height: "auto",
     flexShrink: 0,
     mr: [2, 3, null, null, 4, 5],

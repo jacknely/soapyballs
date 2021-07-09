@@ -10,7 +10,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Logo />
-          <Box sx={styles.footer.menus}>
+          {/* <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
                 <Link
@@ -21,7 +21,7 @@ export default function Footer() {
                 />
               ))}
             </nav>
-          </Box>
+          </Box> */}
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} SoapyBalls
           </Text>

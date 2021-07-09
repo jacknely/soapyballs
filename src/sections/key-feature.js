@@ -4,12 +4,10 @@ import { Container, Grid } from "theme-ui";
 import SectionHeader from "../components/section-header";
 import FeatureCardColumn from "components/feature-card-column.js";
 
-import Partnership from "assets/key-feature/partnership.svg";
-import Subscription from "assets/key-feature/subscription.svg";
-import Support from "assets/key-feature/support.svg";
 import Eco from "assets/Label.svg";
 import Love from "assets/Love.png";
 import Chem from "assets/no_chemical.png";
+import Leave from "assets/Leaves.png";
 
 const data = [
   {
@@ -23,26 +21,26 @@ const data = [
   {
     id: 2,
     imgSrc: Love,
-    altText: "Partnership deal",
-    title: "Partnership deal",
+    altText: "All Natural",
+    title: "All Natural",
     text:
       "Nuts come from India, where they used as a natural detergent for many years.",
   },
   {
     id: 3,
     imgSrc: Chem,
-    altText: "Pro Subscription",
-    title: "Pro Subscription",
+    altText: "Hypoallergenic",
+    title: "Hypoallergenic",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "No skin or respiratory irritation and non-toxic - alternative to chemical cleaning agents.",
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: "Customer Support",
-    title: "Customer Support",
+    imgSrc: Leave,
+    altText: "Countless Uses",
+    title: "Countless Uses",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Extremely reuseable. Each berry can be used up to 6 times before it's spent",
   },
 ];
 
