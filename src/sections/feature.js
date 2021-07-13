@@ -17,32 +17,28 @@ const data = [
     imgSrc: GlobalWarming,
     altText: "Great For The Planet",
     title: "Great For The Planet",
-    text:
-      "Growns in hard environmental conditions it also protects its native areas from the risk of erosion. It is incredibly resilient to diseases and doesn’t need any fertilizer or chemical pesticides..",
+    text: "Grown in harsh environmental conditions the soap nut tree protects its native areas from erosion. It is incredibly resilient to diseases and doesn’t need any fertilizer or chemical pesticides..",
   },
   {
     id: 2,
     imgSrc: NoPlastic,
     altText: "Zero Plastic Packaging",
     title: "Zero Plastic Packaging",
-    text:
-      "At SoapyBalls, we are 100% committed to sustainablilty. All our packaging can be recycled and our in-house processess are carbon negative!",
+    text: "At SoapyBalls, we are 100% committed to sustainablilty. All our packaging can be recycled and our in-house processess are carbon negative!",
   },
   {
     id: 3,
     imgSrc: Sustainable,
     altText: "Compostable",
     title: "Compostable",
-    text:
-      "Our SoapyBalls are 100% biodegradable, meaning you can literally just chuck them in your compost when your done, helping to cut down on landfill with every load.",
+    text: "Our SoapyBalls are 100% biodegradable, meaning you can literally just chuck them in your compost when your done, helping to cut down on landfill with every load.",
   },
   {
     id: 4,
     imgSrc: Support,
     altText: "Sustainable",
     title: "Sustainable",
-    text:
-      "Naturally & sustainably sourced SoapyBalls are an organic, allergy-friendly, economical and effective alternative to the common laundry detergent.",
+    text: "Naturally & sustainably sourced SoapyBalls are an organic, allergy-friendly, economical and effective alternative to the common laundry detergent.",
   },
 ];
 
