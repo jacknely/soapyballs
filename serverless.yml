@@ -8,3 +8,6 @@ nextApp:
       defaultLambda: "nodejs14.x"
       apiLambda: "nodejs14.x"
       imageLambda: "nodejs14.x"
+    build:
+      env:
+        NEXT_PUBLIC_GOOGLE_ANALYTICS: "G-R6DTL63JNN"

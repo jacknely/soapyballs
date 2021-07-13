@@ -1,5 +1,4 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://soapyballs.store",
+  siteUrl: "https://soapyballs.store",
   generateRobotsTxt: true,
-  sitemapSize: 7000,
 };

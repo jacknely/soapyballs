@@ -11,6 +11,8 @@ import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 const productInfo = [
   {
     title: "50",
+    checkoutLink:
+      "https://soapyballs.myshopify.com/cart/40254839685279:1?channel=buy_button",
     headerIcon: <IoIosCheckmarkCircle />,
     description:
       "Sample our SoapyBalls - it's a great way to get familiar with our balls.",
@@ -24,7 +26,7 @@ const productInfo = [
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "Over 20 Laundry Washes",
+        text: "Over 40 Laundry Washes",
         isAvailable: true,
       },
       {
@@ -42,13 +44,15 @@ const productInfo = [
       {
         id: 4,
         icon: <IoIosCheckmarkCircle />,
-        text: "Atleast 200 grams of SoapyBalls",
+        text: "200 grams of SoapyBalls",
         isAvailable: true,
       },
     ],
   },
   {
     title: "150",
+    checkoutLink:
+      "https://soapyballs.myshopify.com/cart/40254839718047:1?channel=buy_button",
     headerIcon: <IoIosCheckmarkCircle />,
     description: "Buy 300 SoapyBalls and start saving the planet today.",
     points: [
@@ -61,13 +65,13 @@ const productInfo = [
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "Over 60 Laundry Washes",
+        text: "Over 120 Laundry Washes",
         isAvailable: true,
       },
       {
         id: 3,
         icon: <IoIosCheckmarkCircle />,
-        text: "Makes over 1500ml of Shampoo",
+        text: "Over 1.5 litres of Shower gel",
         isAvailable: true,
       },
       {
@@ -79,13 +83,15 @@ const productInfo = [
       {
         id: 4,
         icon: <IoIosCheckmarkCircle />,
-        text: "Atleast 600 grams of SoapyBalls",
+        text: "600 grams of SoapyBalls",
         isAvailable: true,
       },
     ],
   },
   {
     title: "250",
+    checkoutLink:
+      "https://soapyballs.myshopify.com/cart/40254839783583:1?channel=buy_button",
     headerIcon: <IoIosCheckmarkCircle />,
     description:
       "Get our big bag of SoapyBalls - Great for families & house shares!",
@@ -99,13 +105,13 @@ const productInfo = [
       {
         id: 2,
         icon: <IoIosCheckmarkCircle />,
-        text: "Over 120 Laundry Washes",
+        text: "Over 200 Laundry Washes",
         isAvailable: true,
       },
       {
         id: 3,
         icon: <IoIosCheckmarkCircle />,
-        text: "Makes over 3000ml of Shampoo",
+        text: "Makes over 3 litres of Shower gel",
         isAvailable: true,
       },
       {
@@ -117,7 +123,7 @@ const productInfo = [
       {
         id: 4,
         icon: <IoIosCheckmarkCircle />,
-        text: "Atleast 1kg of SoapyBalls",
+        text: "1kg of SoapyBalls",
         isAvailable: true,
       },
     ],

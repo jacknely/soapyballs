@@ -9,7 +9,7 @@ const data = {
   subTitle: "SoapyBalls are Soap Nut shells",
   title: "How do I get the Soap from my SoapyBalls?",
   description:
-    'Although we refer to them as "Balls" or "Nuts", its actually the shell of the Indian soap berry that produces the soap-like substance. Once picked and left to dry in the sun,these amazing shells contain a natural cleaning agent called saponin that produces an effect comparable to soap. Click below to see our guides on using SoapyBalls.',
+    'Although we refer to them as "Balls" or "Nuts", its actually the shell of the Indian soap berry that produces the soap-like substance. Once picked and left to dry in the sun,these amazing shells contain a natural cleaning agent called saponin that produces an effect comparable to soap. Keep scrolling to see our guides on using SoapyBalls.',
   btnName: "Get Started",
   btnURL: "#",
 };
@@ -23,8 +23,6 @@ export default function CoreFeature() {
             subTitle={data.subTitle}
             title={data.title}
             description={data.description}
-            btnName={data.btnName}
-            btnURL={data.btnURL}
           />
         </Box>
         <Image src={SoapNuts} width="650px" alt="soap nuts" />
@@ -38,6 +36,7 @@ export default function CoreFeature() {
 
 const styles = {
   containerBox: {
+    paddingTop: "10px",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",

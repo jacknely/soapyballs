@@ -12,8 +12,8 @@ import Feature from "../sections/feature";
 import CoreFeature from "../sections/core-feature";
 import WorkFlow from "../sections/workflow";
 import Package from "../sections/package";
-import TeamSection from "../sections/team-section";
 import TestimonialCard from "../sections/testimonial";
+import CookieConsent from "react-cookie-consent";
 
 export default function IndexPage({ products }) {
   return (
@@ -28,6 +28,9 @@ export default function IndexPage({ products }) {
         <WorkFlow />
         <Package products={products} />
         <TestimonialCard />
+        <CookieConsent style={{ background: "#f6ae42" }}>
+          This website uses cookies to enhance the user experience.
+        </CookieConsent>
       </Layout>
     </ThemeProvider>
   );

@@ -50,7 +50,7 @@
             ]
           },
           "lambda@edge": {
-            "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-1s2vc4k:11"
+            "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-1s2vc4k:39"
           }
         },
         "_next/data/*": {
@@ -62,8 +62,8 @@
             "GET"
           ],
           "lambda@edge": {
-            "origin-response": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:42",
-            "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:42"
+            "origin-response": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:70",
+            "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:70"
           }
         }
       }
@@ -88,8 +88,8 @@
       "PATCH"
     ],
     "lambda@edge": {
-      "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:42",
-      "origin-response": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:42"
+      "origin-request": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:70",
+      "origin-response": "arn:aws:lambda:us-east-1:139228650326:function:smi17c-olx84bd:70"
     },
     "compress": true
   }

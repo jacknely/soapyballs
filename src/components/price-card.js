@@ -9,6 +9,7 @@ import styled from "styled-components";
 export default function PriceCard({
   data: {
     header,
+    checkoutLink,
     name,
     title,
     description,
@@ -48,16 +49,17 @@ export default function PriceCard({
   };
 
   const addToCart = async () => {
-    await clearCart();
-    const checkoutId = await getCheckoutId();
-    const cart = await client.checkout.addLineItems(checkoutId, [
-      {
-        variantId: id,
-        quantity: 1,
-      },
-    ]);
-    console.log(cart);
-    router.push(cart.webUrl);
+    setLoading(true);
+    // await clearCart();
+    // const checkoutId = await getCheckoutId();
+    // const cart = await client.checkout.addLineItems(checkoutId, [
+    //   {
+    //     variantId: id,
+    //     quantity: 1,
+    //   },
+    // ]);
+    // console.log(cart);
+    router.push(checkoutLink);
   };
 
   const StyledLoader = styled(LoadingOverlay)`
@@ -87,7 +89,7 @@ export default function PriceCard({
             sx={styles.pricingHeader}
           >
             <Heading className="package__name" variant="title">
-              {title} Balls
+              {title} SoapyBalls
             </Heading>
             <Text as="p">{description}</Text>
           </Box>
@@ -96,6 +98,7 @@ export default function PriceCard({
             £{price}
             <span></span>
           </Text>
+
           <Box sx={styles.buttonBox}>
             <Button
               variant="primary"
@@ -104,16 +107,6 @@ export default function PriceCard({
             >
               {buttonText}
             </Button>
-            {anotherOption && (
-              <Button
-                variant="textButton"
-                className="free__trial"
-                aria-label={anotherOption}
-                sx={{ color: "black" }}
-              >
-                {anotherOption}
-              </Button>
-            )}
           </Box>
         </Box>
       </StyledLoader>

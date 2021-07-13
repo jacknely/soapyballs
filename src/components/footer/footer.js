@@ -10,7 +10,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Logo />
-          {/* <Box sx={styles.footer.menus}>
+          <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
                 <Link
@@ -21,7 +21,7 @@ export default function Footer() {
                 />
               ))}
             </nav>
-          </Box> */}
+          </Box>
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} SoapyBalls
           </Text>
@@ -35,10 +35,10 @@ const styles = {
   footer: {
     footerBottomArea: {
       borderTop: "1px solid",
-      borderTopColor: "border_color",
+      borderTopColor: "background_secondary",
       display: "flex",
       pt: [7, null, 8],
-      pb: ["40px", null, "100px"],
+      pb: [null, null, "80px"],
       textAlign: "center",
       flexDirection: "column",
     },
@@ -55,7 +55,7 @@ const styles = {
 
     link: {
       fontSize: [1, "15px"],
-      color: "text",
+      color: "background_secondary",
       fontWeight: "400",
       mb: 2,
       cursor: "pointer",
@@ -69,6 +69,7 @@ const styles = {
       },
     },
     copyright: {
+      color: "background_secondary",
       fontSize: [1, "15px"],
       width: "100%",
     },

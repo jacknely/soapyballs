@@ -194,9 +194,15 @@ export default {
       color: "muted",
     },
     secondary: {
-      fontWeight: 500,
-      color: "#00A99D",
-      lineHeight: "40px",
+      paddingTop: "20px",
+      fontWeight: 900,
+      color: "#853900",
+      lineHeight: "65px",
+    },
+    list: {
+      fontSize: 1,
+      color: "text",
+      textAlign: "left",
     },
   },
   links: {

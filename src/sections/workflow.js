@@ -13,84 +13,69 @@ const guides = {
     {
       id: 1,
       title: "Fill your ball bag",
-      text:
-        "Pop about 5 or 6 SoapyBalls (approx 10 half shells) into the supplied ball bag.",
+      text: "Pop about 5 or 6 SoapyBalls (approx 10 half shells) into the supplied ball bag.",
     },
     {
       id: 2,
       title: "Activate your balls",
-      text:
-        "If you do not have a hot water setting on your washer then soak balls in a glass of warm water for 5 mins before",
+      text: "If you do not have a hot water setting on your washer then soak balls in a glass of warm water for 5 mins before",
     },
     {
       id: 3,
       title: "Magic SoapyBalls Time",
-      text:
-        "When agitated in water, the soap berries release saponin, which is a natural cleaner.",
+      text: "Throw your ball bag in and start the wash. When agitated in water, the soap berries release saponin, a natural cleaner!",
     },
     {
       id: 4,
       title: "After care",
-      text:
-        "Save the used shells, as they can be reused up to FOUR more times. Let them dry out naturally or place on radiator",
+      text: "Save the used shells, as they can be reused up to FOUR more times. Let them dry out naturally or place on radiator",
     },
   ],
   shower_gel: [
     {
       id: 1,
       title: "Boil you balls",
-      text:
-        "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes",
+      text: "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes",
     },
     {
       id: 2,
       title: "Spice things up",
-      text:
-        "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil",
+      text: "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil",
     },
     {
       id: 3,
       title: "Froffing and foaming",
-      text:
-        "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,",
+      text: "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,",
     },
     {
       id: 4,
       title: "Bath time",
-      text:
-        "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it",
+      text: "Hop in the shower and get your hair and skin drenched in your solution. Note, there isn't much (if any) foam produced while applying it but it still works a treat.",
     },
   ],
-  soap: [],
-  cleaning: [],
+  cleaning: [
+    {
+      id: 1,
+      title: "Boil balls",
+      text: "Add your 15 Soap Nut shells to your bag and then boil in 0.5 litre of water for around 10 minutes",
+    },
+    {
+      id: 2,
+      title: "Cool down",
+      text: "Leave solution to cool to room temperature or place in fridge.",
+    },
+    {
+      id: 3,
+      title: "Add vinegar",
+      text: "Add 100ml of white viniger to your solution along with 10ml of tea tree oil. Lavendar, orange, rose are also great options instead.",
+    },
+    {
+      id: 4,
+      title: "Clean and shine",
+      text: "Transfer your solution into a empty spray bottle and replace your chemical cleaning solutions with this eco friendly alternative.",
+    },
+  ],
 };
-
-const data = [
-  {
-    id: 1,
-    title: "Boil you balls",
-    text:
-      "Add your Soap Nuts into your bag and then boil in 6 cups of water for around 40 minutes",
-  },
-  {
-    id: 2,
-    title: "Spice things up",
-    text:
-      "Add in the dried rosemary so it has chance to expel its antioxidants and minerals into the solution as it begins to boil",
-  },
-  {
-    id: 3,
-    title: "Froffing and foaming",
-    text:
-      "The solution begins to bubble and foam on the top, though don't let this boil over. Turn off the heat/gas and let it sit and settle until cool,",
-  },
-  {
-    id: 4,
-    title: "Bath time",
-    text:
-      "Hop in the bath/shower and get your hair and scalp drenched in your solution. Be aware, it will be initially foamy during the boiling stage but there isn't much (if any) produced while applying it",
-  },
-];
 
 export default function WorkFlow() {
   const { laundry, shower_gel, cleaning } = guides;
