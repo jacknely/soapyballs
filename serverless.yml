@@ -1,9 +1,9 @@
 name: SoapyBalls
-
+stage: staging
 nextApp:
   component: "@sls-next/serverless-component@1.19.0"
   inputs:
-    domain: ["www", "soapyballs.store"]
+    domain: ["staging", "soapyballs.store"]
     runtime:
       defaultLambda: "nodejs14.x"
       apiLambda: "nodejs14.x"
