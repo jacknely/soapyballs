@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::smi17c-k3iak42/*",
+        "Resource": "arn:aws:s3:::smi17c-bo40sg/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"

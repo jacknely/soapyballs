@@ -1,0 +1,13 @@
+name: SoapyBalls
+
+nextApp:
+  component: "@sls-next/serverless-component@1.19.0"
+  inputs:
+    domain: ["www", "soapyballs.store"]
+    runtime:
+      defaultLambda: "nodejs14.x"
+      apiLambda: "nodejs14.x"
+      imageLambda: "nodejs14.x"
+    build:
+      env:
+        NEXT_PUBLIC_GOOGLE_ANALYTICS: "G-R6DTL63JNN"
