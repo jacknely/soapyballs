@@ -1,5 +1,5 @@
 name: SoapyBalls
-
+stage: staging
 nextApp:
   component: "@sls-next/serverless-component@1.19.0"
   inputs:
