@@ -1,1 +1,13 @@
-{}
+{
+  "region": "us-east-1",
+  "privateZone": false,
+  "domain": "soapyballs.store",
+  "subdomains": [
+    {
+      "domain": "www.soapyballs.store",
+      "distributionId": "E2P5FV8GVQZO3C",
+      "url": "https://d3co5my6tyz72y.cloudfront.net",
+      "type": "awsCloudFront"
+    }
+  ]
+}

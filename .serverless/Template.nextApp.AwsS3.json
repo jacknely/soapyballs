@@ -1,1 +1,6 @@
-{}
+{
+  "name": "smi17c-k3iak42",
+  "region": "us-east-1",
+  "accelerated": true,
+  "url": "https://smi17c-k3iak42.s3.amazonaws.com"
+}
