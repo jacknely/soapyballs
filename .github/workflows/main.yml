@@ -32,13 +32,13 @@ jobs:
         run: aws s3 sync s3://nelson-serverless/soapyballs/prod/.serverless .serverless --delete
 
       - name: Deploy Next.js app
-        run: npx serverless remove
+        run: npx serverless
 
-      # - name: Serverless AWS authentication
-      #   run: npx serverless --component=serverless-next config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
+      - name: Serverless AWS authentication
+        run: npx serverless --component=serverless-next config credentials --provider aws --key ${{ secrets.AWS_KEY }} --secret ${{ secrets.AWS_SECRET }}
 
-      # - name: Deploy Next.js app
-      #   run: npx serverless
+      - name: Deploy Next.js app
+        run: npx serverless
 
-      # - name: Upload `.serverless` state to S3
-      #   run: aws s3 sync .serverless ss3://nelson-serverless/soapyballs/prod/.serverless --delete
+      - name: Upload `.serverless` state to S3
+        run: aws s3 sync .serverless ss3://nelson-serverless/soapyballs/prod/.serverless --delete
