@@ -2,9 +2,7 @@
 name: CI
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: [staging, prod]
   workflow_dispatch:
 jobs:
   build:
@@ -14,6 +12,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
+
+      - name: Set environment variables
+        run: |
+          echo "GIT_BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
 
       - name: Install NPM dependencies
         run: npm -g install
@@ -29,7 +31,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Download `.serverless` state from S3
-        run: aws s3 sync s3://nelson-serverless/soapyballs/prod/.serverless .serverless --delete
+        run: aws s3 sync s3://nelson-serverless/soapyballs/${GIT_BRANCH}/.serverless .serverless --delete
 
       - name: Deploy Next.js app
         run: npx serverless
@@ -41,4 +43,4 @@ jobs:
         run: npx serverless
 
       - name: Upload `.serverless` state to S3
-        run: aws s3 sync .serverless s3://nelson-serverless/soapyballs/prod/.serverless --delete
+        run: aws s3 sync .serverless s3://nelson-serverless/soapyballs/${GIT_BRANCH}/.serverless --delete
