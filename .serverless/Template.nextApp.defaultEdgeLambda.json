@@ -1,6 +1,6 @@
 {
   "name": "smi17c-olx84bd",
-  "hash": "PAXah6aUJNocPA5LczGA+9tJkbnWFliXtfDNAHBQb5E=",
+  "hash": "FjcbmYKAuC8YFuSMrY94s4V/G62yzdsp+BEsoGetE/A=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,

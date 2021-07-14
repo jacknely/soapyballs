@@ -4,9 +4,9 @@
   "domain": "soapyballs.store",
   "subdomains": [
     {
-      "domain": "www.soapyballs.store",
-      "distributionId": "E11M7EWFLLD3VH",
-      "url": "https://d3r7wm2fcdx2oh.cloudfront.net",
+      "domain": "dev.soapyballs.store",
+      "distributionId": "E1CDSHANFFXZXP",
+      "url": "https://d3qwhrhx5u4rnq.cloudfront.net",
       "type": "awsCloudFront"
     }
   ]
