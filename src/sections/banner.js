@@ -5,6 +5,7 @@ import Nut from "assets/soap-nut.png";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 import { Link } from "react-scroll";
+import * as ga from "../utils/ga";
 
 export default function Banner() {
   return (
@@ -35,6 +36,14 @@ export default function Banner() {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => {
+              ga.event({
+                action: "buy",
+                params: {
+                  location: "top",
+                },
+              });
+            }}
           >
             <Button variant="primary">Buy</Button>
           </Link>

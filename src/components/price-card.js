@@ -5,6 +5,7 @@ import List from "./list";
 import { client } from "../utils/shopify";
 import LoadingOverlay from "react-loading-overlay";
 import styled from "styled-components";
+import * as ga from "../utils/ga";
 
 export default function PriceCard({
   data: {
@@ -50,6 +51,13 @@ export default function PriceCard({
 
   const addToCart = async () => {
     setLoading(true);
+    ga.event({
+      action: "buy",
+      params: {
+        location: "package",
+        item: title,
+      },
+    });
     // await clearCart();
     // const checkoutId = await getCheckoutId();
     // const cart = await client.checkout.addLineItems(checkoutId, [
