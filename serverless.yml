@@ -10,4 +10,4 @@ nextApp:
       imageLambda: "nodejs14.x"
     build:
       env:
-        NEXT_PUBLIC_GOOGLE_ANALYTICS: "G-R6DTL63JNN"
+        NEXT_PUBLIC_GOOGLE_ANALYTICS: "UA-201808536-1"
