@@ -54,7 +54,7 @@ const productInfo = [
     checkoutLink:
       "https://soapyballs.myshopify.com/cart/40254839718047:1?channel=buy_button",
     headerIcon: <IoIosCheckmarkCircle />,
-    description: "Buy 300 SoapyBalls and start saving the planet today.",
+    description: "Buy 150 SoapyBalls and start saving the planet today.",
     points: [
       {
         id: 1,
