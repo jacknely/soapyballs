@@ -13283,7 +13283,7 @@ class CustomDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.
     return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], {
       lang: "en-US"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("script", {
-      src: "http://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"
+      src: "https://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"
     }), __jsx("script", {
       async: true,
       src: `https://www.googletagmanager.com/gtag/js?id=${"G-R6DTL63JNN"}`

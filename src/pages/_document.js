@@ -10,7 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <script src="http://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"></script>
+          <script src="https://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"></script>
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
