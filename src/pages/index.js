@@ -37,6 +37,30 @@ export default function IndexPage({ products }) {
 }
 
 export async function getServerSideProps() {
-  const products = await client.product.fetchAll();
+  const products = [{
+        "id": 4727217979452,
+        "product_type": "",
+        "tags": [
+          "no-collections"
+        ],
+        "variants": [
+          {
+            "id": 32725892890684,
+            "title": "Sample",
+            "grams": 0,
+            "product_id": 4727217979452,
+          }
+        ],
+        "images": [],
+        "options": [
+          {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+          }
+        ]
+      }]
   return { props: { products: JSON.parse(JSON.stringify(products)) } };
 }
