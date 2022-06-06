@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@mattjennings/react-modal": "^1.0.2",
-    "@sls-next/serverless-component": "^3.5.5",
+    "@sls-next/serverless-component": "^3.6.0",
     "dotenv": "^8.2.0",
     "framer-motion": "^2.7.5",
     "globby": "^11.0.0",
